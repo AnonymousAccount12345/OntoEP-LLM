@@ -11,7 +11,9 @@ The sequence of operations is as follows
 3. For the generated Initial restrictions, go through the OntoEP-LLM process.
 
 3.1. Create an embedding for the created restriction via SentenceEmbedding/final.py.
+
 3.2. Mapping with ontology elements via Clustering/final.py.
+
 3.3. Generate variant candidates via Counter_Reasoning/final.py.
 
 4. run GPT/generate_reasoning/interactive_batch.py to generate trasnformed rational text for each variant.

@@ -1,4 +1,4 @@
-This Repository 
+
 
 This repository is a repo that stores the source code, data, and prompts for OntoEP-LLM (LLM-Driven Property Restriction Generation via Variant Expansion and Semantic-Hiearchical Pruning).
 

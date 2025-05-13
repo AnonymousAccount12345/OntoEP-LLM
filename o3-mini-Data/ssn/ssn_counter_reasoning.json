@@ -1,0 +1,586 @@
+{
+  "ActuatableProperty,madeActuation,some,Actuation": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This property is designed to be directly affected by an actuation process, indicating a clear relationship between the property and the action taken. If any actuation processes exist, they must all correspond to the defined Actuation.",
+      "reason": "The 'only' variant specifies that when actuation processes are present, they must exclusively be of the type Actuation, thereby ensuring consistency in how the property is influenced."
+    },
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This property represents a characteristic of a system that can be modified or influenced. It plays a crucial role in systems requiring dynamic control, enabling adjustments and responsiveness without being tied to a specific actuation process.",
+      "reason": "By removing the constraint related to the madeActuation relation, the support text is generalized to emphasize the property’s modifiable nature without reference to a specific actuation mechanism."
+    }
+  ],
+  "Actuation,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": "true",
+      "description": "An actuator exerts influence to achieve a desired effect, following a defined procedure that outlines the steps necessary for the outcome.",
+      "reason": "By removing the constraint, the support text no longer anchors the process to acting on a specific property, thus making it independent of the [subject, predicate, rtype, object] relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An actuator exerts influence on a specific property, typically an actuatable property. If any properties are acted upon, they must all be actuatable properties.",
+      "reason": "This variant reflects the change in the constraint from 'some' to 'only', which emphasizes that if an actuation relationship exists, the property involved must exclusively be an actuatable property."
+    },
+    {
+      "operation": "generalize",
+      "value": "Property",
+      "description": "An actuator exerts influence on a specific property, typically a Property.",
+      "reason": "Generalizing the object from ActuatableProperty to Property broadens the scope, so the support text now reflects that the actuator influences a property in a more general sense."
+    }
+  ],
+  "Actuation,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property to achieve a desired effect. It is closely tied to a particular feature of interest, which guides the actuation process. If any features of interest are present, they must all be the defined feature of interest.",
+      "reason": "Changing the constraint from 'some' to 'only' emphasizes that any feature of interest involved in the actuation must exclusively match the defined feature, ensuring a stricter alignment with the actuation's focus."
+    }
+  ],
+  "Actuation,hasResult,some,Result": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "each actuation yields a specific result, reflecting the outcome of the interaction. If any results exist, they must all be of type Result.",
+      "reason": "The 'only' variant changes the constraint so that while an actuation produces a result, any result present must exclusively be a Result, ensuring a more precise outcome definition."
+    }
+  ],
+  "Actuation,usedProcedure,some,Procedure": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The actuation is guided by a defined procedure that outlines the steps necessary to achieve the intended outcome. If a procedure is used in this actuation, it must exclusively be the specified Procedure.",
+      "reason": "Transforming the constraint from 'some' to 'only' emphasizes that while a procedure must be involved, any procedure referenced in the actuation must be precisely the defined Procedure."
+    }
+  ],
+  "Actuator,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Each Actuator functions to perform actions within a system without being explicitly associated with any particular type of property.",
+      "reason": "By removing the constraint, the support text no longer references any specific property relation, making the description independent of the association with ActuatableProperty."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each Actuator is associated with a specific type of property that it can influence, ensuring that if any property associations exist, they must all be ActuatableProperty.",
+      "reason": "The 'only' variation emphasizes that whenever properties are linked, they are exclusively of the defined ActuatableProperty type."
+    },
+    {
+      "operation": "generalize",
+      "value": "Property",
+      "description": "Each Actuator is associated with a specific type of property that it can influence, ensuring that its functionality is aligned with the broader concept of Property.",
+      "reason": "By generalizing from ActuatableProperty to Property, the support text reflects a wider interpretation of the properties that an actuator can affect."
+    }
+  ],
+  "Deployment,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This Deployment class represents a specific arrangement where a system is installed or utilized, without requiring an association to any particular platform.",
+      "reason": "By removing the constraint, the support text no longer refers to being installed on a designated platform, thereby eliminating any dependency on the deployedOnPlatform relation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This Deployment class represents a specific arrangement where a system is installed or utilized on a designated platform. If any platform associations exist, they must exclusively be with that designated platform.",
+      "reason": "The 'only' transformation emphasizes that while a deployment may involve a platform, every associated platform must meet the defined designation requirement."
+    }
+  ],
+  "Deployment,deployedSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The Deployment class highlights a structured arrangement in sensor network configurations where various components are organized to function seamlessly on a designated platform. This description now focuses solely on the overall deployment framework without enforcing any particular constraint on the system being deployed.",
+      "reason": "The constraint regarding the deployed system has been fully removed, so the support text no longer references or depends on the deployedSystem relation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Deployment class encapsulates the relationship between the system, the platform it operates on, and the property it addresses, emphasizing the structured nature of sensor network configurations. If any deployed systems exist, they must all be of type System.",
+      "reason": "Changing the constraint to 'only' shifts the meaning so that while a deployed system is not strictly required, any systems present must conform to being of the type System."
+    }
+  ],
+  "Deployment,forProperty,some,Property": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each deployment is tailored to a particular property, ensuring that if any property is specified, it must exclusively be the defined Property.",
+      "reason": "The 'only' variation emphasizes that when a property is associated with a deployment, it must be exclusively the defined Property, rather than allowing any other value."
+    },
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Each deployment is designed to operate within defined parameters, ensuring system functionality without relying on the assignment of any specific property.",
+      "reason": "Removing the constraint eliminates the dependency on a specific property, while still underscoring that deployments adhere to an overall framework of defined operational parameters."
+    }
+  ],
+  "FeatureOfInterest,hasProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Feature of Interest represents a specific entity or aspect that is being observed or measured within a given context and is intrinsically linked to samples. In this formulation, the concept does not depend on being defined by any specific set of properties.",
+      "reason": "By removing the property-based constraint, the support text no longer references or relies on any relationship involving properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Every Feature of Interest is defined by its properties, which describe its characteristics and behaviors in the context of observation or measurement. If any properties exist, they must exclusively be of the specified Property type.",
+      "reason": "The 'only' variant reinterprets the constraint so that when properties are present, they must all conform strictly to being a Property, ensuring consistency with the intended definition."
+    }
+  ],
+  "FeatureOfInterest,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Feature of Interest represents a specific entity or aspect that is observed or measured. In this formulation, its characterization depends solely on its intrinsic properties without reference to any associated sample.",
+      "reason": "By removing the sample association, the support text is rewritten to focus entirely on the inherent attributes of the Feature of Interest, eliminating any dependency on the sample relation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each Feature of Interest is associated with samples, and if any such samples are provided, they must all be of type Sample. This ensures that every linked sample strictly conforms to this defined criterion.",
+      "reason": "Changing the constraint from 'some' to 'only' rephrases the requirement: rather than merely requiring at least one sample, it now mandates that every associated sample is of the specified type."
+    },
+    {
+      "operation": "generalize",
+      "value": "Result",
+      "description": "Each Feature of Interest is associated with a result that provides the observational data about it, thereby broadening the association from a specific sample to a more general outcome in the observational context.",
+      "reason": "Generalizing the object from Sample to its parent concept Result expands the scope of the association, aligning the support text with a more flexible and inclusive interpretation of the data-providing entity."
+    }
+  ],
+  "ObservableProperty,madeBySensor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "ObservableProperty represents a characteristic whose measurement offers valuable insights into the state of a feature. Its role in monitoring and data collection is essential for analyzing various phenomena in its environment, without necessitating a direct association with any specific sensor or observing device.",
+      "reason": "By removing reference to sensor-based observation, the support text no longer depends on the madeBySensor relation and looks at the property from a more abstract, system-level perspective."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "ObservableProperty is a characteristic or attribute of a feature that can be measured or monitored and is specifically linked to sensors responsible for gathering its data. If any sensors are linked to the property, then every linked entity must be a sensor.",
+      "reason": "The 'only' variation emphasizes that if there are any sensors associated with the property, they must all be sensors, reinforcing a strict and exclusive association."
+    },
+    {
+      "operation": "generalize",
+      "value": "System",
+      "description": "An ObservableProperty is a measurable characteristic or attribute of a feature and is specifically linked to systems responsible for observing and collecting data about it. These systems provide key indicators for understanding the state or condition of the associated features.",
+      "reason": "Generalizing from Sensor to System broadens the constraint, making it applicable to a wider range of observing entities while preserving the emphasis on data collection and monitoring."
+    }
+  ],
+  "Observation,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This observation represents an instance of data collection, presented without any specific reliance on a particular feature. Its interpretation stands independently of any defined feature, ensuring that no mandatory characteristic steers the understanding of the observation.",
+      "reason": "By removing the constraint, the support text is rewritten to exclude any mention of a specific feature of interest, thus decoupling it entirely from the [subject, predicate, rtype, object] elements."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This observation represents an instance of data collection that focuses on a particular feature of interest. If any such features are present, they must be exclusively of the predefined type.",
+      "reason": "The 'only' variant reinterprets the original existential ('some') requirement as a universal condition: all features, if present, must strictly conform to the defined criterion."
+    }
+  ],
+  "Observation,hasResult,some,Result": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each observation is associated with a unique result that reflects the data gathered during the observation process. If any results exist, they must all be of type Result.",
+      "reason": "Switching the constraint from 'some' to 'only' emphasizes that while a result may exist, it must exclusively belong to the class Result, ensuring that all associated results comply strictly with the defined type."
+    }
+  ],
+  "Observation,madeBySensor,some,Sensor": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "It is conducted by a sensor. If any sensor is involved in the observation, they must all be of type Sensor.",
+      "reason": "By switching the 'some' restriction to 'only', we emphasize that if any sensor is associated with the observation, it must strictly be a Sensor."
+    }
+  ],
+  "Observation,observedProperty,some,ObservableProperty": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Observation represents a specific instance of data collection, and it is linked to a specific observable property. In this variant, if any observable properties are associated with an Observation, they must all conform strictly to the ObservableProperty definition.",
+      "reason": "The 'only' variant emphasizes that any observable property present must exclusively adhere to the designated ObservableProperty type, ensuring homogeneity in the observation's linked property."
+    }
+  ],
+  "Observation,usedProcedure,some,Procedure": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This observation is conducted following a defined procedure; if any procedures are associated with the observation, they must all be a Procedure.",
+      "reason": "The 'only' constraint ensures that whenever a procedure is linked with an Observation, it is exclusively of the type Procedure, aligning with the expected data collection process."
+    }
+  ],
+  "Observation,wasOriginatedBy,some,Stimulus": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This Observation represents a specific instance of data collection that focuses on a particular feature of interest. Each observation is associated with a unique result and is conducted by a sensor following a defined procedure, ensuring the clarity of its context and outcome without reference to any external triggering mechanism.",
+      "reason": "The support text was revised to eliminate any mention of a stimulus so as to justify the complete removal of the constraint that originally depended on the [subject, predicate, rtype, object] combination."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Observation represents a specific instance of data collection focused on a particular feature of interest. It is defined such that if any originating factor exists, it must exclusively be a stimulus, ensuring that the observation is triggered only by the designated type.",
+      "reason": "Changing the rtype to 'only' modifies the constraint to require that whenever an originator is present, it is solely a stimulus. The support text was updated accordingly to reflect this exclusive condition."
+    }
+  ],
+  "Output,madeByActuator,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Outputs represent the results produced by a system's processes, capturing the tangible outcomes of interactions within a semantic sensor network. This definition does not depend on any specific type of producer.",
+      "reason": "By removing the constraint, the support text is rewritten to avoid referencing any particular source such as actuators."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Outputs represent the results produced by a system's processes. When these outputs are generated by specific components, any such component must be an actuator.",
+      "reason": "The 'only' variant modifies the constraint to require that if a source is identified, it must exclusively be of type Actuator."
+    },
+    {
+      "operation": "generalize",
+      "value": "System",
+      "description": "Outputs represent the results produced by a system's processes, reflecting the tangible outcomes of interactions within a semantic sensor network. In this context, outputs may result from the operation of systems.",
+      "reason": "Generalizing the original Actuator constraint to System broadens the producer concept, aligning with a wider organizational perspective."
+    }
+  ],
+  "Output,madeBySampler,some,Sampler": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Outputs capture the results produced by a system's processes without specifically relying on or referencing any particular type of device.",
+      "reason": "The constraint has been fully removed, so the support text no longer mentions or depends on the involvement of a sampler."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Outputs may result from the operation of sampling devices; if any such devices contribute to an output, they must all be samplers.",
+      "reason": "Changing the rtype from 'some' to 'only' emphasizes that every device involved in producing an output must be a sampler."
+    }
+  ],
+  "Output,madeBySensor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Outputs represent the results produced by system processes, capturing the tangible outcomes of interactions without attributing them specifically to any source, such as sensors.",
+      "reason": "Removing the constraint eliminates the dependency on the 'madeBySensor' relation and the Sensor class, broadening the interpretation of what can produce an Output."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Outputs may result from the operation of sensors, and if any source contributes to the output, it must be exclusively a sensor.",
+      "reason": "Changing the relation type from 'some' to 'only' shifts the emphasis to ensuring that if a source is involved it is solely a sensor, rather than merely requiring the existence of at least one sensor."
+    },
+    {
+      "operation": "generalize",
+      "value": "System",
+      "description": "Outputs may result from the operation of systems, reflecting that various system components—not just sensors—can produce outputs.",
+      "reason": "Generalizing from Sensor to System broadens the range of acceptable producers of outputs, aligning with the expanded context of system processes."
+    }
+  ],
+  "Platform,hasDeployment,some,Deployment": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. It exclusively hosts systems, ensuring that only compatible entities operate within its framework. Additionally, a Platform is always associated with a deployment context, indicating its specific operational environment. If any deployment contexts are associated with a Platform, they must all be Deployment.",
+      "reason": "The 'only' variant reinterprets the existing deployment association by specifying that whenever deployment contexts are linked, they must all conform to the designated Deployment, reinforcing the exclusivity implied in the original support text."
+    }
+  ],
+  "Platform,hosts,only,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. It plays a critical role in managing and coordinating the interactions among its components without imposing any exclusive hosting requirements.",
+      "reason": "The constraint is entirely removed, so the support text is revised to omit any reference to the exclusive hosting of systems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network, ensuring that at least one compatible system operates within its framework.",
+      "reason": "With the 'some' variant, the emphasis shifts to requiring at least one compatible system rather than mandating that every hosted entity be a system."
+    }
+  ],
+  "Procedure,deployedSystem,some,System": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each Procedure is executed by a designated system, which embodies the necessary capabilities to carry out the prescribed actions. If any deployed systems exist, they must all be System.",
+      "reason": "Changing the restriction type to 'only' emphasizes that when a deployed system is present, it must exclusively be a System, reinforcing a stricter alignment with the defined criterion."
+    },
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Each Procedure is defined as a structured set of actions designed to achieve specific outcomes, highlighting clear and reproducible steps without specifying an executing entity.",
+      "reason": "Removing the constraint eliminates any dependency on the 'deployedSystem' relation, ensuring the support text does not mention or rely on a designated system."
+    }
+  ],
+  "Procedure,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is executed by a designated system that carries out the prescribed actions, ensuring that the process remains reproducible without the necessity of relying on defined inputs or outputs.",
+      "reason": "The constraint on having inputs has been completely removed, so the support text is rewritten to avoid mentioning the reliance on defined inputs and outputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Procedure is characterized by its exclusive reliance on defined inputs and outputs. If any inputs exist, they must all be of the defined Input type.",
+      "reason": "The 'only' variant emphasizes that while inputs may exist, they are required to be exclusively of the Input type. This modification makes explicit the requirement change from merely having at least one input to ensuring that if inputs are present, they are strictly defined."
+    }
+  ],
+  "Procedure,hasOutput,some,Output": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This Procedure is characterized by its exclusive reliance on defined inputs and outputs, indicating that if any outputs exist, they must all be the predefined outputs.",
+      "reason": "The 'only' variant shifts the constraint from merely requiring the existence of an output to enforcing that any outputs present are exclusively the defined ones, thereby reinforcing the precision and reproducibility of the Procedure."
+    }
+  ],
+  "Property,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Each property describes a unique aspect or quality, contributing to a rich characterization of an entity without depending on an association with a feature.",
+      "reason": "The constraint linking a property to a specific feature of interest has been fully removed, so the support text no longer references or depends on any feature association."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each property is uniquely tied to a feature, ensuring that if any features of interest are associated, they must all be valid instances of the FeatureOfInterest, leaving no room for alternative types.",
+      "reason": "The 'only' variant shifts the original 'some' requirement to emphasize that any associated feature must exclusively be a FeatureOfInterest."
+    }
+  ],
+  "Result,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Result class represents the outcomes of sensor observations, often reflecting the state or condition of a particular feature of interest. If a feature of interest is recorded, then every such feature must be the designated feature of interest.",
+      "reason": "Changing the constraint to 'only' emphasizes that whenever a feature of interest is present in a Result, it must strictly conform to the defined feature, ensuring consistency in the interpretation of sensor outcomes."
+    }
+  ],
+  "Result,isResultOf,some,Observation": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Result class represents the outcomes or findings obtained from observations or measurements taken in a semantic sensor network. In this context, if any association through the 'isResultOf' relationship exists, then every such association must point to an instance of Observation.",
+      "reason": "Changing the cardinality constraint from 'some' to 'only' emphasizes that while a Result must be linked to observations, only Observation instances are acceptable in this relationship."
+    }
+  ],
+  "Sample,madeSampling,some,Sampling": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, collected during a Sampling procedure. In this definition, a Sample simply reflects the circumstances under which it was gathered and serves as a vital data point without mandating any specific relationship to the sampling act.",
+      "reason": "By removing the constraint, the support text has been rewritten to describe the Sample without requiring its association with a specific Sampling procedure."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, collected during a Sampling procedure and uniquely associated with the act that produced it. If any sampling procedures are linked to the Sample, they must exclusively refer to Sampling.",
+      "reason": "The 'only' variant emphasizes that while a Sample is still associated with a Sampling procedure, any such associations must exclusively be with Sampling, reflecting a strict constraint."
+    }
+  ],
+  "Sampler,hasFeatureOfInterest,only,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Sampler is a specialized system designed to collect data from a specific feature of interest, emphasizing its role in sampling processes within sensor networks, without enforcing a requirement related to any particular feature.",
+      "reason": "By removing the constraint, the support text no longer specifies or depends on the association with a FeatureOfInterest, thus broadening the interpretation of what data the system may handle."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "The phrase 'designed to collect data from a specific feature of interest' implies that the Sampler must be associated with at least one FeatureOfInterest, ensuring that it has a defined source to gather data from.",
+      "reason": "Changing the constraint from 'only' to 'some' shifts the requirement so that the presence of at least one FeatureOfInterest is guaranteed, rather than enforcing exclusivity of that feature."
+    }
+  ],
+  "Sampler,madeSampling,only,Sampling": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "A Sampler is a specialized system designed to collect data from a specific feature of interest by engaging in defined sampling protocols. It operates within sensor networks to support data collection and analysis, without being restricted to a particular type of sampling activity.",
+      "reason": "The removal of the constraint ensures that the support text is independent of a specific relationship or exclusive property, allowing for a broader interpretation of the Sampler's functions."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "A Sampler is a specialized system designed to collect data from a specific feature of interest by engaging in sampling activities. This definition implies that at least one sampling operation must occur, ensuring that the system is indeed involved in the process of sampling.",
+      "reason": "Changing the constraint from 'only' to 'some' shifts the emphasis from an exclusive involvement in sampling to requiring at least one instance of sampling, which still reflects the core purpose of the Sampler without mandating exclusivity."
+    }
+  ],
+  "Sampling,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Sampling refers to the process of collecting data in order to obtain a representative overview of observations. This procedure is carried out by a dedicated sampler following established protocols, without relying on a specific designated feature to determine what data is collected.",
+      "reason": "The constraint regarding a specific feature of interest has been removed, so the support text no longer references or depends on the existence of such a feature."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that if any features are taken into account, they must all qualify as instances of a FeatureOfInterest.",
+      "reason": "Changing the constraint to 'only' shifts the requirement so that every feature involved must be of the defined type, rather than just ensuring at least one exists."
+    }
+  ],
+  "Sampling,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The sampling process involves collecting data based on a defined procedure, resulting in an outcome that accurately reflects the observations made during the process.",
+      "reason": "By removing the constraint, the support text no longer depends on or mentions the specific concept of a 'sample' or its related properties. Instead, it generally describes the data collection outcome."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The outcome of sampling is a sample that reflects the observations made during the process. If any samples are produced, they must all conform exclusively to the expected sample type.",
+      "reason": "Changing the constraint to 'only' emphasizes that whenever samples are present, they need to be exclusively of the specified kind, ensuring the integrity of the sampling result."
+    },
+    {
+      "operation": "generalize",
+      "value": "Result",
+      "description": "The outcome of sampling is a result that reflects the observations made during the process.",
+      "reason": "Generalizing the object from 'Sample' to 'Result' broadens the outcome description, allowing for any representation that accurately reflects the observations, rather than a narrowly defined sample."
+    }
+  ],
+  "Sampling,madeBySampler,some,Sampler": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "This process follows a defined procedure to ensure consistency and reliability in data collection, ensuring that the observations made are truly representative of the feature of interest.",
+      "reason": "By removing the constraint that the process must be conducted by a sampler, the support text is updated to focus solely on the procedure and outcome of the sampling without referencing any specific agent."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This process is exclusively conducted by a sampler, which is responsible for carrying out the sampling activities. If any individual is involved in conducting the sampling, they must all be this designated sampler.",
+      "reason": "The 'only' variant emphasizes that whenever there is an agent involved in the process, it must exclusively be the specified sampler."
+    }
+  ],
+  "Sampling,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Each sampling operation is carried out in a manner that ensures consistency and reliability in the data collection, without reference to any particular procedure.",
+      "reason": "By removing the constraint, the support text is rewritten to eliminate any mention of a specific procedure, thus decoupling the process from the original [subject, predicate, rtype, object] dependency."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. If any procedures are used, they must exclusively be the defined procedure.",
+      "reason": "The 'only' variant emphasizes that when procedures are involved, they must all conform to the defined procedure, aligning with the modified constraint [Sampling, usedProcedure, only, Procedure]."
+    }
+  ],
+  "Sensor,detects,some,Stimulus": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sensor is a device designed to detect and respond to physical stimuli in the environment, such as light, temperature, or pressure. If any stimuli are detected, they must all qualify as a Stimulus.",
+      "reason": "Changing the rtype to 'only' reinforces that whenever any detection occurs, every instance must meet the criterion of being a Stimulus."
+    },
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "A Sensor is a device engineered to engage with its environment by observing various physical phenomena. Its design emphasizes a broad capability for interacting with environmental conditions rather than focusing on any specific type of stimulus.",
+      "reason": "The removal approach eliminates the explicit requirement that the sensor must detect a specific Stimulus, thereby generalizing the class definition to encompass all forms of interaction with physical phenomena."
+    }
+  ],
+  "Sensor,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Sensor is a device designed to detect and respond to physical stimuli in the environment, such as light, temperature, or pressure. It operates by making observations that ensure accurate data collection without relying on the disclosure of any specific observed property.",
+      "reason": "The constraint regarding the 'observes' relation with a defined property is fully removed, so the support text no longer mentions or depends on this specific relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sensor is a device designed to detect and respond to physical stimuli, such as light, temperature, or pressure. It operates by making observations that are strictly tied to measurable phenomena, and if any observed properties exist, they must all conform to the specified criterion of being observable properties.",
+      "reason": "Changing the relationship type to 'only' shifts the emphasis to ensuring that any observed properties are exclusively of the required kind."
+    },
+    {
+      "operation": "generalize",
+      "value": "Property",
+      "description": "A Sensor is a device designed to detect and respond to physical stimuli, such as light, temperature, or pressure. It achieves accurate data collection by making observations that relate to general properties, ensuring that at least one such property is observed.",
+      "reason": "Generalizing from 'ObservableProperty' to the broader term 'Property' widens the criteria, and the support text now reflects that the Sensor must observe a property in general."
+    }
+  ],
+  "Stimulus,actsOnProperty,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This stimulus acts as a trigger within a sensor network, facilitating the integration and timely collection of observational data without necessarily being linked to any particular property.",
+      "reason": "Removing the constraint eliminates any dependency on observable properties, so the support text no longer refers to a specific observable property association."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This stimulus is intrinsically linked to observable properties, ensuring that if any such associations exist, they must all strictly be observable properties.",
+      "reason": "The 'only' variant changes the constraint to enforce that any linked properties must exclusively meet the definition of an observable property."
+    },
+    {
+      "operation": "generalize",
+      "value": "Property",
+      "description": "This stimulus is intrinsically linked to specific properties, ensuring that each stimulus is associated with a defined property of interest in the surrounding environment.",
+      "reason": "Generalizing the constraint from ObservableProperty to Property broadens the association to all kinds of properties while maintaining the connection necessary for interpreting observations."
+    }
+  ],
+  "System,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The System is a structured arrangement that operates within a specific Platform. If any platform associations exist, they must exclusively be with that Platform.",
+      "reason": "Changing the constraint to 'only' means that while the System maintains a relationship with a Platform, any such association is required to conform exactly to the defined Platform, ensuring consistency in the deployment environment."
+    }
+  ],
+  "System,hasDeployment,some,Deployment": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A System operates within a specific Platform, integrating various components and guided by implemented Procedures and the collaborative work of SubSystems.",
+      "reason": "The reference to Deployments has been completely removed, so the support text no longer mentions or depends on that aspect of the System."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "encompasses Deployments, which define how the System is executed. If any Deployments exist, they must all be of type Deployment.",
+      "reason": "The 'only' variation emphasizes that when Deployments are present, every one must strictly conform to the Deployment type as defined by the System's architecture."
+    }
+  ],
+  "System,hasSubSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "This System is a structured arrangement that operates within a specific Platform, characterized by its ability to host Deployments and implement Procedures that guide its operations and functionalities. Its design supports the integration of multiple components to perform complex tasks efficiently.",
+      "reason": "The constraint regarding the inclusion of SubSystems has been removed, so the support text no longer mentions or depends on any aspect of SubSystems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This System may include SubSystems that work collaboratively to achieve overarching goals. If any SubSystems exist, they must all be Systems.",
+      "reason": "The 'only' variant emphasizes that while SubSystems may be present, any SubSystems that are included must strictly be Systems."
+    }
+  ],
+  "System,implements,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Every System is defined as a structured arrangement that operates within a specific Platform and hosts various components, including Deployments and potentially SubSystems that work together to achieve overarching goals. This definition does not constrain the System with any specific process implementations.",
+      "reason": "The constraint involving the implementation of specific Procedures was entirely removed, so the support text no longer mentions or depends on the procedure implementation aspect."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Every System implements specific Procedures that guide its operations and functionalities. If any Procedures are implemented, they must all be the ones that guide its operations and functionalities.",
+      "reason": "The 'only' variant ensures that while Systems implement Procedures, every Procedure present must exclusively meet the criterion defined in the support text."
+    }
+  ]
+}

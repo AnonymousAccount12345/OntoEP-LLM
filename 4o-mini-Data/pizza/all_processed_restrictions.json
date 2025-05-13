@@ -1,0 +1,2019 @@
+{
+    "DomainConcept": [
+        {
+            "s": "DomainConcept",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "This concept encompasses any object or entity that exists within a specific context or realm, which can include various items, ideas, or phenomena, each with its own unique characteristics and significance."
+        },
+        {
+            "s": "DomainConcept",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "String",
+            "support_sentence": "This concept serves as a broad classification that can include various items... connecting diverse elements within a particular domain."
+        },
+        {
+            "s": "DomainConcept",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "These entities play a role in shaping our understanding and experience of the world around us."
+        },
+        {
+            "s": "DomainConcept",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This concept encompasses any object or entity that exists within a specific context or realm, which can include various items, ideas, or phenomena."
+        },
+        {
+            "s": "DomainConcept",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "This concept serves as a broad classification that can include various items, each with its own unique characteristics."
+        }
+    ],
+    "ValuePartition": [
+        {
+            "s": "ValuePartition",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "PizzaIngredient",
+            "support_sentence": "(This concept refers to a specific portion of the overall value of a pizza, which can be divided based on various criteria such as size, toppings, or ingredients.)"
+        },
+        {
+            "s": "ValuePartition",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "(This division can be useful for pricing strategies, menu design, or even customer preferences, as it highlights the significance of each part in relation to the whole.)"
+        },
+        {
+            "s": "ValuePartition",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "(It helps in understanding how the different components contribute to the total worth of the pizza, allowing for a detailed analysis of what makes each selection unique.)"
+        }
+    ],
+    "Food": [
+        {
+            "s": "Food",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "(Pizza is a type of food that can have various toppings, which are categorized under PizzaTopping, including CheeseTopping, FishTopping, MeatTopping, and VegetableTopping.)"
+        },
+        {
+            "s": "Food",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "(Pizza is typically built on a base, which can be classified as PizzaBase, such as DeepPanBase or ThinAndCrispyBase.)"
+        },
+        {
+            "s": "Food",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "(Pizza can also have varying levels of spiciness, categorized under Spiciness, which includes options like Hot, Medium, and Mild.)"
+        },
+        {
+            "s": "Food",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "(Pizza is made up of various ingredients, which fall under the broader category of Food, encompassing items like cheese, meats, and vegetables.)"
+        },
+        {
+            "s": "Food",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "DomainConcept",
+            "support_sentence": "(Pizza is a food item that can be associated with a specific country of origin, reflecting its cultural significance and diversity.)"
+        }
+    ],
+    "Spiciness": [
+        {
+            "s": "Spiciness",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "(This category represents a way to describe the heat level of a dish, particularly in the context of pizza, encompassing a range of flavors from pleasantly mild to intensely hot.)"
+        }
+    ],
+    "IceCream": [
+        {
+            "s": "IceCream",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "FruitTopping",
+            "support_sentence": "Ice cream can be enhanced with toppings, particularly those made from fruits, making it a popular choice for warm days and special occasions alike."
+        }
+    ],
+    "Pizza": [
+        {
+            "s": "Pizza",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "(The foundation of this culinary creation is essential, as it determines the texture and flavor profile, making the choice of base a crucial aspect of crafting the perfect bite.)"
+        },
+        {
+            "s": "Pizza",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "(It serves as a canvas for a variety of toppings, including savory sauces, rich cheeses, and an array of meats, vegetables, and herbs.)"
+        },
+        {
+            "s": "Pizza",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "DomainConcept",
+            "support_sentence": "(This delightful dish is a beloved staple in many cultures, typically consisting of a flat, round base that is baked until golden and crispy.)"
+        }
+    ],
+    "PizzaBase": [
+        {
+            "s": "PizzaBase",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This category refers to the foundational element of a pizza, which serves as the canvas for all the delicious toppings and sauces that follow."
+        },
+        {
+            "s": "PizzaBase",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "It typically consists of a dough that is baked to create a crisp yet chewy texture, providing the perfect platform for a variety of flavors."
+        },
+        {
+            "s": "PizzaBase",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "This essential component plays a crucial role in defining the overall pizza experience."
+        },
+        {
+            "s": "PizzaBase",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "DomainConcept",
+            "support_sentence": "This category refers to the foundational element of a pizza, which serves as the canvas for all the delicious toppings and sauces that follow."
+        },
+        {
+            "s": "PizzaBase",
+            "p": "isBaseOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "This category refers to the foundational element of a pizza, which serves as the canvas for all the delicious toppings and sauces that follow."
+        }
+    ],
+    "PizzaTopping": [
+        {
+            "s": "PizzaTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "This category encompasses various ingredients that enhance the flavor and texture of a pizza."
+        },
+        {
+            "s": "PizzaTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MeatTopping",
+            "support_sentence": "These delightful additions can range from classic options like pepperoni and mushrooms to more adventurous toppings such as arugula or goat cheese."
+        },
+        {
+            "s": "PizzaTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Each topping contributes its unique taste, allowing for endless combinations to satisfy different palates."
+        },
+        {
+            "s": "PizzaTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "FishTopping",
+            "support_sentence": "These delightful additions can range from classic options like pepperoni and mushrooms to more adventurous toppings such as arugula or goat cheese."
+        },
+        {
+            "s": "PizzaTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "HerbSpiceTopping",
+            "support_sentence": "These ingredients play a crucial role in defining the overall character of the dish."
+        }
+    ],
+    "Hot": [
+        {
+            "s": "Hot",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "(This category encompasses flavors that bring a noticeable warmth and a kick to dishes, often characterized by their ability to ignite the taste buds.)"
+        }
+    ],
+    "Medium": [],
+    "Mild": [
+        {
+            "s": "Mild",
+            "p": "hasSpiciness",
+            "rtype": "only",
+            "o": "Mild",
+            "support_sentence": "(This category refers to a flavor profile that is gentle and not overpowering, making it an ideal choice for those who prefer a more subdued taste experience.)"
+        },
+        {
+            "s": "Mild",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "(Pizzas in this range are characterized by their subtle heat, allowing the other ingredients to shine without the distraction of intense spiciness.)"
+        },
+        {
+            "s": "Mild",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "(These pizzas provide a delightful balance that appeals to a wide audience.)"
+        }
+    ],
+    "NamedPizza": [
+        {
+            "s": "NamedPizza",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "it must be built on a foundation of a pizza base."
+        },
+        {
+            "s": "NamedPizza",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "Typically, these pizzas are crafted with a unique combination of ingredients and flavors that reflect their identity."
+        },
+        {
+            "s": "NamedPizza",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "string",
+            "support_sentence": "Each one a memorable culinary experience\" implies that named pizzas can be associated with specific cultural or regional origins."
+        },
+        {
+            "s": "NamedPizza",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "string",
+            "support_sentence": "crafted with a unique combination of ingredients\" indicates that named pizzas must include various ingredients."
+        }
+    ],
+    "UnclosedPizza": [
+        {
+            "s": "UnclosedPizza",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "The base of this pizza is essential, providing the necessary support for all the delicious ingredients piled on top."
+        },
+        {
+            "s": "UnclosedPizza",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "MozzarellaTopping",
+            "support_sentence": "A key ingredient is the presence of mozzarella, which adds a creamy and rich flavor that complements the other toppings beautifully."
+        },
+        {
+            "s": "UnclosedPizza",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This type of pizza is characterized by its open structure, allowing for a delightful combination of toppings to be showcased."
+        }
+    ],
+    "DeepPanBase": [
+        {
+            "s": "DeepPanBase",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This base is perfect for loading up with a variety of ingredients, from classic pepperoni to vibrant vegetables, ensuring that every bite is packed with flavor."
+        }
+    ],
+    "ThinAndCrispyBase": [
+        {
+            "s": "ThinAndCrispyBase",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This type of pizza base is characterized by its lightweight and crunchy texture, offering a delightful crispness that enhances the overall eating experience. It serves as a delicate foundation for a variety of toppings, allowing the flavors to shine without being overly filling."
+        }
+    ],
+    "CheeseTopping": [
+        {
+            "s": "CheeseTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Milk",
+            "support_sentence": "(CheeseTopping is often made from various types of milk, enhancing its flavor and texture.)"
+        },
+        {
+            "s": "CheeseTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "(CheeseTopping is a staple that elevates the overall taste experience of any pizza, making each slice irresistibly delicious.)"
+        },
+        {
+            "s": "CheeseTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "(While not explicitly stated, cheese toppings are generally considered to have a mild flavor profile, complementing the richness of the cheese.)"
+        }
+    ],
+    "FishTopping": [
+        {
+            "s": "FishTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "SeafoodIngredient",
+            "support_sentence": "FishTopping is described as bringing the fresh, briny flavors of the ocean, often featuring ingredients like shrimp, crab, or calamari, which are all seafood ingredients."
+        }
+    ],
+    "FruitTopping": [
+        {
+            "s": "FruitTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This category includes various types of fruits that can be used as toppings."
+        },
+        {
+            "s": "FruitTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Fruit",
+            "support_sentence": "These toppings bring a burst of freshness and natural sweetness, enhancing the overall flavor profile of the dish."
+        },
+        {
+            "s": "FruitTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Fruit toppings offer a unique twist that can complement savory ingredients beautifully."
+        }
+    ],
+    "HerbSpiceTopping": [
+        {
+            "s": "HerbSpiceTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "HerbSpiceTopping",
+            "support_sentence": "This category includes a variety of flavorful additions that enhance the taste of pizzas through the use of aromatic plants and spices."
+        },
+        {
+            "s": "HerbSpiceTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "These toppings can range from dried herbs like oregano and basil to fresh options such as parsley and cilantro, each contributing its unique essence to the overall flavor profile."
+        },
+        {
+            "s": "HerbSpiceTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "These ingredients not only elevate the dish\u2019s aroma but also add a fresh, vibrant taste that complements the other components."
+        }
+    ],
+    "MeatTopping": [
+        {
+            "s": "MeatTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This category includes a variety of delicious toppings made from different types of meat, enhancing the flavor and heartiness of any pizza."
+        },
+        {
+            "s": "MeatTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Meat",
+            "support_sentence": "These toppings not only add protein but also create a satisfying, rich taste experience."
+        },
+        {
+            "s": "MeatTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "From savory pepperoni and spicy sausage to tender chicken and crispy bacon, these toppings can vary in spiciness."
+        }
+    ],
+    "NutTopping": [
+        {
+            "s": "NutTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "With a mild spiciness, it enhances the overall taste without overwhelming the palate."
+        },
+        {
+            "s": "NutTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "NutTopping",
+            "support_sentence": "This type of topping adds a delightful crunch and rich flavor to your pizza, typically consisting of various nuts."
+        },
+        {
+            "s": "NutTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Nuts",
+            "support_sentence": "This type of topping adds a delightful crunch and rich flavor to your pizza, typically consisting of various nuts."
+        },
+        {
+            "s": "NutTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "Pizza",
+            "support_sentence": "This topping offers a unique texture and taste that can elevate any pizza experience."
+        }
+    ],
+    "SauceTopping": [
+        {
+            "s": "SauceTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "SauceTopping enhances the taste and texture of pizza, serving as a foundation for additional toppings, which indicates that it can have other types of pizza toppings associated with it."
+        }
+    ],
+    "VegetableTopping": [
+        {
+            "s": "VegetableTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "(ArtichokeTopping or AsparagusTopping or CaperTopping or CheeseyVegetableTopping or GarlicTopping or LeekTopping or MushroomTopping or OliveTopping or OnionTopping or PepperTopping or PetitPoisTopping or RocketTopping or SpinachTopping or TomatoTopping)",
+            "support_sentence": "this topping is made up of various fresh vegetables that enhance both the flavor and texture of the dish."
+        }
+    ],
+    "American": [
+        {
+            "s": "American",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "This style of pizza is characterized by its hearty combination of flavorful toppings, which must always include mozzarella, pepperoni sausage, and tomatoes..."
+        },
+        {
+            "s": "American",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PeperoniSausageTopping",
+            "support_sentence": "This style of pizza is characterized by its hearty combination of flavorful toppings, which must always include mozzarella, pepperoni sausage, and tomatoes..."
+        },
+        {
+            "s": "American",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "MozzarellaTopping",
+            "support_sentence": "This style of pizza is characterized by its hearty combination of flavorful toppings, which must always include mozzarella, pepperoni sausage, and tomatoes..."
+        },
+        {
+            "s": "American",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "The base is typically a well-prepared pizza crust, providing the perfect foundation for the generous layering of these essential toppings."
+        },
+        {
+            "s": "American",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "UnitedStates",
+            "support_sentence": "Originating from the United States, it embodies a rich culinary tradition that celebrates robust flavors and classic ingredients."
+        }
+    ],
+    "AmericanHot": [
+        {
+            "s": "AmericanHot",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "(AmericanHot is a type of pizza, which typically features a classic pizza base.)"
+        },
+        {
+            "s": "AmericanHot",
+            "p": "hasCountryOfOrigin",
+            "rtype": "exactly 1",
+            "o": "American",
+            "support_sentence": "(AmericanHot originates from the United States, indicating its country of origin is American.)"
+        },
+        {
+            "s": "AmericanHot",
+            "p": "hasSpiciness",
+            "rtype": "exactly 1",
+            "o": "Hot",
+            "support_sentence": "(This type of pizza is known for its bold and spicy flavors, delivering a satisfying heat, which classifies its spiciness as Hot.)"
+        },
+        {
+            "s": "AmericanHot",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MeatTopping",
+            "support_sentence": "(AmericanHot typically features toppings that include pepperoni sausage, which falls under the category of MeatTopping.)"
+        },
+        {
+            "s": "AmericanHot",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "(AmericanHot is known for its toppings that include hot green peppers and tomatoes, which are classified as VegetableToppings.)"
+        }
+    ],
+    "Cajun": [
+        {
+            "s": "Cajun",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "TomatoBase",
+            "support_sentence": "Each slice is generously adorned with creamy mozzarella, sweet onions, vibrant peperonata, succulent prawns, and a zesty kick from Tobasco pepper sauce, all layered atop a classic tomato base."
+        },
+        {
+            "s": "Cajun",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PrawnsTopping",
+            "support_sentence": "Each slice is generously adorned with creamy mozzarella, sweet onions, vibrant peperonata, succulent prawns, and a zesty kick from Tobasco pepper sauce..."
+        },
+        {
+            "s": "Cajun",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PeperonataTopping",
+            "support_sentence": "...sweet onions, vibrant peperonata, succulent prawns, and a zesty kick from Tobasco pepper sauce..."
+        },
+        {
+            "s": "Cajun",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "OnionTopping",
+            "support_sentence": "...sweet onions, vibrant peperonata, succulent prawns, and a zesty kick from Tobasco pepper sauce..."
+        },
+        {
+            "s": "Cajun",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "SauceTopping",
+            "support_sentence": "...and a zesty kick from Tobasco pepper sauce..."
+        },
+        {
+            "s": "Cajun",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Hot",
+            "support_sentence": "...creates a unique and flavorful experience, perfect for those who enjoy a little spice in their meal."
+        }
+    ],
+    "Capricciosa": [
+        {
+            "s": "Capricciosa",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "FishTopping",
+            "support_sentence": "Each slice is adorned with anchovies, capers, ham, mozzarella, olives, peperonata, and a generous spread of tomato..."
+        },
+        {
+            "s": "Capricciosa",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Each slice is adorned with anchovies, capers, ham, mozzarella, olives, peperonata, and a generous spread of tomato..."
+        },
+        {
+            "s": "Capricciosa",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "all resting on a classic pizza base."
+        },
+        {
+            "s": "Capricciosa",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "Each slice is adorned with anchovies, capers, ham, mozzarella, olives, peperonata, and a generous spread of tomato..."
+        }
+    ],
+    "Caprina": [
+        {
+            "s": "Caprina",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings, which include creamy goats cheese, rich mozzarella..."
+        },
+        {
+            "s": "Caprina",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "...tangy sundried tomatoes, and classic tomato sauce."
+        },
+        {
+            "s": "Caprina",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "The crust is built on a solid pizza base, providing the perfect foundation for these carefully selected toppings to shine."
+        }
+    ],
+    "Fiorentina": [
+        {
+            "s": "Fiorentina",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "This delightful pizza variety features a harmonious blend of toppings that include garlic, mozzarella, olives, parmesan, spinach, and tomatoes, all resting on a classic pizza base."
+        },
+        {
+            "s": "Fiorentina",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "Each component contributes to a rich and savory flavor profile, making it a favorite among those who appreciate a well-balanced and hearty meal."
+        },
+        {
+            "s": "Fiorentina",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "The combination of these ingredients not only satisfies the palate but also reflects a traditional approach to pizza-making, celebrating the freshness of its toppings."
+        }
+    ],
+    "FourSeasons": [
+        {
+            "s": "FourSeasons",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that represent the four seasons, each adding its unique flavor to the mix."
+        },
+        {
+            "s": "FourSeasons",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "The base is a classic pizza crust, providing the perfect foundation for this colorful and varied topping arrangement."
+        },
+        {
+            "s": "FourSeasons",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "You'll find anchovies and capers alongside creamy mozzarella, earthy mushrooms, briny olives, zesty pepperoni, and fresh tomatoes, all working together to create a balanced and satisfying dish."
+        },
+        {
+            "s": "FourSeasons",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "The diverse tastes and textures of the toppings may suggest a range of spiciness levels, contributing to the overall flavor profile."
+        }
+    ],
+    "FruttiDiMare": [
+        {
+            "s": "FruttiDiMare",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "GarlicTopping",
+            "support_sentence": "This delightful pizza variety is a seafood lover's dream, featuring a harmonious blend of toppings that includes savory garlic..."
+        },
+        {
+            "s": "FruttiDiMare",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MixedSeafoodTopping",
+            "support_sentence": "This delightful pizza variety is a seafood lover's dream, featuring a harmonious blend of toppings that includes a mix of fresh seafood..."
+        },
+        {
+            "s": "FruttiDiMare",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "Each slice offers a taste of the ocean, complemented by a flavorful base that enhances the overall experience."
+        },
+        {
+            "s": "FruttiDiMare",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "It's a perfect choice for those who enjoy the unique combination of ingredients that celebrate the sea, all while being anchored by classic pizza elements."
+        }
+    ],
+    "Giardiniera": [
+        {
+            "s": "Giardiniera",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "(The class description mentions a combination of toppings that includes leek, mozzarella, mushrooms, olives, peperonata, petit pois, and sliced tomatoes, which are all categorized as VegetableTopping.)"
+        },
+        {
+            "s": "Giardiniera",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "(The crust serves as a sturdy foundation, indicating that Giardiniera has a specific type of PizzaBase.)"
+        },
+        {
+            "s": "Giardiniera",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "(Each ingredient contributes to the dish, suggesting that Giardiniera includes various Food items as its ingredients.)"
+        },
+        {
+            "s": "Giardiniera",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "(While the class description does not specify the spiciness level, it implies a balance of flavors, which often includes a level of spiciness.)"
+        }
+    ],
+    "LaReine": [
+        {
+            "s": "LaReine",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "The base is crafted from a traditional pizza dough, providing a sturdy foundation for the delightful array of ingredients."
+        },
+        {
+            "s": "LaReine",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "Each slice is generously adorned with ham, mozzarella, mushrooms, olives, and tomatoes, ensuring that every bite offers a perfect balance of textures and tastes."
+        },
+        {
+            "s": "LaReine",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "HamTopping",
+            "support_sentence": "Each slice is generously adorned with ham, mozzarella, mushrooms, olives, and tomatoes..."
+        },
+        {
+            "s": "LaReine",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "Each slice is generously adorned with ham, mozzarella, mushrooms, olives, and tomatoes..."
+        },
+        {
+            "s": "LaReine",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Each slice is generously adorned with ham, mozzarella, mushrooms, olives, and tomatoes..."
+        },
+        {
+            "s": "LaReine",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "Each slice is generously adorned with ham, mozzarella, mushrooms, olives, and tomatoes..."
+        }
+    ],
+    "Margherita": [
+        {
+            "s": "Margherita",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "This delightful pizza is a classic choice, featuring a harmonious blend of two essential toppings: creamy mozzarella and tangy tomato."
+        },
+        {
+            "s": "Margherita",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MozzarellaTopping",
+            "support_sentence": "This delightful pizza is a classic choice, featuring a harmonious blend of two essential toppings: creamy mozzarella and tangy tomato."
+        },
+        {
+            "s": "Margherita",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "The base is typically a simple yet satisfying pizza crust that allows the rich flavors of the toppings to shine."
+        },
+        {
+            "s": "Margherita",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "Italian",
+            "support_sentence": "This pizza embodies the essence of Italian cuisine, making it a beloved favorite among pizza enthusiasts."
+        }
+    ],
+    "Mushroom": [
+        {
+            "s": "Mushroom",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MushroomTopping",
+            "support_sentence": "This delicious creation is a type of pizza that features a delightful blend of toppings, including the rich creaminess of mozzarella, the earthy flavor of mushrooms, and the tangy freshness of tomatoes."
+        },
+        {
+            "s": "Mushroom",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "This delicious creation is a type of pizza that features a delightful blend of toppings, including the rich creaminess of mozzarella, the earthy flavor of mushrooms, and the tangy freshness of tomatoes."
+        },
+        {
+            "s": "Mushroom",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "Each bite offers a harmonious combination of these ingredients, all sitting atop a classic pizza base that provides the perfect foundation."
+        },
+        {
+            "s": "Mushroom",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "MozzarellaTopping",
+            "support_sentence": "This delicious creation is a type of pizza that features a delightful blend of toppings, including the rich creaminess of mozzarella."
+        }
+    ],
+    "Napoletana": [
+        {
+            "s": "Napoletana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "AnchoviesTopping",
+            "support_sentence": "This delightful pizza variety hails from Italy and is characterized by its distinct combination of toppings, which must include anchovies..."
+        },
+        {
+            "s": "Napoletana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "CaperTopping",
+            "support_sentence": "This delightful pizza variety hails from Italy and is characterized by its distinct combination of toppings, which must include capers..."
+        },
+        {
+            "s": "Napoletana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MozzarellaTopping",
+            "support_sentence": "This delightful pizza variety hails from Italy and is characterized by its distinct combination of toppings, which must include mozzarella..."
+        },
+        {
+            "s": "Napoletana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "OliveTopping",
+            "support_sentence": "This delightful pizza variety hails from Italy and is characterized by its distinct combination of toppings, which must include olives..."
+        },
+        {
+            "s": "Napoletana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "This delightful pizza variety hails from Italy and is characterized by its distinct combination of toppings, which must include tomatoes..."
+        },
+        {
+            "s": "Napoletana",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "The base is a classic pizza crust, which serves as the perfect foundation for these ingredients."
+        },
+        {
+            "s": "Napoletana",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "Italy",
+            "support_sentence": "This delightful pizza variety hails from Italy..."
+        }
+    ],
+    "Parmense": [
+        {
+            "s": "Parmense",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "The base is a classic pizza crust, providing the perfect foundation for this delicious combination."
+        },
+        {
+            "s": "Parmense",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "This delightful pizza variety is characterized by a harmonious blend of toppings, featuring tender asparagus, savory ham, creamy mozzarella, rich Parmesan, and fresh tomatoes."
+        },
+        {
+            "s": "Parmense",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MeatTopping",
+            "support_sentence": "This delightful pizza variety is characterized by a harmonious blend of toppings, featuring tender asparagus, savory ham, creamy mozzarella, rich Parmesan, and fresh tomatoes."
+        },
+        {
+            "s": "Parmense",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "This delightful pizza variety is characterized by a harmonious blend of toppings, featuring tender asparagus, savory ham, creamy mozzarella, rich Parmesan, and fresh tomatoes."
+        }
+    ],
+    "PolloAdAstra": [
+        {
+            "s": "PolloAdAstra",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "The crust is built on a classic pizza base, making it a satisfying choice for those who appreciate bold tastes and hearty toppings."
+        },
+        {
+            "s": "PolloAdAstra",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "ChickenTopping",
+            "support_sentence": "featuring tender chicken and a blend of spices that give it a distinctive Cajun kick."
+        },
+        {
+            "s": "PolloAdAstra",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "GarlicTopping",
+            "support_sentence": "Topped with fresh garlic, creamy mozzarella, and vibrant red onions."
+        },
+        {
+            "s": "PolloAdAstra",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "it also includes sweet peppers and juicy tomatoes, creating a colorful and appetizing dish."
+        },
+        {
+            "s": "PolloAdAstra",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "SweetPepperTopping",
+            "support_sentence": "it also includes sweet peppers and juicy tomatoes, creating a colorful and appetizing dish."
+        },
+        {
+            "s": "PolloAdAstra",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "CajunSpiceTopping",
+            "support_sentence": "a blend of spices that give it a distinctive Cajun kick."
+        },
+        {
+            "s": "PolloAdAstra",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Medium",
+            "support_sentence": "a blend of spices that give it a distinctive Cajun kick."
+        }
+    ],
+    "PrinceCarlo": [
+        {
+            "s": "PrinceCarlo",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that include savory leeks, creamy mozzarella, rich Parmesan, fragrant rosemary, and fresh tomatoes."
+        },
+        {
+            "s": "PrinceCarlo",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that include creamy mozzarella and rich Parmesan."
+        },
+        {
+            "s": "PrinceCarlo",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "HerbSpiceTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that include fragrant rosemary."
+        },
+        {
+            "s": "PrinceCarlo",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "The base is crafted to provide the perfect foundation for these ingredients, ensuring that every slice is as satisfying as it is delicious."
+        }
+    ],
+    "QuattroFormaggi": [
+        {
+            "s": "QuattroFormaggi",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "It's crafted on a traditional pizza base, ensuring that each bite is both satisfying and delicious."
+        },
+        {
+            "s": "QuattroFormaggi",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "This delightful pizza is a celebration of cheese, featuring a rich blend of four distinct varieties that create a creamy and indulgent experience."
+        },
+        {
+            "s": "QuattroFormaggi",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "Complemented by a classic tomato base, this pizza offers a perfect balance of flavors and textures."
+        }
+    ],
+    "Rosa": [
+        {
+            "s": "Rosa",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "GorgonzolaTopping",
+            "support_sentence": "(This delightful pizza variety features a harmonious blend of Gorgonzola, Mozzarella, and Tomato toppings, ensuring every bite is rich and flavorful.)"
+        },
+        {
+            "s": "Rosa",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MozzarellaTopping",
+            "support_sentence": "(This delightful pizza variety features a harmonious blend of Gorgonzola, Mozzarella, and Tomato toppings, ensuring every bite is rich and flavorful.)"
+        },
+        {
+            "s": "Rosa",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "(This delightful pizza variety features a harmonious blend of Gorgonzola, Mozzarella, and Tomato toppings, ensuring every bite is rich and flavorful.)"
+        },
+        {
+            "s": "Rosa",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "(Each slice is crafted with a specific type of pizza base that complements the toppings perfectly, creating a satisfying culinary experience.)"
+        }
+    ],
+    "Siciliana": [
+        {
+            "s": "Siciliana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "FishTopping",
+            "support_sentence": "Each slice is adorned with anchovies, artichokes, garlic, ham, mozzarella, olives, and tomatoes, ensuring that every bite is bursting with taste."
+        },
+        {
+            "s": "Siciliana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Each slice is adorned with anchovies, artichokes, garlic, ham, mozzarella, olives, and tomatoes, ensuring that every bite is bursting with taste."
+        },
+        {
+            "s": "Siciliana",
+            "p": "hasBase",
+            "rtype": "exactly 1",
+            "o": "PizzaBase",
+            "support_sentence": "The base is crafted from a traditional pizza dough, providing the perfect foundation for this medley of ingredients."
+        },
+        {
+            "s": "Siciliana",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "This delightful pizza variety features a rich combination of toppings that come together to create a unique flavor profile."
+        },
+        {
+            "s": "Siciliana",
+            "p": "hasCountryOfOrigin",
+            "rtype": "exactly 1",
+            "o": "Italy",
+            "support_sentence": "This pizza offers a satisfying experience for anyone looking to indulge in a classic Italian dish."
+        }
+    ],
+    "SloppyGiuseppe": [
+        {
+            "s": "SloppyGiuseppe",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "(The description mentions a \"base topped with a rich medley of ingredients,\" indicating that SloppyGiuseppe has a base, which is a type of PizzaBase.)"
+        },
+        {
+            "s": "SloppyGiuseppe",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "(The description highlights a \"delightful combination of flavors\" with various toppings such as \"green peppers,\" \"hot spiced beef,\" \"mozzarella cheese,\" \"onions,\" and \"tomatoes,\" which are all classified under PizzaTopping.)"
+        },
+        {
+            "s": "SloppyGiuseppe",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "(The ingredients mentioned in the description, such as \"green peppers,\" \"hot spiced beef,\" \"mozzarella cheese,\" \"onions,\" and \"tomatoes,\" are all types of Food, indicating that SloppyGiuseppe has these as ingredients.)"
+        },
+        {
+            "s": "SloppyGiuseppe",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "(The description refers to the \"savory kick of hot spiced beef,\" suggesting that SloppyGiuseppe has a level of spiciness, which can be classified under Spiciness.)"
+        }
+    ],
+    "Soho": [
+        {
+            "s": "Soho",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "This delightful pizza variety features a harmonious blend of flavors, showcasing a base that perfectly supports a medley of toppings."
+        },
+        {
+            "s": "Soho",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "Each slice is adorned with the rich taste of garlic, the creamy goodness of mozzarella, the briny essence of olives, the nutty notes of parmesan, the fresh zest of rocket, and the classic tang of tomatoes."
+        },
+        {
+            "s": "Soho",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "Together, these ingredients create a mouthwatering experience that celebrates the art of pizza-making, ensuring that every bite is a delicious adventure."
+        }
+    ],
+    "Veneziana": [
+        {
+            "s": "Veneziana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "CaperTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that includes capers, mozzarella cheese, olives, onions, pine kernels, sultanas, and tomatoes..."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MozzarellaTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that includes capers, mozzarella cheese, olives, onions, pine kernels, sultanas, and tomatoes..."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "OliveTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that includes capers, mozzarella cheese, olives, onions, pine kernels, sultanas, and tomatoes..."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "OnionTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that includes capers, mozzarella cheese, olives, onions, pine kernels, sultanas, and tomatoes..."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "NutTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that includes capers, mozzarella cheese, olives, onions, pine kernels, sultanas, and tomatoes..."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "FruitTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that includes capers, mozzarella cheese, olives, onions, pine kernels, sultanas, and tomatoes..."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "This delightful pizza features a harmonious blend of toppings that includes capers, mozzarella cheese, olives, onions, pine kernels, sultanas, and tomatoes..."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasBase",
+            "rtype": "some",
+            "o": "PizzaBase",
+            "support_sentence": "all resting on a classic pizza base."
+        },
+        {
+            "s": "Veneziana",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "Country",
+            "support_sentence": "Originating from a specific country, this pizza is not just a meal but a taste of culinary tradition..."
+        }
+    ],
+    "CheeseyVegetableTopping": [
+        {
+            "s": "CheeseyVegetableTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Cheese",
+            "support_sentence": "This delicious topping combines the rich, creamy goodness of cheese with a variety of fresh vegetables..."
+        },
+        {
+            "s": "CheeseyVegetableTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Vegetable",
+            "support_sentence": "This delicious topping combines... a variety of fresh vegetables, creating a perfect blend of flavors and textures."
+        },
+        {
+            "s": "CheeseyVegetableTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "This topping not only adds a delightful taste to your pizza..."
+        },
+        {
+            "s": "CheeseyVegetableTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "Ideal for those who crave a hearty yet healthy option...\" (implying that it can have varying levels of spiciness)."
+        }
+    ],
+    "FourCheesesTopping": [
+        {
+            "s": "FourCheesesTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Cheese",
+            "support_sentence": "The class description highlights that the FourCheesesTopping features a rich blend of four different cheeses, indicating that it must have ingredients that are classified as cheese."
+        },
+        {
+            "s": "FourCheesesTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "The description states that the combination is crafted to ensure a mild spiciness, which directly indicates that the spiciness level of this topping is mild."
+        },
+        {
+            "s": "FourCheesesTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "Pizza",
+            "support_sentence": "As a topping, the FourCheesesTopping is designed to be used on pizzas, thus it must have a relationship indicating that it is a topping of some pizza."
+        }
+    ],
+    "GoatsCheeseTopping": [
+        {
+            "s": "GoatsCheeseTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "GoatMilk",
+            "support_sentence": "(GoatsCheeseTopping is made from the milk of goats, indicating that GoatMilk is a necessary ingredient for this topping.)"
+        }
+    ],
+    "GorgonzolaTopping": [
+        {
+            "s": "GorgonzolaTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Known for its mild spiciness, it pairs beautifully with a variety of other ingredients, enhancing the overall taste experience while maintaining a smooth and savory profile."
+        },
+        {
+            "s": "GorgonzolaTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "This delightful topping adds a creamy and tangy flavor to your pizza, bringing a rich and bold character without overwhelming heat."
+        },
+        {
+            "s": "GorgonzolaTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Cheese",
+            "support_sentence": "Perfect for those who appreciate a sophisticated cheese choice, this topping elevates any pizza to a gourmet delight."
+        }
+    ],
+    "MozzarellaTopping": [
+        {
+            "s": "MozzarellaTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "CheeseTopping",
+            "support_sentence": "This delightful topping is a staple in many pizzas, known for its creamy texture and mild flavor that perfectly complements a variety of ingredients."
+        },
+        {
+            "s": "MozzarellaTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Milk",
+            "support_sentence": "Its origins can be traced back to specific regions, adding a cultural touch to every bite."
+        },
+        {
+            "s": "MozzarellaTopping",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "Italy",
+            "support_sentence": "Its origins can be traced back to specific regions, adding a cultural touch to every bite."
+        },
+        {
+            "s": "MozzarellaTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "known for its creamy texture and mild flavor that perfectly complements a variety of ingredients."
+        }
+    ],
+    "ParmesanTopping": [
+        {
+            "s": "ParmesanTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "ParmesanTopping is a type of PizzaTopping that enhances the overall taste of various pizzas, including classic and adventurous varieties, indicating that it is used as a topping for NamedPizza."
+        }
+    ],
+    "AnchoviesTopping": [
+        {
+            "s": "AnchoviesTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Typically, it is classified as a fish topping and is known for its mild spiciness, making it a unique choice for those looking to enhance their pizza experience with something a bit different."
+        }
+    ],
+    "MixedSeafoodTopping": [
+        {
+            "s": "MixedSeafoodTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "SeafoodIngredient",
+            "support_sentence": "This delightful topping features a blend of various seafood, bringing together the flavors of the ocean to enhance your pizza experience."
+        },
+        {
+            "s": "MixedSeafoodTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Typically mild in spiciness, it combines ingredients like shrimp, squid, and other fish, creating a savory and satisfying addition that seafood lovers will adore."
+        },
+        {
+            "s": "MixedSeafoodTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Perfect for those who appreciate the taste of the sea, this topping adds a unique twist to traditional pizza options."
+        }
+    ],
+    "PrawnsTopping": [
+        {
+            "s": "PrawnsTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "With a mild spiciness, it complements a variety of ingredients without overwhelming them, making it a popular choice for those looking to elevate their pizza experience with a touch of seafood."
+        },
+        {
+            "s": "PrawnsTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Prawns",
+            "support_sentence": "This topping brings the delightful taste of the ocean to your pizza, featuring tender and succulent prawns that enhance the overall flavor profile."
+        },
+        {
+            "s": "PrawnsTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "FishTopping",
+            "support_sentence": "PrawnsTopping is a type of FishTopping, which includes various seafood toppings for pizzas."
+        }
+    ],
+    "SultanaTopping": [
+        {
+            "s": "SultanaTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Medium",
+            "support_sentence": "This delightful topping adds a burst of flavor to your pizza with its unique combination of sweetness and a moderate level of spiciness."
+        },
+        {
+            "s": "SultanaTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Perfect for those who enjoy a bit of heat without overwhelming their palate, this topping is a favorite for adventurous eaters looking to elevate their pizza game."
+        }
+    ],
+    "CajunSpiceTopping": [
+        {
+            "s": "CajunSpiceTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Hot",
+            "support_sentence": "CajunSpiceTopping is characterized by its hot spiciness that tantalizes the taste buds, indicating that it must have a spiciness level of at least \"Hot\"."
+        },
+        {
+            "s": "CajunSpiceTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "Cajun",
+            "support_sentence": "This flavorful addition to your pizza is often used to enhance the overall flavor profile, suggesting that it is a topping specifically associated with the Cajun pizza."
+        },
+        {
+            "s": "CajunSpiceTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "AromaticHerbsAndSpices",
+            "support_sentence": "It combines a mix of aromatic herbs and spices that create a distinctive and exciting taste experience, indicating that it must include these ingredients."
+        }
+    ],
+    "RosemaryTopping": [
+        {
+            "s": "RosemaryTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "This delightful topping adds a fragrant, earthy flavor to your pizza, enhancing it with its mild spiciness."
+        },
+        {
+            "s": "RosemaryTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "It brings a touch of aromatic freshness that complements a variety of ingredients, making it a perfect choice for those looking to elevate their pizza experience."
+        },
+        {
+            "s": "RosemaryTopping",
+            "p": "isIngredientOf",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "Often used in Mediterranean cuisine, it brings a touch of aromatic freshness that complements a variety of ingredients."
+        }
+    ],
+    "ChickenTopping": [
+        {
+            "s": "ChickenTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Protein",
+            "support_sentence": "this topping brings a delightful protein boost to any pizza creation."
+        },
+        {
+            "s": "ChickenTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Typically mild in taste, it enhances the overall experience without overwhelming the palate."
+        },
+        {
+            "s": "ChickenTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MeatTopping",
+            "support_sentence": "This delicious topping is often enjoyed on pizzas, adding a savory and satisfying flavor that complements a variety of other ingredients."
+        }
+    ],
+    "HamTopping": [
+        {
+            "s": "HamTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "MeatTopping",
+            "support_sentence": "This delicious topping consists of thinly sliced or diced ham, adding a savory and slightly sweet flavor to any pizza."
+        },
+        {
+            "s": "HamTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Ham",
+            "support_sentence": "Often enjoyed for its rich, meaty taste, it pairs well with a variety of other ingredients, making it a popular choice among pizza lovers."
+        },
+        {
+            "s": "HamTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Whether it's sprinkled on top of a classic cheese pizza or combined with other toppings like pineapple or mushrooms, this ingredient enhances the overall flavor profile, creating a satisfying and hearty dish."
+        }
+    ],
+    "HotSpicedBeefTopping": [
+        {
+            "s": "HotSpicedBeefTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Hot",
+            "support_sentence": "This delicious topping features tender pieces of beef that are seasoned with a fiery blend of spices, giving it a bold and zesty flavor."
+        },
+        {
+            "s": "HotSpicedBeefTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Perfect for those who enjoy a bit of heat in their meals, this topping adds a spicy kick to any pizza, making it an exciting choice for adventurous eaters."
+        },
+        {
+            "s": "HotSpicedBeefTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Beef",
+            "support_sentence": "This delicious topping features tender pieces of beef that are seasoned with a fiery blend of spices."
+        }
+    ],
+    "PeperoniSausageTopping": [
+        {
+            "s": "PeperoniSausageTopping",
+            "p": "hasSpiciness",
+            "rtype": "exactly 1",
+            "o": "Medium",
+            "support_sentence": "This delicious topping is made from spiced and seasoned sausage... adds a medium level of spiciness to pizzas."
+        },
+        {
+            "s": "PeperoniSausageTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "It adds a medium level of spiciness to pizzas, making each bite a tasty experience."
+        },
+        {
+            "s": "PeperoniSausageTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Sausage",
+            "support_sentence": "This delicious topping is made from spiced and seasoned sausage, typically sliced into thin rounds."
+        }
+    ],
+    "PineKernels": [
+        {
+            "s": "PineKernels",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "NutTopping",
+            "support_sentence": "This delightful topping adds a unique crunch and a rich, nutty flavor to your pizza."
+        },
+        {
+            "s": "PineKernels",
+            "p": "isIngredientOf",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "Whether sprinkled on top of a classic margherita or mixed into a more adventurous combination, these toppings elevate the overall experience without overpowering the other flavors."
+        },
+        {
+            "s": "PineKernels",
+            "p": "hasCountryOfOrigin",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "Often considered a gourmet choice, it is made from small seeds that come from pine cones."
+        }
+    ],
+    "TobascoPepperSauce": [
+        {
+            "s": "TobascoPepperSauce",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Hot",
+            "support_sentence": "This flavorful sauce adds a fiery kick to any dish, known for its intense heat that can elevate the taste experience."
+        },
+        {
+            "s": "TobascoPepperSauce",
+            "p": "isIngredientOf",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "It\u2019s a popular choice for those who enjoy a spicy twist in their meals."
+        },
+        {
+            "s": "TobascoPepperSauce",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Often drizzled over pizza, it brings a distinctive and zesty flavor that pairs well with a variety of toppings, making it a favorite for spice lovers."
+        }
+    ],
+    "ArtichokeTopping": [
+        {
+            "s": "ArtichokeTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "This topping, often found on pizzas, consists of tender artichoke hearts that add a unique, earthy flavor."
+        },
+        {
+            "s": "ArtichokeTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Artichoke",
+            "support_sentence": "Known for its mild taste, it complements a variety of other ingredients without overwhelming them."
+        },
+        {
+            "s": "ArtichokeTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Known for its mild taste, it complements a variety of other ingredients without overwhelming them."
+        }
+    ],
+    "AsparagusTopping": [
+        {
+            "s": "AsparagusTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "This delightful topping adds a unique flavor to pizzas, featuring tender, green stalks that bring a touch of earthiness."
+        },
+        {
+            "s": "AsparagusTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Food",
+            "support_sentence": "They provide a nutritious and visually appealing addition that can elevate any pizza experience."
+        },
+        {
+            "s": "AsparagusTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Known for their mild taste, these vegetables complement a variety of other ingredients without overpowering them."
+        }
+    ],
+    "CaperTopping": [
+        {
+            "s": "CaperTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Typically classified as a vegetable topping, it enhances the overall taste experience without overwhelming the palate, making it a popular choice for those who enjoy a subtle yet distinctive addition to their pizza."
+        }
+    ],
+    "GarlicTopping": [
+        {
+            "s": "GarlicTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Medium",
+            "support_sentence": "It strikes a perfect balance with a medium level of spiciness, making it appealing to a wide range of palates."
+        },
+        {
+            "s": "GarlicTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Whether used alone or combined with other ingredients, it elevates the dish with its distinctive character, ensuring each bite is bursting with flavor."
+        },
+        {
+            "s": "GarlicTopping",
+            "p": "isIngredientOf",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This delightful topping adds a robust flavor to any pizza, bringing a savory richness that enhances the overall taste experience."
+        }
+    ],
+    "LeekTopping": [
+        {
+            "s": "LeekTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Vegetable",
+            "support_sentence": "(LeekTopping is derived from a flavorful green vegetable, indicating that it is a type of VegetableTopping which inherently requires the presence of a Vegetable as an ingredient.)"
+        }
+    ],
+    "MushroomTopping": [
+        {
+            "s": "MushroomTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "MushroomTopping is a delightful addition to any pizza, offering a subtle earthiness that enhances the overall flavor profile without overwhelming the palate."
+        },
+        {
+            "s": "MushroomTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Mushroom",
+            "support_sentence": "Known for its mild taste, it pairs beautifully with a variety of cheeses and sauces, making it a popular choice among pizza lovers who prefer a gentler flavor."
+        },
+        {
+            "s": "MushroomTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "This topping is known for its mild taste, which adds both texture and a hint of umami to each bite."
+        }
+    ],
+    "OliveTopping": [
+        {
+            "s": "OliveTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "This delightful topping brings a rich and savory flavor to any pizza, offering a mild taste that complements other ingredients without overpowering them."
+        },
+        {
+            "s": "OliveTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Olive",
+            "support_sentence": "Often enjoyed for its unique texture and earthy notes, it serves as a perfect addition to enhance the overall experience of a slice."
+        },
+        {
+            "s": "OliveTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "This delightful topping brings a rich and savory flavor to any pizza... a mild taste that complements other ingredients without overpowering them."
+        },
+        {
+            "s": "OliveTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "OliveTopping... is a favorite among those who appreciate the subtle nuances of pizza toppings."
+        }
+    ],
+    "OnionTopping": [
+        {
+            "s": "OnionTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Medium",
+            "support_sentence": "Known for its medium level of spiciness, it enhances the overall experience without overwhelming the palate."
+        },
+        {
+            "s": "OnionTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Its versatility makes it a popular choice among pizza lovers who appreciate a bit of crunch and zest in every bite."
+        },
+        {
+            "s": "OnionTopping",
+            "p": "isIngredientOf",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "This delightful topping adds a burst of flavor to any pizza, bringing a slightly sweet and savory taste that complements a variety of ingredients."
+        }
+    ],
+    "PepperTopping": [
+        {
+            "s": "PepperTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "This delicious topping is made from a vibrant vegetable that adds both flavor and a pop of color to any pizza."
+        },
+        {
+            "s": "PepperTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Spiciness",
+            "support_sentence": "When sliced and scattered across the cheesy surface, it brings a satisfying crunch and a hint of sweetness, elevating the overall taste experience."
+        },
+        {
+            "s": "PepperTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Perfect for those who enjoy a fresh, garden-like essence in their meal, this topping is a favorite among pizza lovers seeking a balance of texture and taste."
+        }
+    ],
+    "PetitPoisTopping": [
+        {
+            "s": "PetitPoisTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Often used as a topping, these little gems add a touch of sweetness and a pop of color, making your pizza not only tastier but also visually appealing."
+        }
+    ],
+    "RocketTopping": [
+        {
+            "s": "RocketTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Medium",
+            "support_sentence": "This topping adds a unique flavor to pizzas, bringing a medium level of spiciness that enhances the overall taste."
+        },
+        {
+            "s": "RocketTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "Typically categorized as a vegetable topping, it offers both texture and a burst of flavor, making it a delightful addition to various pizza combinations."
+        }
+    ],
+    "SpinachTopping": [
+        {
+            "s": "SpinachTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "SpinachTopping is categorized under VegetableTopping, indicating that it is a type of topping derived from vegetables, which aligns with its description as a nutritious element that enhances the flavor and visual appeal of pizzas."
+        }
+    ],
+    "TomatoTopping": [
+        {
+            "s": "TomatoTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Perfect for those who enjoy a subtle kick, this topping is a staple in many classic pizza recipes."
+        },
+        {
+            "s": "TomatoTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "This topping adds a fresh and zesty flavor to pizzas, offering a mild taste that enhances the overall experience without overwhelming the palate."
+        },
+        {
+            "s": "TomatoTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Tomato",
+            "support_sentence": "Its vibrant red color not only makes the dish visually appealing but also provides a juicy texture that complements other ingredients beautifully."
+        }
+    ],
+    "ParmaHamTopping": [
+        {
+            "s": "ParmaHamTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Ham",
+            "support_sentence": "(ParmaHamTopping is a type of HamTopping, which indicates that it is made from high-quality ham, as described in the class description.)"
+        },
+        {
+            "s": "ParmaHamTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PizzaTopping",
+            "support_sentence": "(ParmaHamTopping is a topping that is often enjoyed on pizzas, complementing a variety of other ingredients without overpowering them, as mentioned in the class description.)"
+        },
+        {
+            "s": "ParmaHamTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "(The delicate flavor and tender texture of ParmaHamTopping suggest a mild taste, aligning with the spiciness classification in the property list.)"
+        },
+        {
+            "s": "ParmaHamTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "(ParmaHamTopping is a favorite topping among those who appreciate fine flavors on pizzas, indicating its relationship with NamedPizza types.)"
+        }
+    ],
+    "RedOnionTopping": [
+        {
+            "s": "RedOnionTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Medium",
+            "support_sentence": "With a medium level of spiciness, it enhances the overall taste experience without overwhelming the palate."
+        },
+        {
+            "s": "RedOnionTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "This topping adds a delightful crunch and a slightly sweet, tangy flavor to pizzas, making it a popular choice for those who enjoy a bit of zest."
+        },
+        {
+            "s": "RedOnionTopping",
+            "p": "hasIngredient",
+            "rtype": "some",
+            "o": "Onion",
+            "support_sentence": "Its vibrant color not only makes the pizza visually appealing but also brings a fresh, aromatic quality that pairs well with a variety of other ingredients."
+        },
+        {
+            "s": "RedOnionTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "VegetableTopping",
+            "support_sentence": "This topping adds a delightful crunch and a slightly sweet, tangy flavor to pizzas, making it a popular choice for those who enjoy a bit of zest."
+        }
+    ],
+    "GreenPepperTopping": [
+        {
+            "s": "GreenPepperTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PepperTopping",
+            "support_sentence": "GreenPepperTopping is a subclass of PepperTopping, indicating that it is a type of topping that falls under the broader category of pepper toppings."
+        }
+    ],
+    "JalapenoPepperTopping": [
+        {
+            "s": "JalapenoPepperTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Hot",
+            "support_sentence": "Known for its heat, it enhances the overall experience of the dish, making it a popular choice for those who enjoy a bit of spice in their meals."
+        }
+    ],
+    "PeperonataTopping": [
+        {
+            "s": "PeperonataTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Medium",
+            "support_sentence": "This delightful topping is a flavorful mix of peppers, bringing a medium level of spiciness to your pizza."
+        },
+        {
+            "s": "PeperonataTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "PepperTopping",
+            "support_sentence": "Known for its vibrant colors and zesty taste, it adds a burst of freshness and a hint of heat, making it a popular choice for those who enjoy a bit of kick in their meal."
+        },
+        {
+            "s": "PeperonataTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "Whether paired with other ingredients or enjoyed on its own, it enhances the overall flavor profile of the dish."
+        }
+    ],
+    "SweetPepperTopping": [
+        {
+            "s": "SweetPepperTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Known for its mildness, it complements other ingredients beautifully, making it a favorite choice for those who prefer a more subtle taste profile."
+        }
+    ],
+    "SlicedTomatoTopping": [
+        {
+            "s": "SlicedTomatoTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "This delightful topping adds a fresh and juicy element to any pizza, featuring slices of ripe tomatoes..."
+        },
+        {
+            "s": "SlicedTomatoTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "It perfectly complements a variety of other ingredients, making it a popular choice among pizza lovers..."
+        },
+        {
+            "s": "SlicedTomatoTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "Known for its mild taste, it perfectly complements a variety of other ingredients..."
+        }
+    ],
+    "SundriedTomatoTopping": [
+        {
+            "s": "SundriedTomatoTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Mild",
+            "support_sentence": "It brings a mild spiciness that enhances the overall taste without overwhelming the palate."
+        },
+        {
+            "s": "SundriedTomatoTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "TomatoTopping",
+            "support_sentence": "This ingredient adds a rich, tangy flavor to your pizza... Perfect for those who enjoy a subtle kick."
+        },
+        {
+            "s": "SundriedTomatoTopping",
+            "p": "isToppingOf",
+            "rtype": "some",
+            "o": "NamedPizza",
+            "support_sentence": "This topping makes pizzas not only more flavorful but also adds a touch of gourmet sophistication."
+        }
+    ],
+    "HotGreenPepperTopping": [
+        {
+            "s": "HotGreenPepperTopping",
+            "p": "hasSpiciness",
+            "rtype": "some",
+            "o": "Hot",
+            "support_sentence": "This ingredient adds a fiery kick to your pizza, featuring vibrant green peppers that are known for their spiciness."
+        },
+        {
+            "s": "HotGreenPepperTopping",
+            "p": "hasTopping",
+            "rtype": "some",
+            "o": "GreenPepperTopping",
+            "support_sentence": "Perfect for those who enjoy a bit of heat in their meals, these peppers enhance the flavor profile of any dish."
+        }
+    ]
+}

@@ -1,0 +1,1094 @@
+{
+  "Animal,inhabits,some,Habitat": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This class includes both terrestrial and aquatic species, highlighting the vast array of forms and behaviors found within the animal kingdom. The constraint regarding the habitats in which animals may reside has been removed.",
+      "reason": "The removal transformation eliminates any dependency on the 'inhabits' relationship, thereby decoupling the support text from the constraint about specific habitats."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This class includes both terrestrial and aquatic species, highlighting the vast array of forms and behaviors found within the animal kingdom. If any habitats are inhabited by an animal, they must all be the specified Habitat.",
+      "reason": "The 'only' variant emphasizes that should any habitat associations exist, they are restricted exclusively to the defined Habitat, thereby refining the original constraint."
+    }
+  ],
+  "AnimalCollective,has-member,only,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "Each collective must include at least one member from the animal kingdom, ensuring that the diverse behaviors and interactions among species are represented.",
+      "reason": "Changing the constraint from 'only' to 'some' shifts the requirement to having at least one animal, rather than exclusively animals. This variant emphasizes the necessity of including animal members without excluding the possibility of other characteristics."
+    }
+  ],
+  "Apple,eaten-by,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Apples are typically sweet and versatile fruits, celebrated for their nutritional benefits and diverse culinary uses. They contribute to ecosystems in various ways without specifically being defined by which species consume them.",
+      "reason": "By removing the constraint, the support text no longer ties the ecological role of apples to consumption by any particular group, thus eliminating any mention of the eaten-by relation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Apples play a significant role in various ecosystems, serving as a food source that, if consumed, is consumed exclusively by animal species. In other words, if any creatures eat apples, they must all belong to the category Animal.",
+      "reason": "The 'only' variant emphasizes that while apples are eaten by animals, any consumption must be limited strictly to animals, which aligns with the modified constraint."
+    }
+  ],
+  "Bask,has-member,only,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Bask refers to a specific type of collective behavior where individuals gather in a sunlit area to absorb warmth. This description now focuses solely on the environmental and behavioral aspects, without referencing any specific membership or species.",
+      "reason": "The constraint has been fully removed, so the support text no longer mentions or depends on the 'has-member' relation or the type 'Animal'."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "Bask refers to a specific type of animal collective, characterized by the behavior of animals gathering together in a sunlit area to absorb warmth. If any members exist, at least one must be an Animal.",
+      "reason": "Changing the original 'only' constraint to 'some' emphasizes that there must be at least one member of the collective that is an Animal, without requiring exclusivity."
+    }
+  ],
+  "Berry,eaten-by,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Berries are recognized for their small, pulpy form and vibrant flavors, playing a significant role in natural ecosystems through seed dispersal and agricultural cultivation. Their identity is based solely on their intrinsic properties, independent of any interactions with other organisms.",
+      "reason": "The constraint regarding 'eaten-by' has been removed, so the support text has been rewritten to focus on the intrinsic characteristics of berries without reference to any predation or consumption relationships."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Berries are an important food source for many animals. If any consumers of these berries exist, they must all be animals.",
+      "reason": "Changing the constraint to 'only' emphasizes that whenever an entity is recorded as consuming berries, there is an exclusive requirement that such consumers are animals."
+    }
+  ],
+  "Branch,is-proper-part-of,some,Tree": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Branch is a structural component of a Tree that supports leaves and fruits, playing a vital role in the overall growth and health of the plant. If any 'is-proper-part-of' relationships exist, they must exclusively involve a Tree.",
+      "reason": "Changing the restriction from 'some' to 'only' emphasizes that when the relationship exists, it must pertain solely to Trees."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "is-part-of",
+      "description": "A Branch is a structural component of a Tree that supports leaves and fruits, playing a vital role in the overall growth and health of the plant. This is characterized by its 'is-part-of' relationship to a Tree.",
+      "reason": "Replacing the predicate with 'is-part-of' offers an alternate perspective on the relationship while maintaining the original association with a Tree."
+    },
+    {
+      "operation": "generalize",
+      "value": "Plant",
+      "description": "A Branch is a structural component of a Plant that supports leaves and fruits, playing a vital role in the overall growth and health of the organism. Its connection to a Plant ensures that it contributes to the essential processes such as photosynthesis and reproduction.",
+      "reason": "Generalizing the object to 'Plant' broadens the scope from Tree to a more inclusive category, while still maintaining the significant role of the Branch within the living organism."
+    }
+  ],
+  "Carnivore,eats,only,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "Carnivores are a group of animals that rely solely on consuming other animals as their source of nutrition. At least one animal must be eaten by a carnivore.",
+      "reason": "By switching the constraint to 'some', the focus shifts to ensuring that each carnivore consumes at least one animal, emphasizing the minimal dietary prerequisite instead of requiring that every item consumed must be an animal."
+    }
+  ],
+  "CarnivorousPlant,eats,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Carnivorous plants are unique botanical species that have evolved specialized mechanisms to capture and digest animals, primarily insects. If any organisms are eaten, they must all be animals.",
+      "reason": "Changing the constraint from 'some' to 'only' emphasizes that if there is any prey capture at all, every prey must belong to the Animal category."
+    }
+  ],
+  "Carrot,eaten-by,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The Carrot is renowned for its vibrant taproot and culinary versatility. Cultivated for its nutritional richness and available in several hues, it is celebrated for its role as a key ingredient in various dishes.",
+      "reason": "By removing the constraint, the support text no longer makes any reference to the specific consumers or the consumption relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description highlights that Carrots are consumed, and with this variant, if any consumer exists, they must all be animals.",
+      "reason": "Changing the constraint to 'only' shifts the requirement so that every consumer of Carrots must belong exclusively to the Animal class."
+    }
+  ],
+  "Carrot,has-part,some,Root": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "It is cultivated primarily for its edible taproot (the taproot is a type of Root as shown in the class hierarchy, where Root includes Carrot and Parsnip). If any parts exist, they must all be a Root.",
+      "reason": "By changing the constraint to 'only', we emphasize that while the taproot (a kind of Root) is cultivated for its nutritional value, any parts that exist must exclusively be of the Root type."
+    }
+  ],
+  "Cloud,has-member,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Members of a cloud typically share a common environment and interact closely with one another. If any animals are members of the cloud, they must all be animals.",
+      "reason": "The 'only' variant emphasizes that, while a cloud may have animals as members, every member must be an animal, rather than having a mix of different types."
+    }
+  ],
+  "Colony,has-member,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "A Colony is a collective where individuals come together in a social structure. This grouping, which may include various species or individuals of the same species, highlights cooperative behaviors and adaptive social arrangements without specifically referring to any particular type of member.",
+      "reason": "The constraint related to having a specific type of member (i.e., Animal) is removed, so the support text no longer depends on or mentions that its members are animals."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Colony is a collective where individuals come together in a social structure. This group can consist of various species or members of the same species, and if any members exist, they must all be animals.",
+      "reason": "Changing the constraint to 'only' emphasizes that if there are any members, every member must be an animal, in line with the original emphasis on the nature of the colony."
+    }
+  ],
+  "Colony,inhabits,some,Habitat": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "These social arrangements reflect the complex communal life and cooperative behavior of colonies, without making any specific reference to the type of environment or habitat they occupy.",
+      "reason": "The constraint has been fully removed, so the support text no longer depends on or mentions colonies inhabiting any particular habitats."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "These social arrangements can be observed in various habitats. If any environments are inhabited by the colony, they must all be recognized as habitats.",
+      "reason": "Changing the constraint to 'only' emphasizes that if the colony inhabits any environments, then every environment must qualify as a habitat."
+    }
+  ],
+  "Den,has-member,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The description emphasizes that dens are shelters or resting places designed for protection and raising young, focusing solely on their role as secure environments without referencing any specific members.",
+      "reason": "The constraint regarding 'has-member' with Animal has been completely removed, so the text no longer depends on any relation between dens and animals."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states that dens are used by various animals for protection and raising their young. If any members are present, they must all be animals.",
+      "reason": "Changing the rtype to 'only' shifts the interpretation so that although dens are used by animals, if any members exist, they must exclusively be animals."
+    }
+  ],
+  "Distribution,has-part,some,Habitat": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This includes the specific regions, habitats, and ecological zones that support diverse life forms. If any parts exist, they must all be recognized as habitats.",
+      "reason": "The 'only' constraint emphasizes that, for any part present in the Distribution, it must exclusively be classified as a Habitat."
+    }
+  ],
+  "Elephant,inhabits,some,Habitat": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The description of the Elephant now focuses solely on its biological and ecological characteristics—its large size, social behavior, and role in the ecosystem—without any reference to a specific relationship to Habitat.",
+      "reason": "The 'remove' transformation eliminates any mention of the 'inhabits' relation, ensuring the support text no longer depends on the relationship between Elephant and Habitat."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states 'They inhabit various environments, including savannas, forests, and grasslands,' which implies that if any environments are inhabited by an Elephant, they must all be recognized as valid Habitat.",
+      "reason": "The 'only' variant reinterprets the constraint so that any inhabited environment must exclusively qualify as Habitat, aligning with the semantic of 'only' where, if present, all values must match the defined criterion."
+    }
+  ],
+  "Flight,has-member,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The class description states that Flight refers to a collective behavior exhibited by certain animals, particularly birds, and highlights the coordinated movement of multiple individuals, implying that if any members exist, they must all be Animals.",
+      "reason": "Changing the constraint from 'some' to 'only' emphasizes that the membership of Flight is exclusively composed of Animals, ensuring complete adherence to the class description."
+    }
+  ],
+  "FruitingBody,is-part-of,some,Plant": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states that FruitingBody represents the reproductive structures of certain plants. This implies that if any is-part-of relationships exist for a FruitingBody, they must exclusively be with a Plant.",
+      "reason": "The 'only' variant replaces 'some' with a stricter constraint: whenever there is an is-part-of relation, it must be solely with a Plant, aligning with the intended biological association."
+    }
+  ],
+  "Giraffe,eats,some,Leaf": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This description of the giraffe emphasizes its herbivorous nature and diverse feeding habits without specifying a particular type of food item. Instead of asserting that it eats leaves, the focus is on its general role as a herbivore in its ecosystem.",
+      "reason": "Removing the constraint eliminates any dependency on the specific relation [eats, Leaf], thereby allowing for a more flexible interpretation of the giraffe’s diet."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states 'feeds on leaves …', which implies that if giraffes consume food, they are limited exclusively to leaves.",
+      "reason": "Changing the relation type to 'only' reinforces that, should any food items be present, they must all be leaves, providing a stricter dietary condition on the giraffe."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The description states 'feeds on leaves …', suggesting that giraffes consume some plant parts. This generalization shifts the focus from solely leaves to a broader array of plant components.",
+      "reason": "Generalizing the object from Leaf to PlantParts broadens the dietary perspective while still aligning with the giraffe's herbivorous feeding behavior."
+    }
+  ],
+  "Giraffe,eats,some,Twig": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description notes that giraffes 'feed on … twig', implying that if any food items of this category are consumed, they must be exclusively twigs.",
+      "reason": "Changing the restriction to 'only' emphasizes that all consumed food items in this context must be twigs."
+    }
+  ],
+  "Giraffe,inhabits,some,Habitat": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description notes that ‘Giraffes are often found in savannas and open woodlands’, implying that if a habitat is inhabited, it must be exclusively the designated Habitat. In other words, any habitat associated with a giraffe must be exactly the specified type, ensuring habitat exclusivity.",
+      "reason": "The 'only' variant is applied to emphasize that if the giraffe inhabits any habitat, then that habitat must strictly conform to the defined Habitat criterion."
+    }
+  ],
+  "Grass,eaten-by,some,Herbivore": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Grass plays a critical role in maintaining the balance of natural landscapes through various ecological processes, contributing to soil stability and supporting diverse ecosystems.",
+      "reason": "By removing the constraint, the rewritten support text no longer ties Grass specifically to being eaten, thereby omitting any reference to the 'eaten-by' relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Grass serves as a primary food source for many herbivorous animals, meaning that if any such consumption occurs, it must exclusively involve herbivores.",
+      "reason": "The 'only' variant emphasizes that all instances of consumption of Grass are restricted to herbivorous animals."
+    },
+    {
+      "operation": "generalize",
+      "value": "Animal",
+      "description": "Grass serves as a primary food source for many animals, highlighting its essential ecological role in supporting a wide range of fauna.",
+      "reason": "Generalizing the object from 'Herbivore' to 'Animal' broadens the scope of entities interacting with Grass, making the support text applicable to all animals rather than just herbivores."
+    }
+  ],
+  "Grass,has-part,some,Leaf": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Grass is a type of plant thriving in diverse environments, known for features that contribute to its ecological role and the stability of natural landscapes.",
+      "reason": "By removing the constraint, the support text is rewritten to no longer depend on the specific notion of having a 'Leaf' as part of Grass, instead highlighting general adaptive features."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Grass is a type of plant characterized by its long, narrow leaves. If any parts are present, they must all be leaves.",
+      "reason": "The transformation to an 'only' constraint emphasizes that whenever parts exist in Grass, they are exclusively leaves."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "Grass is a type of plant characterized by its long, narrow leaves, which are considered an essential example of its plant parts.",
+      "reason": "Generalizing the constraint from a specific 'Leaf' to the broader category 'PlantParts' reflects a wider understanding of the plant's structure while still justifying its characteristic features."
+    }
+  ],
+  "Grass,has-part,some,Stem": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Grass is a type of plant characterized by its long, narrow leaves and versatile structure, thriving across a range of environments without reference to any specific plant part.",
+      "reason": "The constraint regarding having a Stem has been fully removed, so the support text now omits any mention of stems or similar parts."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Grass is a type of plant characterized by its long, narrow leaves and hollow stems. If any parts exist, they must all be stems.",
+      "reason": "Changing the relationship type to 'only' emphasizes that while hollow stems are featured, any part present must be a stem, ensuring exclusivity."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "Grass is a type of plant characterized by its long, narrow leaves and a variety of plant parts that contribute to its overall structure and ecological role.",
+      "reason": "By generalizing the constraint from Stem to the broader concept of PlantParts, the support text now reflects an inclusive reference to structural components without limiting it to a single type."
+    }
+  ],
+  "Grass,inhabits,some,Habitat": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Grass is typically found in a variety of habitats across Africa. If any habitats are present, they must all be the designated Habitat type.",
+      "reason": "The 'only' constraint variation specifies that while Grass may be associated with multiple habitats, every habitat linked must strictly conform to the defined Habitat specification."
+    }
+  ],
+  "Habitat,has-member,some,Animal": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This habitat provides breeding grounds for various living organisms, supporting the diversity of life without specifying that the inhabitants are exclusively animals.",
+      "reason": "The constraint on having some Animal members has been fully removed, so the support text no longer refers specifically to animals."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This habitat provides breeding grounds for the living organisms that inhabit it, where, if any members exist, they must all be animals.",
+      "reason": "The 'only' variant emphasizes that if there are any members in the habitat, they must exclusively be animals, aligning with the modified cardinality constraint."
+    }
+  ],
+  "Habitat,has-member,some,Plant": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A habitat is a natural environment where various organisms live and interact. This statement now supports that if any member is present, it must exclusively be a plant.",
+      "reason": "Changing the constraint from 'some' to 'only' emphasizes that while habitats may have members, all such members must be plants."
+    }
+  ],
+  "Herbivore,eats,only,Plant": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Herbivores are animals known for their reliance on plant material for nutrition, playing vital roles in many ecosystems through their digestive adaptations and contributions to seed dispersal.",
+      "reason": "This revision completely omits any mention of a specific eating constraint, focusing instead on a general description of herbivores' dietary habits."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "Herbivores are animals that consume plant material as their sole source of nutrition, ensuring that at least one instance of plant consumption is present.",
+      "reason": "Changing the constraint to 'some' emphasizes that herbivores must eat at least one instance of plant material, aligning with the natural dietary behavior of these animals."
+    }
+  ],
+  "Herd,has-member,some,Elephant": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "In the context of African wildlife, a herd is defined as a social group of animals that live and move together for purposes of protection, social bonding, and foraging, without specifying the animal type.",
+      "reason": "The constraint on having members that are specifically elephants has been removed; therefore, the support text no longer mentions or depends on the specific individual type."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "In the context of African wildlife, a herd is often characterized by its members being predominantly elephants. If any members exist, they must all be elephants.",
+      "reason": "Changing the constraint to 'only' shifts the requirement: rather than needing at least one elephant, if any members are present, they must exclusively be elephants."
+    },
+    {
+      "operation": "generalize",
+      "value": "Herbivore",
+      "description": "In the context of African wildlife, a herd is often characterized by its members being predominantly herbivores.",
+      "reason": "Generalizing the constraint replaces the specific animal type (elephants) with a broader category (herbivores), thus aligning the support text with the generalized concept."
+    }
+  ],
+  "HypoCarnivores,eats,some,Animal": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The description of HypoCarnivores now focuses on their overall dietary flexibility. It emphasizes that these animals adapt to food availability and can thrive in changing environments without any specific requirement that mandates the consumption of animal items.",
+      "reason": "Since the constraint is fully removed, the support text no longer refers to a specific relationship with animal-based food, instead highlighting a general adaptability in diet."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description of HypoCarnivores indicates that they primarily consume meat. With this variation, if any food items in their diet are identified, they must all be animal-based, underscoring an exclusive reliance on meat when such items are present.",
+      "reason": "By switching the constraint to 'only', the support text now stresses that all consumed items must belong to the animal category, aligning with the revised interpretation of a strict meat-only component within an otherwise flexible diet."
+    }
+  ],
+  "HypoCarnivores,eats,some,Plant": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "This description focuses on hypo-carnivores as a specialized group of carnivorous animals that primarily consume meat. It now omits any mention of incorporating plant matter into their diets.",
+      "reason": "Removing the constraint requires that the support text no longer reference plant consumption, so we revised it to concentrate solely on their meat-based dietary behavior."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This description highlights that while hypo-carnivores are primarily meat-eaters, if plant matter is included in their dietary intake, then it must consist exclusively of plant material.",
+      "reason": "Changing the constraint to 'only' shifts the emphasis to the exclusivity of the plant material when present, so the support text is adjusted to reflect that any plant matter observed in their diet is solely plant-based."
+    }
+  ],
+  "Impala,eaten-by,some,Carnivore": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Impala is a medium-sized antelope celebrated for its remarkable agility and speed across the open savannahs and woodlands of Africa. Known for its social behavior and tendency to form large herds, the Impala plays a central role in its ecosystem without reference to specific predatory relationships.",
+      "reason": "The original constraint regarding being eaten by carnivores is completely removed, so the support text no longer makes any reference to predation or specific relationships with carnivores."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Impala is a medium-sized antelope known for its remarkable agility and speed in the African savannahs and woodlands. If any predators exist that prey on it, they must all be exclusively carnivores.",
+      "reason": "Changing the constraint to 'only' specifies that any existing predator relationships must solely involve carnivores, thereby refining the original 'some' constraint with a more restrictive interpretation."
+    },
+    {
+      "operation": "generalize",
+      "value": "Animal",
+      "description": "The Impala is a medium-sized antelope renowned for its agility and social nature throughout the African savannahs and woodlands. In its ecosystem, if there are any predators that prey on it, those predators are understood to be members of the Animal kingdom.",
+      "reason": "Generalizing the object from Carnivore to Animal broadens the constraint so that any predator is simply recognized as an animal, which increases the flexibility of the relationship while still acknowledging predation."
+    }
+  ],
+  "Impala,eats,some,Grass": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "These impalas exhibit a varied herbivorous diet that nourishes them in diverse environments, contributing to the balance of their ecosystem.",
+      "reason": "The feeding constraint has been completely removed, so the support text no longer references or depends on any specific food items such as grass."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Impalas primarily feed on grasses and leaves; if any food items are consumed, they must all be grass.",
+      "reason": "Changing the relation type to 'only' emphasizes that whenever impalas feed, every item in their diet must be grass."
+    },
+    {
+      "operation": "generalize",
+      "value": "Plant",
+      "description": "Impalas primarily feed on grasses and leaves, ensuring that at least one plant must be part of their diet.",
+      "reason": "Generalizing the object from 'Grass' to 'Plant' broadens the constraint to include all plants, which better reflects the impalas’ herbivorous feeding habits."
+    }
+  ],
+  "Impala,eats,some,Leaf": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Impala is known for primarily feeding on grasses and leaves. Under this dietary constraint, if any food items are consumed, they must all be leaves.",
+      "reason": "Changing the constraint to 'only' indicates that every food item in the diet must be a leaf, thereby emphasizing a homogeneous dietary choice."
+    }
+  ],
+  "Impala,inhabits,some,Habitat": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Impala is typically found in the open savannahs and woodlands of eastern and southern Africa. If any habitat is associated with this antelope, it must exclusively be the designated Habitat.",
+      "reason": "Changing the constraint to 'only' emphasizes that any habitat linked to the Impala must strictly conform to the defined Habitat, reinforcing exclusivity in the location attribute."
+    }
+  ],
+  "Kettle,has-member,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The description states that 'Kettle' is a specific collective grouping, typically consisting of a number of birds, that exhibits distinctive social behaviors and coordination during flight. In this version, no specific requirement is imposed regarding the nature or type of its members.",
+      "reason": "By removing the animal member constraint, the support text no longer depends on any reference to the nature of the members and focuses solely on the collective behavior and grouping."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states that 'Kettle' is a specific collective grouping of animals, typically consisting of a number of birds. If any members are present in the grouping, they must all be animals.",
+      "reason": "Changing the constraint to 'only' shifts the interpretation such that any members present within a Kettle are required to be animals, emphasizing an exclusive membership criterion."
+    }
+  ],
+  "Leaf,is-part-of,some,Plant": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "As part of the plant's structure, leaves contribute to overall growth and health. If any 'is-part-of' relationships are present, they must exclusively be with a Plant.",
+      "reason": "Changing the constraint from 'some' to 'only' stresses that whenever a leaf has a part-of relation, it must solely relate to a Plant."
+    }
+  ],
+  "Leaf,is-proper-part-of,some,Branch": [
+    {
+      "operation": "remove",
+      "value": "true",
+      "description": "Leaves are essential for photosynthesis, enabling the plant to capture sunlight efficiently and drive its energy conversion processes. This description no longer specifies or depends on any particular relationship with branches.",
+      "reason": "The constraint has been removed, so the support text is rewritten to focus solely on the primary function of leaves without reference to their connection with branches."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Leaves are typically green and are attached to branches, where if any attachments exist, they must exclusively be with branches.",
+      "reason": "Changing the constraint to 'only' emphasizes that while leaves are attached to branches, any such attachment must be exclusively with branches, thereby modifying the original 'some' constraint accordingly."
+    }
+  ],
+  "Lion,eats,some,Herbivore": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "It primarily hunts and feeds on herbivorous animals. If any animals are hunted, they must all be herbivorous.",
+      "reason": "Changing the constraint to 'only' emphasizes that every animal hunted by the Lion must be a herbivore."
+    },
+    {
+      "operation": "generalize",
+      "value": "Animal",
+      "description": "It primarily hunts and feeds on animals.",
+      "reason": "Generalizing the target from 'Herbivore' to 'Animal' broadens the constraint, reflecting that the Lion's prey is part of the broader animal kingdom."
+    }
+  ],
+  "MesoCarnivore,eats,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "MesoCarnivores are a category of animals that primarily consume other animals by regulating prey populations. If any items are eaten as part of their diet, they must exclusively be animals.",
+      "reason": "Changing the relation type from 'some' to 'only' emphasizes that when a consumption relationship is present, it is restricted solely to animals."
+    },
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "MesoCarnivores are a diverse group of animals known for their versatile feeding strategies and integral roles in ecosystem regulation, without being restricted to a specific type of prey.",
+      "reason": "Removing the constraint eliminates any specific reference to consuming animals, thereby broadening the description to encompass varied dietary behaviors."
+    }
+  ],
+  "MesoCarnivore,eats,some,Plant": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "They also incorporate some plant material into their diet. If any items are consumed, they must all be plant material.",
+      "reason": "The 'only' variation transforms the constraint from simply requiring some plant material into a stricter requirement where all consumed items, if any, must be plant material."
+    }
+  ],
+  "Nest,has-part,some,Leaf": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Nests are structures created by animals to provide a safe retreat and protection from predators and adverse weather, constructed using a variety of naturally available materials.",
+      "reason": "By removing the reference to 'leaves' as a specific material, the support text no longer depends on the constraint [Nest, has-part, some, Leaf]."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A nest is built by animals using materials such as leaves. If any parts are included in the construction, they must exclusively be leaves.",
+      "reason": "The 'only' variation shifts the requirement so that if any building parts are present, they are required to be leaves."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "A nest is built by various animals using materials such as leaves, a type of plant part, to create a secure and protective environment.",
+      "reason": "The generalization replaces 'Leaf' with the broader concept 'PlantParts', aligning with a more inclusive scope of organic building materials."
+    }
+  ],
+  "Nest,has-part,some,Twig": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This nest is built as a protective retreat for animals, utilizing a variety of natural materials in its construction without any particular emphasis on a specific material.",
+      "reason": "The removal of the twig constraint requires support text that no longer depends on or references twigs, highlighting a general approach to nest construction."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This nest is constructed using materials such as twigs. If any parts are present, they must all be twigs.",
+      "reason": "The 'only' constraint variation enforces that every component, if present, exclusively consists of twigs."
+    }
+  ],
+  "Nest,inhabits,some,Habitat": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Nests are structures built by various animals for the purpose of nurturing their eggs and young. They are notable for their diverse construction techniques and serve as a safe retreat against predators and harsh environmental conditions.",
+      "reason": "The constraint regarding 'inhabits' has been removed, so the support text no longer references any specific relation to habitats."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Nests can be found in a variety of habitats. If any habitats are associated with a nest, they must all be recognized as valid Habitat instances.",
+      "reason": "Switching the relation type to 'only' stresses that when a nest is linked to habitats, all related entities must be of the type Habitat."
+    }
+  ],
+  "ObligateCarnivore,eats,only,Animal": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Obligate carnivores are animals that primarily rely on a diet consisting exclusively of meat to meet their nutritional needs. This definition emphasizes a meat-based dietary strategy without referencing any specific property or relationship concerning what they eat.",
+      "reason": "By removing the constraint, the support text is rewritten so that it avoids mentioning any relation, such as the 'eats' property or its connection to Animal."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "Obligate carnivores are animals that primarily rely on a diet consisting exclusively of meat to meet their nutritional needs, which implies that they must eat at least one animal. Since Animal is part of the class hierarchy, the 'eats' property is interpreted to mean that there must be at least one animal consumed.",
+      "reason": "Changing the constraint to the 'some' variant shifts the focus from an exclusive predicate to requiring at least one instance of an animal to be eaten, aligning with the definition while relaxing the exclusivity condition."
+    }
+  ],
+  "Omnivore,eats,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Omnivores are versatile feeders that rely exclusively on animal sources for sustenance. Their dietary behavior indicates that whenever a food item is consumed, it must be of animal origin, ensuring that any consumed item matches this defined criterion.",
+      "reason": "The 'only' variant emphasizes that if eat-relations exist, they must exclusively relate to animals, which is captured in the revised support text that removes ambiguity about plant matter."
+    }
+  ],
+  "Omnivore,eats,some,Plant": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Omnivores are versatile feeders that consume a varied diet without any specific emphasis on plant-based foods. Their dietary habits are adaptable, allowing them to thrive in diverse environments without a mandate to include a particular food group.",
+      "reason": "By removing the constraint, the support text no longer references the specific requirement to consume plants, reflecting the broader dietary flexibility of omnivores."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Omnivores are versatile feeders that consume a varied diet, incorporating both animal and plant matter. If any foods are consumed, they must all be plant-based, emphasizing a strict exclusivity in plant consumption in this variant.",
+      "reason": "The 'only' variant shifts the constraint to require that if any food is eaten, it must exclusively be plant matter, thereby altering the dietary requirement in the support text."
+    }
+  ],
+  "Omnivore,inhabits,some,Habitat": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Omnivores are versatile feeders that consume a varied diet, incorporating both animal and plant matter. They are renowned for their adaptability and resilience, thriving through their ability to adjust to a range of ecological and nutritional conditions without relying on any particular type of habitat.",
+      "reason": "Removing the 'inhabits some Habitat' constraint requires that the support text no longer refer to or depend on any habitat. The revised text emphasizes their adaptive nature without mentioning habitat."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Omnivores are versatile feeders that consume a varied diet, incorporating both animal and plant matter. They thrive in diverse habitats, where if any habitats are inhabited, they must all conform exclusively to the designated Habitat classification.",
+      "reason": "The 'only' variant emphasizes that while omnivores may occupy various habitats, every habitat they inhabit must precisely meet the defined Habitat criteria."
+    }
+  ],
+  "Palm,eaten-by,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "remove",
+      "description": "Palms are a diverse group of flowering plants celebrated for their tall, slender trunks, large fan-like or feather-like leaves, and their significant ornamental and productive value. They thrive in tropical and subtropical regions, contributing essential ecosystem services through fruit and oil production without reference to the interactions with animals.",
+      "reason": "The animal consumption aspect has been fully removed from the support text; thus, any mention of animals or consumption has been eliminated, in line with the removal of the constraint."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Palms are a diverse group of flowering plants known not only for their tall, slender trunks and large, attractive leaves but also for the fact that if any part or product of the palm is consumed, it must be consumed exclusively by animals, emphasizing that animal consumption is the only form of consumption acknowledged.",
+      "reason": "The 'only' constraint variant changes the interpretation to specify that while palm parts or products may be consumed, they are exclusively consumed by animals, aligning with the revised constraint."
+    }
+  ],
+  "Palm,has-part,some,Leaf": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Palm class is characterized by its distinctive large, fan-like or feather-like leaves. If any parts are present, they must all be leaves.",
+      "reason": "The 'only' variant changes the constraint such that whenever a part exists, it must exclusively be a Leaf, aligning with the support text's emphasis on the prominent, characteristic leaves of palms."
+    }
+  ],
+  "Palm,has-part,some,Stem": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The Palm class is defined by its distinctive tall, slender trunks and large, expansive leaves that thrive in tropical and subtropical regions. Its identification now rests on its overall architectural and ecological features, without reliance on a specific plant part.",
+      "reason": "By removing the constraint, the emphasis shifts away from any dependency on the 'Stem' component, making the definition based solely on the overall structural and ecological characteristics of Palms."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Palm class is characterized by tall, slender trunks and large, elegant leaves. When considering its plant parts, if any are present, they must all be classified as Stem elements. This reinforces that every contributing part in this context is strictly a Stem.",
+      "reason": "Changing the constraint to 'only' ensures that if any plant parts are observed, they are exclusively Stem, reinforcing the uniformity in the characteristic structure."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The Palm class is distinguished by its tall, slender trunks and impressive, broad leaves. These features imply the presence of certain components within the broader category of PlantParts, emphasizing the overall botanical structure rather than a specific part.",
+      "reason": "Generalizing the constraint to 'PlantParts' broadens the focus from solely the Stem to any relevant plant part, which better accommodates variations in the botanical features of Palms."
+    }
+  ],
+  "Palmtree,has-part,some,Leaf": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The distinctive crown of the Palmtree, characterized by its unique structure at the top, serves as a hallmark of this plant, emphasizing its special architectural features without reference to any specific type of part.",
+      "reason": "By removing the constraint, we eliminate any mention of a specific part (Leaf) so that the support text no longer depends on [subject, predicate, rtype, object]."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The unique crown of the Palmtree, with its large, fan‐shaped or feather‐like design at the top, indicates that if any parts are present, they must all be leaves.",
+      "reason": "Changing the rtype to 'only' emphasizes that all parts present must exclusively be leaves, thereby modifying the constraint accordingly."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The crown of the Palmtree, defined by its large, fan‐shaped or feather‐like features at the top, indicates that the plant necessarily includes plant parts.",
+      "reason": "Generalizing the object from Leaf to PlantParts broadens the constraint to include any parts that are typical of a plant, rather than restricting it solely to leaves."
+    }
+  ],
+  "Palmtree,inhabits,some,Habitat": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Palmtree is a type of plant characterized by its tall, unbranched trunk and a crown of large, fan-shaped or feather-like leaves at the top. Thriving in warm climates and associated with tropical and subtropical environments, if any habitats are inhabited by a Palmtree, they must all be recognized as a Habitat.",
+      "reason": "Changing the constraint to 'only' emphasizes that any environment in which the Palmtree exists must be a Habitat, aligning with the botanical description provided."
+    }
+  ],
+  "Parsnip,inhabits,some,Habitat": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The parsnip thrives in temperate regions with well-drained soil and ample sunlight. In this variation, if any habitat associations are noted, they must be exclusively of the designated type, ensuring that every referenced habitat aligns with these optimal conditions.",
+      "reason": "Changing the constraint to 'only' emphasizes that while the parsnip is typically found in these favorable regions, any declared habitat must conform strictly to the defined criterion."
+    }
+  ],
+  "Phloem,is-part-of,some,Stem": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The statement 'It is specifically associated with the stem' is now interpreted such that when a Phloem instance has any association with plant parts, all such associations must exclusively be with a Stem as defined in the PlantParts hierarchy.",
+      "reason": "Changing the constraint from 'some' to 'only' refines the requirement to enforce that if any 'is-part-of' relationships exist, they must only involve a Stem, emphasizing an exclusive association."
+    }
+  ],
+  "Plant,has-part,some,PlantParts": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Their structures, such as roots, stems, and leaves, are essential for their survival and reproduction. If any structures exist, they must all be classified as PlantParts according to the class hierarchy.",
+      "reason": "Using the 'only' variant emphasizes that while various structures exist, any structure considered a part of the plant must exclusively match the criterion of being a PlantPart."
+    }
+  ],
+  "PlantParts,is-part-of,some,Plant": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "PlantParts refer to the various components that make up a plant, each playing a crucial role in its growth, function, and reproduction. In this description, the emphasis is placed solely on the diverse roles and characteristics of plant components without specifically referencing any particular linking relationship to another entity.",
+      "reason": "Removing the constraint requires that the support text no longer depends on or mentions a specific relational link (is-part-of) to Plant."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Every plant part is inherently linked to a specific plant, emphasizing the interdependence between the components and the whole organism. If any such link exists, it must exclusively pertain to a plant.",
+      "reason": "Changing the rtype to 'only' conveys that if any linking relationships are present, they are restricted solely to plants."
+    }
+  ],
+  "Predator,eats,some,Prey": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The class description states that predators actively hunt and consume other animals for sustenance, and they influence the distribution and behavior of prey species. This implies that if a predator exhibits an 'eats' relationship, all such relationships must be with members of the Prey class.",
+      "reason": "The 'only' constraint variation emphasizes that any instance of a predator's 'eats' relationship should exclusively target Prey, reinforcing the specificity of the ecological role."
+    }
+  ],
+  "Prey,eaten-by,some,Predator": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Prey animals are 'primarily hunted by predators for food', which indicates that if a Prey is consumed, then every consumer must be a Predator as defined by the class hierarchy.",
+      "reason": "Changing the constraint to 'only' emphasizes that any entity that eats a Prey must exclusively be a Predator, thus enforcing a stricter association."
+    }
+  ],
+  "Rhumba,has-member,some,Animal": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Rhumba is defined as a collective where individuals come together for social interactions or cooperative behaviors. This definition no longer imposes any specific requirement regarding the type of members that constitute the group.",
+      "reason": "Removed the specific constraint on having animal members, allowing the definition to focus solely on the collective behavior without reference to any particular type of member."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Rhumba is defined as a collective where individuals come together for social interactions or cooperative behaviors. If any members exist, they must all be animals.",
+      "reason": "Changing the constraint to 'only' emphasizes that any member present in the collective must be an animal, ensuring a uniform type among all members."
+    }
+  ],
+  "RockDassie,eats,some,Grass": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Rock Dassie is celebrated for its adaptable feeding habits that help it thrive in rocky terrains, without relying on any specific dietary component.",
+      "reason": "Removing the constraint eliminates any explicit reference to a particular food type and the associated relation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Rock Dassie feeds on a variety of vegetation, including grasses. If any food sources are consumed, they must exclusively be grass.",
+      "reason": "Changing to 'only' clarifies that while the animal consumes a range of vegetation, any items identified as food must be grass."
+    },
+    {
+      "operation": "generalize",
+      "value": "Plant",
+      "description": "The Rock Dassie feeds on a diverse range of plant life, including grasses, underscoring its herbivorous nature.",
+      "reason": "Generalizing the object from Grass to Plant broadens the dietary scope to cover all plants, aligning with the broader classification."
+    }
+  ],
+  "RockDassie,eats,some,Leaf": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Rock Dassie, also known as the hyrax, is a small herbivorous mammal native to Africa that primarily feeds on a variety of vegetation including ... leaves. If any leaves are consumed as part of its diet, they must be exclusively of the Leaf type.",
+      "reason": "Changing the constraint to 'only' enforces that if leaves are eaten, they must be only of type Leaf, reflecting a stricter dietary requirement."
+    }
+  ],
+  "RockDassie,inhabits,some,Habitat": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Rock Dassie is typically found in rocky terrains, where if any habitats are recorded, they must all qualify as Habitat. This underscores the idea that all observed recognized inhabitation sites must conform strictly to the Habitat classification.",
+      "reason": "Changing the constraint to 'only' shifts the emphasis from merely requiring the presence of some habitats to insisting that every recorded habitat must match the defined type, ensuring consistency in how the Rock Dassie's environment is characterized."
+    }
+  ],
+  "Role,inheres-in,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each role is defined by the specific behaviors and interactions of the animals that embody them, which implies that if any 'inheres-in' relationships are present, they must all point to an Animal.",
+      "reason": "By using the variant 'only', the constraint now emphasizes that all 'inheres-in' relations must be exclusively associated with an Animal, thereby ensuring consistency in how a role is linked to its animal counterpart."
+    }
+  ],
+  "Root,is-part-of,only,Plant": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The Root class represents the essential underground part of a plant, anchoring it securely in the soil and facilitating the absorption of water and nutrients. In this revised version, there is no longer any requirement or implication that every Root must be part of a Plant.",
+      "reason": "Removing the constraint eliminates any dependency on the relationship between Root and Plant, thereby allowing Roots to be defined without needing to be associated with a Plant."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "The Root class represents the essential underground part of a plant, anchoring it securely in the soil and facilitating the absorption of water and nutrients. Accordingly, at least one association with a Plant must exist.",
+      "reason": "Changing the constraint to 'some' modifies the requirement so that each Root must have at least one association with a Plant, relaxing the original 'only' restriction."
+    }
+  ],
+  "Scourge,has-member,only,Animal": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Scourges refer to collective groups that exhibit coordinated behavior and social dynamics within their environments, without any restrictions concerning the specific nature or species of the individuals involved.",
+      "reason": "By removing the constraint, the support text is rewritten to emphasize generic collective behavior without referencing any specific relationship or type of member."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "Scourges refer to collective groups that exhibit coordinated behavior and social dynamics within their environments, with the stipulation that at least one member must be an animal.",
+      "reason": "The 'some' constraint asserts that the group must include at least one animal, so the support text is modified to emphasize that requirement while maintaining the original context of coordinated animal behavior."
+    }
+  ],
+  "Stem,is-proper-part-of,some,Plant": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The Stem is a vital part of a plant that supports its structure and facilitates the transport of nutrients and water between the roots and the leaves. This description focuses solely on the functional and structural role of the Stem without referencing its specific relationships.",
+      "reason": "By removing the constraint, the support text is rewritten to provide a general explanation of the Stem without mentioning any relationships such as being a proper part of a Plant."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Stem is a vital part of a plant that supports its structure and facilitates the transport of nutrients and water between the roots and the leaves. If any parts that the Stem is associated with exist, they must all be plants.",
+      "reason": "Changing the rtype to 'only' shifts the emphasis: if the Stem is part of any structure, those structures are exclusively plants, ensuring a consistent relationship."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "is-part-of",
+      "description": "The Stem is a vital part of a plant that supports its structure and facilitates the transport of nutrients and water between the roots and the leaves. In this context, the Stem is described as being part of a Plant, highlighting its integral role within the plant's overall structure.",
+      "reason": "Using the 'is-part-of' predicate instead of 'is-proper-part-of' provides an alternative wording of the relationship, while still emphasizing the Stem’s integral association with a Plant."
+    }
+  ],
+  "Swarm,has-member,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "Constraint fully removed",
+      "description": "The Swarm class represents a collective grouping defined by its coordinated movement and collective behavior. The description focuses solely on the dynamic interactions and group strategies, without specifying that the group must be composed of animals.",
+      "reason": "The original constraint requiring a 'has-member' relationship with Animal is completely removed, so the support text no longer mentions or implies the existence of animal members."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Swarm class represents a collective grouping of members where, if any members are present, they must all be animals, ensuring that every individual contributing to the coordinated behavior is an animal.",
+      "reason": "The 'only' variant emphasizes that if members exist within the swarm, they are exclusively animals."
+    }
+  ],
+  "Tasty-plant,eaten-by,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Tasty-plants are renowned for being desirable food sources for a range of creatures and provide nourishment to both carnivores and herbivores. If any organism consumes a Tasty-plant, it must be an Animal.",
+      "reason": "Using the 'only' variant emphasizes that while Tasty-plants are eaten by various beings, any such consumer is required to be an Animal, thus preserving the intended ecological relationship."
+    }
+  ],
+  "Tree,has-part,some,Branch": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "('supports branches' implies that if a Tree has any parts, they must all be Branch.)",
+      "reason": "The 'only' constraint emphasizes that all parts of a Tree, if present, should exclusively be Branch, rather than allowing any other type of part."
+    }
+  ],
+  "Tree,has-part,some,Leaf": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The definition of a Tree now focuses on its overall structural characteristics such as a trunk, branches, and various supportive elements without requiring any particular component.",
+      "reason": "Removing the specific component constraint means the support text is rewritten to avoid any mention of 'Leaf' or the relation that previously tied Tree to Leaf."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The support text now indicates that if a Tree has any parts, they must all be Leaves, thereby asserting that all structural components are exclusively Leaves.",
+      "reason": "Changing the rtype to 'only' shifts the meaning from simply requiring at least one Leaf to demanding that every part present is a Leaf."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The support text now states that a Tree necessarily includes components that are categorized as PlantParts, thus broadening the required element from just Leaves to a wider range of plant structural components.",
+      "reason": "Generalizing from Leaf to PlantParts allows the constraint to encompass diverse botanical elements while still maintaining the intent that a Tree is composed of essential parts."
+    }
+  ],
+  "Tree,has-part,some,Stem": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "This Tree is defined as a perennial plant with features such as an elongated trunk supporting branches and leaves. Its structure is characterized by various essential attributes, without specifying the inclusion of a particular part.",
+      "reason": "The constraint specifying the inclusion of a Stem has been removed, so the support text no longer depends on or mentions that part."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description 'characterized by an elongated stem or trunk' indicates that if any parts exist in a Tree's structure, they must all be a Stem.",
+      "reason": "Changing the constraint to 'only' emphasizes that all parts present must be a Stem if parts are included."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The phrase 'characterized by an elongated stem or trunk' indicates that a Tree must include at least one PlantParts as an essential component of its structure.",
+      "reason": "Generalizing from the specific 'Stem' to 'PlantParts' broadens the requirement to include any relevant plant part while preserving the intent of the original characteristic."
+    }
+  ],
+  "Troop,has-member,some,Animal": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Troop is a social group of animals that typically live and travel together, exhibiting coordinated behavior and strong social bonds among its members. In this variation, if members exist within a Troop, they must all be animals.",
+      "reason": "Changing the constraint type to 'only' emphasizes that if there are any members present in a Troop, they are exclusively animals, aligning with the behavior described in the class definition."
+    }
+  ],
+  "Twig,has-part,some,Leaf": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Twigs are fundamental structures in plants, serving important roles in their overall anatomy and function without any specific emphasis on bearing leaves.",
+      "reason": "Removed the constraint so that the support text no longer mentions or depends on the relation to Leaf."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The phrase 'supporting leaves and buds' implies that if any parts are associated with a twig, they must all be leaves.",
+      "reason": "Changed the constraint type to 'only', emphasizing that all parts, when present, must be leaves."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The description that twigs support leaves and buds has been generalized to indicate that twigs include at least one plant part, highlighting their structural role within the plant.",
+      "reason": "Generalized the object from Leaf to the broader concept of PlantParts to widen the scope of what a twig may support."
+    }
+  ],
+  "Twig,is-part-of,some,Plant": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A twig is described as an integral part of a plant, essential to its structure and its ability to photosynthesize and reproduce. Under this modified constraint, if a twig is associated with any larger structure using the 'is-part-of' relationship, then every such association must be exclusively with a plant.",
+      "reason": "The 'only' variant restricts the relationship so that if any part association exists, it must be solely with a plant, reinforcing the unique and exclusive role of the twig within the plant."
+    }
+  ],
+  "Twig,is-proper-part-of,some,Tree": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The phrase 'typically grows on a tree or shrub' has been refined such that if a twig is designated as a proper part of a tree, then every instance of such a proper part relationship must exclusively involve trees.",
+      "reason": "The 'only' variant constrains the relationship so that if any proper-part-of relations are present for a twig, they must all be with trees rather than trees or shrubs."
+    }
+  ],
+  "Warthog,eats,some,Animal": [
+    {
+      "operation": "remove",
+      "value": "true",
+      "description": "This description of the warthog emphasizes its varied diet and foraging habits without limiting the category of its food sources to any specific type.",
+      "reason": "Removing the constraint eliminates the specific reference to eating 'Animal', thus broadening the dietary description to encompass all types of food."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states that its varied diet 'includes other animals.' If any items are consumed as food, they must all be animals.",
+      "reason": "The 'only' variant refines the constraint so that while the warthog’s diet remains varied, any food it eats is exclusively an animal, emphasizing a stricter dietary requirement."
+    }
+  ],
+  "Warthog,eats,some,FruitingBody": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "The description notes that its diet includes a variety of food items without focusing on any specific category.",
+      "reason": "By removing the constraint altogether, the support text is adjusted so that it no longer references or depends on the 'eats some FruitingBody' constraint."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description notes that its diet includes fruiting bodies. If any food items are consumed, they must all be fruiting bodies.",
+      "reason": "Changing the rtype to 'only' emphasizes that whenever the Warthog consumes food items, they are exclusively fruiting bodies, reflecting this stricter requirement in the support text."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The description notes that its diet includes fruiting bodies, which are an example of plant parts. This implies that its diet contains some plant parts.",
+      "reason": "Generalizing the object from FruitingBody to PlantParts broadens the category, so the support text is modified to highlight that fruiting bodies are a type of plant part within its varied diet."
+    }
+  ],
+  "Warthog,eats,some,Grass": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The description emphasizes that the Warthog is a wild pig with a varied diet and social behavior, without singling out any specific food source such as grasses.",
+      "reason": "By removing the constraint, the support text no longer highlights or depends on the fact that grasses are part of the diet."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description notes that the Warthog’s diet includes various food sources such as grasses. If any food items are consumed, they must all be grasses.",
+      "reason": "Changing the constraint to 'only' means that any food item eaten must exclusively be grass, which is now reflected in the support text."
+    },
+    {
+      "operation": "generalize",
+      "value": "Plant",
+      "description": "The description indicates that the Warthog’s diet includes grasses, a type of plant. This supports a generalized constraint stating that the Warthog must eat at least one plant-based food.",
+      "reason": "Generalizing from 'Grass' to 'Plant' broadens the constraint to include any plant matter, which fits within the context of the Warthog's diverse diet."
+    }
+  ],
+  "Warthog,eats,some,Root": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The description notes that the warthog's foraging behavior is varied without emphasizing any particular food items. It now highlights the animal's ability to forage diverse food sources without specifically mentioning roots.",
+      "reason": "By removing the constraint, the support text is rewritten to exclude any dependency on the dietary detail regarding roots."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description notes that if any food items are consumed by the warthog, they must all be roots.",
+      "reason": "Changing the constraint to 'only' emphasizes that every food item eaten must be classified as a root, thereby enforcing a strict dietary requirement."
+    }
+  ],
+  "Warthog,inhabits,some,Habitat": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The description now focuses on the general range and natural behaviors of Warthogs, noting that they are wild members of the pig family adapted to a variety of environments without referencing any specific habitat requirement.",
+      "reason": "By removing the habitat constraint, the support text no longer depends on the 'inhabits' relation, allowing the description to stand independently of a specific habitat definition."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description specifies that Warthogs are typically found in open and wooded savannas. If any habitats are associated with a Warthog, they must all be open and wooded savannas.",
+      "reason": "The 'only' variant rephrases the constraint to emphasize that whenever a habitat is linked to a Warthog, it must be exclusively an open and wooded savanna, aligning with the specific environmental conditions mentioned."
+    }
+  ],
+  "Xylem,is-part-of,some,Plant": [
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description notes that 'Xylem is a vital tissue found in vascular plants,' which supports its association with plants. Consequently, if any relationships via 'is-part-of' exist, they must all point to an instance of Plant.",
+      "reason": "Using the 'only' constraint ensures that any 'is-part-of' relationship that xylem holds is exclusively with Plant, thus preserving the ontological assertion in the support text."
+    }
+  ],
+  "Xylem,is-proper-part-of,some,Stem": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The description states that xylem plays a crucial role in transporting water and nutrients throughout the plant and is essential for maintaining the plant’s structure and overall health.",
+      "reason": "Removing the constraint means the support text must no longer reference xylem as being directly related to the stem. The revised support text thus omits any mention of a specific part (stem) and focuses only on xylem's critical functions."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states that “It is typically located within the stem and is essential for maintaining the plant’s structure,” indicating that if any proper parts are related to xylem, they must all be the stem.",
+      "reason": "The 'only' variant emphasizes that when a proper part relation exists, it should exclusively be the stem, thereby ensuring that no other part is considered in this context."
+    },
+    {
+      "operation": "generalize",
+      "value": "PlantParts",
+      "description": "The description states that “It is typically located within the stem and is essential for maintaining the plant’s structure,” indicating that xylem is a proper part of the plant parts.",
+      "reason": "Generalizing the object from Stem to PlantParts broadens the constraint to include all relevant structural components of the plant rather than limiting it to only the stem."
+    }
+  ],
+  "Zeal,has-member,some,Animal": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Zeal is a collective group characterized by dynamic social behavior and cooperative interactions among its members. This account of a Zeal does not impose any restrictions regarding the specific type of entities that can form the group.",
+      "reason": "By removing the constraint, the support text no longer alludes to having a certain kind of member (Animal) as a requirement, making the class definition more general."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Zeal is a collective group of animals that typically includes multiple individuals. If any members are present, they must all be animals.",
+      "reason": "The 'only' variant specifies that while a Zeal is composed of animals, all its members, if any, must strictly be animals, thus reinforcing the type constraint in a more exclusive manner."
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+    "Thing": [
+        {
+            "s": "Sensor",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "This framework is designed to facilitate the understanding and management of various types of sensors and their functions."
+        },
+        {
+            "s": "Sensor",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "The system includes components that collect samples and process observations, allowing for detailed analysis of the features being studied."
+        },
+        {
+            "s": "Sensor",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "It encompasses devices that can measure environmental conditions or specific phenomena, as well as those that can perform actions based on the data they gather."
+        },
+        {
+            "s": "Sensor",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "It provides a structure for describing the properties being measured or controlled, which can vary from simple observations to complex interactions with the environment."
+        },
+        {
+            "s": "Sensor",
+            "p": "madeObservation",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "Through this interconnected system, users can effectively monitor and respond to changes, ensuring that both data collection and action can be seamlessly integrated."
+        }
+    ],
+    "Sensor": [
+        {
+            "s": "Sensor",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest."
+        },
+        {
+            "s": "Sensor",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates."
+        },
+        {
+            "s": "Sensor",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action."
+        },
+        {
+            "s": "Sensor",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest."
+        }
+    ],
+    "Vocabulary": [
+        {
+            "s": "Sensor",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "This framework serves as a comprehensive way to represent various elements related to sensors and their functions, encompassing devices that measure and observe different phenomena."
+        },
+        {
+            "s": "Sensor",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "The system includes features of interest that are the focus of observations, providing insights into the characteristics being studied."
+        },
+        {
+            "s": "Sensor",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "It also involves the procedures that guide the operations of these sensors, ensuring that the data collected is relevant and accurately reflects the environment being examined."
+        },
+        {
+            "s": "Sensor",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "This framework serves as a comprehensive way to represent various elements related to sensors and their functions, detailing the properties that can be acted upon or monitored."
+        },
+        {
+            "s": "Sensor",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "It encompasses devices that measure and observe different phenomena, while also detailing the properties that can be acted upon or monitored."
+        },
+        {
+            "s": "Sensor",
+            "p": "madeObservation",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "This holistic approach allows for a clear understanding of how sensors interact with their surroundings and how they contribute to data gathering and analysis."
+        }
+    ],
+    "Result": [
+        {
+            "s": "Result",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "Observations are captured as results, which can be linked to specific samples taken during measurements."
+        },
+        {
+            "s": "Result",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "The ontology also covers different properties that can be observed or actuated, as well as the features of interest that these systems study."
+        },
+        {
+            "s": "Result",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "It includes a variety of systems such as sensors, actuators, and samplers, each playing a specific role in observing and manipulating physical phenomena."
+        },
+        {
+            "s": "Result",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "The ontology provides a structured way to describe the various components involved in sensor networks and their interactions."
+        },
+        {
+            "s": "Result",
+            "p": "madeBySampler",
+            "rtype": "some",
+            "o": "Sampler",
+            "support_sentence": "The framework allows for the definition of procedures that detail the methods used in sampling and actuation."
+        },
+        {
+            "s": "Result",
+            "p": "madeByActuator",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "This structured approach facilitates a better understanding and management of sensor networks, enhancing their application across various domains."
+        }
+    ],
+    "Property": [],
+    "Sampling": [
+        {
+            "s": "Sampling",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "This concept revolves around the process of collecting data from a specific feature of interest, ensuring that the results are strictly in the form of samples."
+        },
+        {
+            "s": "Sampling",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "Each sampling event is closely linked to the particular feature being investigated, emphasizing the importance of the relationship between the sample collected and the characteristic it represents."
+        },
+        {
+            "s": "Sampling",
+            "p": "madeBySampler",
+            "rtype": "some",
+            "o": "Sampler",
+            "support_sentence": "It is carried out by a designated sampler, which follows a defined procedure to ensure accuracy and reliability in the data gathered."
+        },
+        {
+            "s": "Sampling",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "It is carried out by a designated sampler, which follows a defined procedure to ensure accuracy and reliability in the data gathered."
+        },
+        {
+            "s": "Sampling",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "This structured approach allows for systematic observations and enhances the understanding of the underlying phenomena being studied."
+        }
+    ],
+    "Deployment": [
+        {
+            "s": "Deployment",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "The deployment is carefully structured so that it adheres to certain constraints, such as being associated with particular platforms and systems."
+        },
+        {
+            "s": "Deployment",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "This concept refers to the act of placing a system in a specific environment or context, ensuring that it operates on a designated platform."
+        },
+        {
+            "s": "Deployment",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "The deployment aligns with the intended functionality and operational requirements, allowing for effective monitoring and interaction with the environment in which it is situated."
+        },
+        {
+            "s": "Deployment",
+            "p": "hasSubSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "It is characterized by its relationship to the systems it encompasses and the specific properties it addresses."
+        },
+        {
+            "s": "Deployment",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "The deployment is carefully structured so that it adheres to certain constraints, such as being associated with particular platforms and systems."
+        }
+    ],
+    "System": [
+        {
+            "s": "System",
+            "p": "hasSubSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "These components may include other subsystems, allowing for a hierarchical organization in which more complex systems are built from simpler ones."
+        },
+        {
+            "s": "System",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "Each of these components is required to be associated with a particular platform that hosts its operations."
+        },
+        {
+            "s": "System",
+            "p": "hasDeployment",
+            "rtype": "some",
+            "o": "Deployment",
+            "support_sentence": "They are also linked to deployment processes that define how they are set up and utilized in real-world scenarios."
+        },
+        {
+            "s": "System",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "Each one is designed to follow certain procedures, ensuring that their functions are carried out in a systematic and efficient manner."
+        }
+    ],
+    "Agent": [
+        {
+            "s": "Agent",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "The framework encompasses a broad range of components involved in the interaction between sensors and the environment, leading to valuable results from observations made by these sensors."
+        },
+        {
+            "s": "Agent",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "The framework includes instruments designed to measure specific characteristics, which can either be directly observable or capable of being manipulated, indicating that agents observe observable properties."
+        },
+        {
+            "s": "Agent",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "The framework covers the features being studied, which could be physical samples or conditions that yield data, thus agents have features of interest."
+        },
+        {
+            "s": "Agent",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "The instruments may operate independently or as part of a larger system that includes elements like actuators, which can perform actions based on sensor readings, suggesting that agents can be acted on by actuators."
+        },
+        {
+            "s": "Agent",
+            "p": "isProxyFor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "The system can include various types of agents and platforms that facilitate these processes, indicating that agents may serve as proxies for sensors."
+        },
+        {
+            "s": "Agent",
+            "p": "madeObservation",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "Observations made by these sensors lead to valuable results, often requiring specific procedures for accurate data collection, implying that agents make observations."
+        },
+        {
+            "s": "Agent",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "The framework also includes various types of agents and platforms, suggesting that agents are deployed on platforms."
+        }
+    ],
+    "Input": [
+        {
+            "s": "Input",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "Inputs are integral elements that are exclusively linked to specific procedures, serving as the necessary components or data that are fed into these processes."
+        }
+    ],
+    "FeatureOfInterest": [
+        {
+            "s": "FeatureOfInterest",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "This category encompasses elements that are the focus of measurement or observation in various contexts, typically representing specific attributes or phenomena of interest. Each of these elements is associated with a sample, which serves as a representative instance used for analysis."
+        }
+    ],
+    "ObservableProperty": [
+        {
+            "s": "ObservableProperty",
+            "p": "observes",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "These properties are specifically observed through the lens of a sensor, which ensures that the observations are accurate and meaningful."
+        },
+        {
+            "s": "ObservableProperty",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "They are inherently linked to specific observations and stimuli, allowing for a structured understanding of the data collected."
+        },
+        {
+            "s": "ObservableProperty",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "This concept plays a critical role in the broader framework of sensor networks, facilitating the analysis and interpretation of environmental data."
+        },
+        {
+            "s": "ObservableProperty",
+            "p": "isObservedBy",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "By focusing on what can be observed, this concept plays a critical role in the broader framework of sensor networks."
+        }
+    ],
+    "Output": [
+        {
+            "s": "Output",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "Each output is uniquely tied to the procedure that generated it, ensuring a clear link between what was done and what was observed or measured."
+        }
+    ],
+    "Sampler": [
+        {
+            "s": "Sampler",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "The primary focus of this entity is to ensure that the sampling is done accurately and systematically, adhering to certain protocols or methodologies."
+        },
+        {
+            "s": "Sampler",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "As a crucial component in the data collection process, it plays a vital role in various applications, including environmental monitoring, scientific research, and industrial processes, where obtaining reliable and representative samples is essential for informed decision-making and analysis."
+        },
+        {
+            "s": "Sampler",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "It operates by executing a defined process called sampling, which allows it to gather data or measurements that can be analyzed later."
+        },
+        {
+            "s": "Sampler",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "The Sampler is responsible for collecting samples from the environment or specific phenomena."
+        },
+        {
+            "s": "Sampler",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "The primary focus of this entity is to ensure that the sampling is done accurately and systematically."
+        }
+    ],
+    "Actuation": [
+        {
+            "s": "Actuation",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "Each instance of this process is characterized by a tangible result that emerges from the action taken by the actuator."
+        },
+        {
+            "s": "Actuation",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "It is closely linked to a particular feature of interest, which is the aspect being affected or manipulated."
+        },
+        {
+            "s": "Actuation",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "Additionally, there is a defined procedure that guides how the actuation occurs, ensuring that the actions are performed in a systematic manner."
+        },
+        {
+            "s": "Actuation",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "This concept represents a process through which an actuator exerts influence over a specific property, typically one that can be controlled or modified."
+        }
+    ],
+    "Procedure": [
+        {
+            "s": "Procedure",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "It is characterized by its inputs, which are the necessary information or resources needed to carry out the procedure."
+        },
+        {
+            "s": "Procedure",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "Additionally, a procedure is always executed by a system, ensuring that the actions are performed in a structured and reliable manner."
+        },
+        {
+            "s": "Procedure",
+            "p": "implementedBy",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "This framework allows for the systematic handling of tasks, where each procedure can be clearly defined and understood based on its components and the system that implements it."
+        }
+    ],
+    "TemporalEntity": [
+        {
+            "s": "TemporalEntity",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways."
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "The ability to actuate means they can initiate changes or responses based on predefined criteria or commands, making them essential components in various applications."
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "They play a critical role in automated systems where precise control and responsiveness are necessary."
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "These entities can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs."
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "They can initiate changes or responses based on predefined criteria or commands."
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "They serve as a bridge between the sensor data and the actions taken to address observed conditions."
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "They can affect their environment in meaningful ways."
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "isProxyFor",
+            "rtype": "some",
+            "o": "TemporalEntity",
+            "support_sentence": "These entities are designed to perform tasks based on signals they receive."
+        }
+    ],
+    "Sample": [
+        {
+            "s": "Sample",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "A sample is intrinsically linked to the feature it represents, making it a crucial element in observations and experiments aimed at understanding and measuring various phenomena."
+        },
+        {
+            "s": "Sample",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "A sample is a specific instance of data or material that has been collected for analysis, representing a particular feature of interest, which can lead to results in observations and experiments."
+        },
+        {
+            "s": "Sample",
+            "p": "madeBySampler",
+            "rtype": "some",
+            "o": "Sampler",
+            "support_sentence": "This instance is solely derived from a defined sampling process, ensuring that it accurately reflects the conditions or characteristics of the feature being studied."
+        },
+        {
+            "s": "Sample",
+            "p": "isObservedBy",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "Each sample is intrinsically linked to the feature it represents, making it a crucial element in observations aimed at understanding and measuring various phenomena."
+        }
+    ],
+    "Observation": [
+        {
+            "s": "Observation",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "Each instance captures the results of these measurements, which are linked to observable characteristics of the environment or subject being studied."
+        },
+        {
+            "s": "Observation",
+            "p": "observes",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor."
+        },
+        {
+            "s": "Observation",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "Every observation is uniquely associated with a sensor that performs the data collection, ensuring that the information gathered is both relevant and accurate."
+        },
+        {
+            "s": "Observation",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "The process is guided by a particular procedure and is influenced by specific stimuli that trigger the observations."
+        },
+        {
+            "s": "Observation",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor."
+        }
+    ],
+    "ActuatableProperty": [
+        {
+            "s": "ActuatableProperty",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "This concept represents a characteristic that can be influenced by an action or a process."
+        },
+        {
+            "s": "ActuatableProperty",
+            "p": "madeActuation",
+            "rtype": "some",
+            "o": "Actuation",
+            "support_sentence": "It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method."
+        },
+        {
+            "s": "ActuatableProperty",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions."
+        },
+        {
+            "s": "ActuatableProperty",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "By being linked to a specific actuation process, it ensures that changes can be made in a reliable and predictable manner."
+        },
+        {
+            "s": "ActuatableProperty",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "making it a critical element in automated systems and responsive environments."
+        }
+    ],
+    "Actuator": [
+        {
+            "s": "Actuator",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "An actuator is designed to perform actions or control systems based on certain inputs, indicating that it must have some form of input to function effectively."
+        },
+        {
+            "s": "Actuator",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "The description states that actuators are associated with specific properties they can influence or control, which implies that they act on some actuatable properties."
+        },
+        {
+            "s": "Actuator",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "The functionality of an actuator involves performing actions that result in changes, suggesting that it must have some output as a result of its operations."
+        },
+        {
+            "s": "Actuator",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "The actuator's operations are closely linked to environmental stimuli, which can be detected by sensors, indicating that it may be acted on by some sensors."
+        },
+        {
+            "s": "Actuator",
+            "p": "madeActuation",
+            "rtype": "some",
+            "o": "Actuation",
+            "support_sentence": "The concept of actuation is central to the definition of an actuator, meaning it must be involved in some actuation processes."
+        }
+    ],
+    "Stimulus": [
+        {
+            "s": "Stimulus",
+            "p": "observes",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "A stimulus refers to an event or condition that can trigger a response or observation from a sensor."
+        },
+        {
+            "s": "Stimulus",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "It is associated with sensors, which are the devices that respond to these stimuli."
+        },
+        {
+            "s": "Stimulus",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "Furthermore, it is associated with observations, which are the recorded data resulting from the sensor's response to the stimulus."
+        },
+        {
+            "s": "Stimulus",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "Essentially, a stimulus serves as a catalyst for interaction between the environment and the sensing devices."
+        }
+    ],
+    "Platform": [
+        {
+            "s": "Platform",
+            "p": "hosts",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "It is designed to host different types of systems, such as sensors and actuators, which contribute to the overall functionality of the network."
+        },
+        {
+            "s": "Platform",
+            "p": "hasDeployment",
+            "rtype": "some",
+            "o": "Deployment",
+            "support_sentence": "Additionally, this entity is involved in deployment activities, indicating that it plays a crucial role in the implementation and management of these systems in real-world settings."
+        },
+        {
+            "s": "Platform",
+            "p": "hasSubSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "Through its hosting capabilities and deployment involvement, it facilitates the seamless integration and operation of the associated technologies, enhancing the overall performance of sensor networks."
+        }
+    ]
+}

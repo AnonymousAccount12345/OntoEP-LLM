@@ -1,0 +1,696 @@
+{
+    "Thing": [],
+    "Animal": [
+        {
+            "s": "Animal",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"This class includes both terrestrial and aquatic species, highlighting the vast array of forms and behaviors found within the animal kingdom.\")"
+        }
+    ],
+    "Plant": [
+        {
+            "s": "Plant",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "Their structures, such as roots, stems, and leaves, are essential for their survival and reproduction,\" and in the class hierarchy these components (Leaf, Root, Stem) fall under PlantParts."
+        }
+    ],
+    "PlantParts": [
+        {
+            "s": "PlantParts",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "Every plant part is inherently linked to a specific plant, emphasizing the interdependence between the components and the whole organism."
+        }
+    ],
+    "Distribution": [
+        {
+            "s": "Distribution",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"This includes the specific regions, habitats, and ecological zones that support diverse life forms.\")"
+        }
+    ],
+    "Habitat": [
+        {
+            "s": "Habitat",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"…providing … breeding grounds for the species that inhabit it\" implies that living organisms—in this case animals—are members of the habitat.)"
+        },
+        {
+            "s": "Habitat",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(\"A habitat is a natural environment where various organisms live and interact\" supports that, in addition to animals, plants (another major life‐form) are also inhabitants.)"
+        }
+    ],
+    "DeprecatedClass": [],
+    "AnimalCollective": [
+        {
+            "s": "AnimalCollective",
+            "p": "has-member",
+            "rtype": "only",
+            "o": "Animal",
+            "support_sentence": "(\"Each collective is comprised exclusively of members from the animal kingdom, showcasing the diverse behaviors among various species.\")"
+        }
+    ],
+    "Role": [
+        {
+            "s": "Role",
+            "p": "inheres-in",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "“each role is defined by the specific behaviors and interactions of the animals that embody them,” which implies that any instance of Role must inhere in some Animal."
+        }
+    ],
+    "Carnivore": [
+        {
+            "s": "Carnivore",
+            "p": "eats",
+            "rtype": "only",
+            "o": "Animal",
+            "support_sentence": "Carnivores are a group of animals that just consume other animals as their all source of nutrition."
+        }
+    ],
+    "Herbivore": [
+        {
+            "s": "Herbivore",
+            "p": "eats",
+            "rtype": "only",
+            "o": "Plant",
+            "support_sentence": "Herbivores are animals that just consume plant material as their all source of nutrition."
+        }
+    ],
+    "Omnivore": [
+        {
+            "s": "Omnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"consume a varied diet, incorporating both animal …\")"
+        },
+        {
+            "s": "Omnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(\"consume a varied diet, incorporating both … plant matter\")"
+        },
+        {
+            "s": "Omnivore",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"thrive in diverse habitats\")"
+        }
+    ],
+    "Giraffe": [
+        {
+            "s": "Giraffe",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(The description states “feeds on leaves …”, indicating that giraffes eat leaves.)"
+        },
+        {
+            "s": "Giraffe",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Twig",
+            "support_sentence": "(The description mentions “feeds on … twig”, showing that giraffes also consume twigs.)"
+        },
+        {
+            "s": "Giraffe",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(The description notes that “Giraffes are often found in savannas and open woodlands”, implying they inhabit such habitats.)"
+        }
+    ],
+    "Lion": [
+        {
+            "s": "Lion",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Herbivore",
+            "support_sentence": "It primarily hunts and feeds on herbivorous animals."
+        }
+    ],
+    "RockDassie": [
+        {
+            "s": "RockDassie",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Grass",
+            "support_sentence": "feeds on a variety of vegetation, including grasses"
+        },
+        {
+            "s": "RockDassie",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "feeds on a variety of vegetation, including ... leaves"
+        },
+        {
+            "s": "RockDassie",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "typically found in rocky terrains"
+        }
+    ],
+    "Warthog": [
+        {
+            "s": "Warthog",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The description states that its varied diet “includes other animals.”)"
+        },
+        {
+            "s": "Warthog",
+            "p": "eats",
+            "rtype": "some",
+            "o": "FruitingBody",
+            "support_sentence": "(The description notes that its diet “includes … fruiting bodies.”)"
+        },
+        {
+            "s": "Warthog",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Grass",
+            "support_sentence": "(The description notes that its diet “includes … grasses.”)"
+        },
+        {
+            "s": "Warthog",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Root",
+            "support_sentence": "(The description notes that its diet “includes … roots.”)"
+        },
+        {
+            "s": "Warthog",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(The description specifies that Warthogs are “typically found in open and wooded savannas.”)"
+        }
+    ],
+    "Tree": [
+        {
+            "s": "Tree",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Stem",
+            "support_sentence": "(\"characterized by an elongated stem or trunk\" indicates that a Tree must include a Stem as part of its structure)"
+        },
+        {
+            "s": "Tree",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Branch",
+            "support_sentence": "(\"supports branches\" implies that a Tree includes Branch as one of its parts)"
+        },
+        {
+            "s": "Tree",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(\"supports ... leaves\" shows that a Tree necessarily includes Leaf as a component)"
+        }
+    ],
+    "CarnivorousPlant": [
+        {
+            "s": "CarnivorousPlant",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"Carnivorous plants are unique botanical species that have evolved specialized mechanisms to capture and digest animals, primarily insects\" and \"by attracting, trapping, and digesting their prey, they supplement their nutritional intake\")"
+        }
+    ],
+    "Grass": [
+        {
+            "s": "Grass",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(\"characterized by its long, narrow leaves\")"
+        },
+        {
+            "s": "Grass",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Stem",
+            "support_sentence": "(\"characterized by its ... hollow stems\")"
+        },
+        {
+            "s": "Grass",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Herbivore",
+            "support_sentence": "(\"serving as a primary food source for many herbivorous animals\")"
+        },
+        {
+            "s": "Grass",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"typically found in a variety of habitats across Africa\")"
+        }
+    ],
+    "Tasty-plant": [
+        {
+            "s": "Tasty-plant",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The description states that Tasty-plants “are desirable food sources for various animal species” and “provide nourishment to both carnivores and herbivores,” indicating that animals eat these plants.)"
+        }
+    ],
+    "Palm": [
+        {
+            "s": "Palm",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"providing habitat and food for various animal species\" implies that animals may consume parts or products of palm trees)"
+        },
+        {
+            "s": "Palm",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(\"characterized by their large, fan-like or feather-like leaves\")"
+        },
+        {
+            "s": "Palm",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Stem",
+            "support_sentence": "(\"characterized by their tall, slender trunks\" can be interpreted using Stem from PlantParts in the class hierarchy)"
+        }
+    ],
+    "FruitingBody": [
+        {
+            "s": "FruitingBody",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "The description states that FruitingBody “represents the reproductive structures of certain plants,” which implies that each FruitingBody is a part of (i.e. is-part-of) a Plant."
+        }
+    ],
+    "Branch": [
+        {
+            "s": "Branch",
+            "p": "is-proper-part-of",
+            "rtype": "some",
+            "o": "Tree",
+            "support_sentence": "(\"A Branch is a structural component of a Tree…\")"
+        }
+    ],
+    "Leaf": [
+        {
+            "s": "Leaf",
+            "p": "is-proper-part-of",
+            "rtype": "some",
+            "o": "Branch",
+            "support_sentence": "(\"Leaves are typically green and are attached to branches, where they can efficiently capture light.\")"
+        },
+        {
+            "s": "Leaf",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(\"As part of the plant's structure, leaves contribute to overall growth and health.\")"
+        }
+    ],
+    "Twig": [
+        {
+            "s": "Twig",
+            "p": "is-proper-part-of",
+            "rtype": "some",
+            "o": "Tree",
+            "support_sentence": "(\"typically grows on a tree or shrub\" indicates that a twig is a proper part of a tree)"
+        },
+        {
+            "s": "Twig",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(\"supporting leaves and buds\" implies that twigs bear leaves, and Leaf is available in the class_hierarchy)"
+        },
+        {
+            "s": "Twig",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(\"plays a crucial role in the overall structure of the plant\" and \"contributing to its ability to photosynthesize and reproduce\" indicate that a twig is a part of the plant)"
+        }
+    ],
+    "Root": [
+        {
+            "s": "Root",
+            "p": "is-part-of",
+            "rtype": "only",
+            "o": "Plant",
+            "support_sentence": "(\"The Root class represents the essential underground part of a plant, anchoring it securely in the soil...\" implies that every Root must be part of a Plant.)"
+        }
+    ],
+    "Phloem": [
+        {
+            "s": "Phloem",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Stem",
+            "support_sentence": "It is specifically associated with the stem\" indicates that any instance of Phloem must be part of a Stem as defined in the PlantParts hierarchy."
+        }
+    ],
+    "Stem": [
+        {
+            "s": "Stem",
+            "p": "is-proper-part-of",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(\"The Stem is a vital part of a plant that supports its structure and facilitates the transport of nutrients and water between the roots and the leaves.\")"
+        }
+    ],
+    "Xylem": [
+        {
+            "s": "Xylem",
+            "p": "is-proper-part-of",
+            "rtype": "some",
+            "o": "Stem",
+            "support_sentence": "(The description states that “It is typically located within the stem and is essential for maintaining the plant’s structure,” indicating that xylem is a proper part of the stem.)"
+        },
+        {
+            "s": "Xylem",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(The description notes “Xylem is a vital tissue found in vascular plants,” which supports that xylem is part of a plant.)"
+        }
+    ],
+    "Palmtree": [
+        {
+            "s": "Palmtree",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(\"crown of large, fan‐shaped or feather‐like leaves at the top\" indicates that a Palmtree necessarily includes leaves)"
+        },
+        {
+            "s": "Palmtree",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"thrives in warm climates and is often associated with tropical and subtropical environments\" implies that any environment a Palmtree inhabits is a Habitat)"
+        }
+    ],
+    "Bask": [
+        {
+            "s": "Bask",
+            "p": "has-member",
+            "rtype": "only",
+            "o": "Animal",
+            "support_sentence": "(\"Bask refers to a specific type of animal collective, characterized by the behavior of animals gathering together in a sunlit area\" and \"observed in certain reptiles and mammals\")"
+        }
+    ],
+    "Cloud": [
+        {
+            "s": "Cloud",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"Members of a cloud typically share a common environment and interact closely with one another,\" which implies that a Cloud is defined by having animals as members.)"
+        }
+    ],
+    "Colony": [
+        {
+            "s": "Colony",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"A Colony is a collective of animals that live together…\" and \"can consist of various species or members of the same species\", indicating that its members are animals.)"
+        },
+        {
+            "s": "Colony",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"These social arrangements can be observed in various habitats,\" implying that colonies inhabit habitats.)"
+        }
+    ],
+    "Den": [
+        {
+            "s": "Den",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The description states that dens are “used by various animals for protection and raising their young,” which implies that at least one Animal is a member of the Den.)"
+        }
+    ],
+    "Flight": [
+        {
+            "s": "Flight",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The class description states that Flight “refers to a collective behavior exhibited by certain animals, particularly birds,” and highlights “the coordinated movement of multiple individuals,” implying that Flight is constituted by members that are Animals.)"
+        }
+    ],
+    "Herd": [
+        {
+            "s": "Herd",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Elephant",
+            "support_sentence": "In the context of African wildlife, a herd is often characterized by its members being predominantly elephants..."
+        }
+    ],
+    "Kettle": [
+        {
+            "s": "Kettle",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The description states that \"Kettle\" is a specific collective grouping of animals, typically consisting of a number of birds, which implies that the class has members that are animals.)"
+        }
+    ],
+    "Nest": [
+        {
+            "s": "Nest",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Twig",
+            "support_sentence": "(\"constructed using materials such as twigs\")"
+        },
+        {
+            "s": "Nest",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(\"constructed using materials such as leaves\")"
+        },
+        {
+            "s": "Nest",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"Nests can be found in a variety of habitats\")"
+        }
+    ],
+    "Rhumba": [
+        {
+            "s": "Rhumba",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"characterized by a group of individuals that come together for social interactions or cooperative behaviors\" implies that a Rhumba consists of animal members)."
+        }
+    ],
+    "Scourge": [
+        {
+            "s": "Scourge",
+            "p": "has-member",
+            "rtype": "only",
+            "o": "Animal",
+            "support_sentence": "(\"Scourges may include multiple individuals of the same species, highlighting their interconnectedness and cooperative dynamics within their environment.\")"
+        }
+    ],
+    "Swarm": [
+        {
+            "s": "Swarm",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"The Swarm class represents a collective grouping of animals that move or act together in a coordinated manner, implying that a swarm is made up of animal members.\")"
+        }
+    ],
+    "Troop": [
+        {
+            "s": "Troop",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The description states that a Troop is \"a social group of animals\" and is characterized by \"strong social bonds among its members,\" supporting that each Troop must have at least one Animal as a member.)"
+        }
+    ],
+    "Zeal": [
+        {
+            "s": "Zeal",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "A Zeal is a collective group of animals that typically includes multiple individuals..."
+        }
+    ],
+    "Predator": [
+        {
+            "s": "Predator",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Prey",
+            "support_sentence": "(The class description states that predators “actively hunt and consume other animals for sustenance” and “influence the distribution and behavior of prey species,” which supports a restriction using the 'eats' property with Prey as the filler.)"
+        }
+    ],
+    "Prey": [
+        {
+            "s": "Prey",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Predator",
+            "support_sentence": "(\"Prey animals are 'primarily hunted by predators for food', which indicates that each Prey must be eaten by some instance of Predator as defined in the class hierarchy.\")"
+        }
+    ],
+    "HypoCarnivores": [
+        {
+            "s": "HypoCarnivores",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The description states that HypoCarnivores \"primarily consume meat,\" indicating that an animal item (meat) is a regular part of their diet.)"
+        },
+        {
+            "s": "HypoCarnivores",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(The description also notes that they \"can also incorporate some plant matter into their diets,\" implying that plant materials are occasionally included in what they eat.)"
+        }
+    ],
+    "MesoCarnivore": [
+        {
+            "s": "MesoCarnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "MesoCarnivores are a category of animals that primarily consume other animals by regulating prey populations."
+        },
+        {
+            "s": "MesoCarnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "They also incorporate some plant material into their diet."
+        }
+    ],
+    "ObligateCarnivore": [
+        {
+            "s": "ObligateCarnivore",
+            "p": "eats",
+            "rtype": "only",
+            "o": "Animal",
+            "support_sentence": "(\"Obligate carnivores are animals that primarily rely on a diet consisting exclusively of meat to meet their nutritional needs\" implies that they eat only animals, i.e. meat, and since Animal is in the class_hierarchy, we restrict the \"eats\" property accordingly.)"
+        }
+    ],
+    "Elephant": [
+        {
+            "s": "Elephant",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(The description states “They inhabit various environments, including savannas, forests, and grasslands,” which supports that Elephants have an ‘inhabits’ relation to Habitat.)"
+        }
+    ],
+    "Impala": [
+        {
+            "s": "Impala",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Grass",
+            "support_sentence": "(\"primarily feeding on grasses and leaves\")"
+        },
+        {
+            "s": "Impala",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(\"primarily feeding on grasses and leaves\")"
+        },
+        {
+            "s": "Impala",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Carnivore",
+            "support_sentence": "(\"prey for larger carnivores\")"
+        },
+        {
+            "s": "Impala",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"Typically found in the open savannahs and woodlands of eastern and southern Africa\")"
+        }
+    ],
+    "Apple": [
+        {
+            "s": "Apple",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "Apples play a significant role in various ecosystems, serving as a food source for numerous animal species."
+        }
+    ],
+    "Berry": [
+        {
+            "s": "Berry",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(\"Berries are an important food source for many animals.\")"
+        }
+    ],
+    "Parsnip": [
+        {
+            "s": "Parsnip",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(\"typically grows in temperate regions, thriving in well-drained soil with plenty of sunlight\")"
+        }
+    ],
+    "Carrot": [
+        {
+            "s": "Carrot",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Root",
+            "support_sentence": "It is cultivated primarily for its edible taproot\" (the taproot is a kind of Root as shown in the class_hierarchy, where Root includes Carrot and Parsnip)."
+        },
+        {
+            "s": "Carrot",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "commonly consumed by both humans and various animals\" (the description explicitly mentions that Carrots are eaten, and Animal is available in the class_hierarchy)."
+        }
+    ]
+}

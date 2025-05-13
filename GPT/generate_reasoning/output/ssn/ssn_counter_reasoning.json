@@ -1,0 +1,1880 @@
+{
+  "ActuatableProperty,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "An ActuatableProperty refers to a characteristic or attribute of a system that can be influenced or modified through a specific action, indicating a clear relationship between the property and the action taken.",
+      "reason": "By removing the constraint, the definition now stands independently, focusing solely on the essence of an ActuatableProperty without referencing any specific relationship to another entity."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An ActuatableProperty refers to a characteristic or attribute of a system that can be influenced or modified through a specific action. If any properties exist, they must all be Properties.",
+      "reason": "The 'only' constraint specifies that if there are properties associated with ActuatableProperties, they must exclusively be of the type Property, ensuring uniformity."
+    }
+  ],
+  "Actuation,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect.",
+      "reason": "Removing the constraint allows for a broader interpretation of actuation without specifying the requirement for it to act on some actuatable property."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect. If any properties exist, they must all be actuatable properties.",
+      "reason": "The 'only' constraint emphasizes that if properties are present, they must exclusively be actuatable properties."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect. An actuator has a property that it acts upon.",
+      "reason": "Using 'hasProperty' shifts the focus to the relationship between the actuator and the property, highlighting that the actuator possesses a property it can influence."
+    },
+    {
+      "operation": "generalize",
+      "value": "Property",
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically a property, to achieve a desired effect.",
+      "reason": "Generalizing to 'Property' broadens the scope of actuation to encompass all types of properties, not just actuatable ones."
+    }
+  ],
+  "Actuation,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This process is closely tied to a particular feature of interest, which is the focus of the actuation.",
+      "reason": "Removing the constraint allows the support text to focus on the actuation process itself without dependency on the existence of a feature of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This process is closely tied to a particular feature of interest, which is the focus of the actuation. If any features exist, they must all match the defined criterion of being a feature of interest.",
+      "reason": "The 'only' constraint clarifies that if any features are present, they must exclusively be features of interest, emphasizing exclusivity in the context of actuation."
+    }
+  ],
+  "Actuation,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect. This process is closely tied to a particular feature of interest, which is the focus of the actuation. The actuation is guided by a defined procedure that outlines the steps necessary to achieve the intended outcome.",
+      "reason": "By removing the constraint, the support text no longer depends on the outcome of the interaction, allowing for a broader understanding of actuation without the necessity of a specific result."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each actuation yields a specific result, reflecting the outcome of the interaction between the actuator and the property it acts upon. If any results exist, they must all be defined as specific results.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively match defined specific results."
+    }
+  ],
+  "Actuation,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect. This process is closely tied to a particular feature of interest, which is the focus of the actuation. Each actuation yields a specific result, reflecting the outcome of the interaction between the actuator and the property it acts upon.",
+      "reason": "Removing the constraint allows the support text to focus on the general concept of actuation without being tied to the presence of a procedure."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect. This process is closely tied to a particular feature of interest, which is the focus of the actuation. Each actuation yields a specific result, reflecting the outcome of the interaction between the actuator and the property it acts upon. If any procedures are used, they must exclusively be of the defined type.",
+      "reason": "The 'only' constraint clarifies that if procedures are involved in the actuation, they must all conform to a specific type, emphasizing exclusivity."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isResultOf",
+      "description": "Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect. This process is closely tied to a particular feature of interest, which is the focus of the actuation. Each actuation yields a specific result, reflecting the outcome of the interaction between the actuator and the property it acts upon. The actuation is guided by a defined result that outlines the steps necessary to achieve the intended outcome.",
+      "reason": "Using the alternative predicate 'isResultOf' shifts the focus to the relationship between the actuation and its outcomes, highlighting the causative aspect of the procedure involved."
+    }
+  ],
+  "Actuator,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "An Actuator is a specialized device that is designed to perform actions or control mechanisms in response to signals or commands. It is specifically tailored to execute actuations, which are defined actions that affect the state of a system or environment. As such, an Actuator plays a crucial role in the operational dynamics of a system, enabling precise control over various properties.",
+      "reason": "Removing the constraint allows for a broader understanding of the Actuator's role without being limited to specific properties it can influence."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Actuator is associated with a specific type of property that it can influence, ensuring that its functionality is aligned with the properties it is intended to actuate. If any properties exist, they must all be actuatable properties.",
+      "reason": "The 'only' constraint clarifies that if an Actuator interacts with properties, those properties must exclusively be of the actuatable type."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "An Actuator is associated with a specific type of property that it can influence, ensuring that its functionality is aligned with the properties it is intended to actuate. Each Actuator has a specific property that it can influence.",
+      "reason": "Using 'hasProperty' instead of 'actsOnProperty' focuses on the Actuator's direct relationship with a property, emphasizing the specific property it influences."
+    },
+    {
+      "operation": "generalize",
+      "value": "Property",
+      "description": "An Actuator is associated with a specific type of property that it can influence, ensuring that its functionality is aligned with the properties it is intended to actuate.",
+      "reason": "Generalizing to 'Property' allows for a more inclusive understanding of the Actuator's capability to influence various kinds of properties."
+    }
+  ],
+  "Actuator,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "An Actuator is a specialized device that is designed to perform actions or control mechanisms in response to signals or commands. It is specifically tailored to execute actuations, which are defined actions that affect the state of a system or environment. Each Actuator is associated with a specific type of property that it can influence, ensuring that its functionality is aligned with the properties it is intended to actuate.",
+      "reason": "By removing the constraint, the description now focuses on the general capabilities and roles of an Actuator without referencing specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Actuator plays a crucial role in the operational dynamics of a system, enabling precise control over various actuatable properties. If any results exist, they must all be specific types of Result.",
+      "reason": "The 'only' constraint indicates that if results are present, they must exclusively be of the type Result, emphasizing the specificity of outcomes produced by an Actuator."
+    }
+  ],
+  "Agent,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "By removing the constraint, the support text can focus on the general capabilities of an Agent without being tied to specific properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Agent can act or make decisions within a system, which implies that it can act on various properties within that system. If an Agent acts on any property, it must exclusively act on properties that meet the defined criteria.",
+      "reason": "The 'only' constraint clarifies that any properties acted upon must conform to specific criteria, ensuring limited and controlled interactions."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "An Agent can act or make decisions within a system, which implies that it can act on various properties within that system. An Agent has a property that defines its capabilities in the system.",
+      "reason": "Using 'hasProperty' emphasizes the relationship between the Agent and its properties, highlighting the characteristics that enable its actions."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "An Agent is an entity that can act or make decisions within a system, which implies that it can act on various properties within that system. An Agent, as a Thing, can engage with various properties that define its interaction capabilities.",
+      "reason": "Generalizing to 'Thing' broadens the context of the Agent, placing it within the larger category of entities capable of action."
+    }
+  ],
+  "Agent,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "By removing the constraint, the support text can focus on the general characteristics and functionalities of Agents without being tied to specific deployment conditions."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment. If agents are deployed on platforms, they must exclusively be deployed on specific types of platforms.",
+      "reason": "The 'only' constraint emphasizes that if Agents are deployed on platforms, they must be limited to specific types, thus refining the understanding of Agent deployment."
+    }
+  ],
+  "Agent,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "The removal of the constraint allows for a broader understanding of Agents without limiting their characteristics to specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They must exclusively focus on features of interest within their environment.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must exclusively align with the defined criteria, highlighting the specificity of the Agent's focus."
+    }
+  ],
+  "Agent,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "By removing the constraint, the focus shifts to the broader definition of an Agent without being limited by the specific requirement of having inputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment. If they have any inputs, they must exclusively be of the type Input.",
+      "reason": "The 'only' constraint clarifies that if an Agent has inputs, those inputs must be exclusively of the specified type, emphasizing a stricter relationship."
+    }
+  ],
+  "Agent,hasOutput,some,Output": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "By removing the constraint, the support text can focus on the general characteristics and functionalities of agents without referencing specific outputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "As agents carry out tasks or operations, they are likely to produce outputs based on their interactions. If any outputs exist, they must exclusively be of the type Output.",
+      "reason": "The 'only' constraint clarifies that if an agent produces outputs, those outputs must exclusively be of the specified type, emphasizing the necessity of adhering to this criterion."
+    }
+  ],
+  "Agent,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "An Agent is capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli, which often leads to a Result.",
+      "reason": "The removal of the constraint allows for a broader interpretation of agents, emphasizing their capability to act and interact without the necessity of producing a result."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Agent is capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. If any results are produced, they must exclusively be a Result.",
+      "reason": "The 'only' constraint specifies that if an agent produces results, those results must be of a specific type, emphasizing exclusivity in the outcomes of agent actions."
+    }
+  ],
+  "Agent,hasSubSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Agents contribute to the overall functionality of the system, which may involve having subsystems associated with them.",
+      "reason": "By removing the constraint, the support text no longer relies on the presence of subsystems, allowing for a broader interpretation of what constitutes an Agent."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Agents contribute to the overall functionality of the system, which may involve having subsystems associated with them. If any subsystems exist, they must exclusively be systems.",
+      "reason": "The 'only' constraint emphasizes that if subsystems are present, they must solely consist of systems, highlighting exclusivity in their association."
+    }
+  ],
+  "Agent,implementedBy,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Agents serve as foundational components in the architecture of a semantic sensor network, indicating they can be implemented by various systems.",
+      "reason": "Removing the constraint allows for a broader interpretation of the implementation of Agents without being tied to specific systems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Agents serve as foundational components in the architecture of a semantic sensor network, indicating that if they are implemented, they must be implemented exclusively by specific systems.",
+      "reason": "The 'only' constraint indicates that any implementation of Agents must be done by designated systems, ensuring exclusivity."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasSubSystem",
+      "description": "Agents serve as foundational components in the architecture of a semantic sensor network, indicating they can be implemented by various systems that include specific subsystems.",
+      "reason": "Using the 'hasSubSystem' relation shifts the focus to the specific subsystems that can implement Agents, providing a more detailed relationship."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "Agents serve as foundational components in the architecture of a semantic sensor network, indicating they can be implemented by various things.",
+      "reason": "Generalizing to 'Thing' expands the scope of potential implementers to any entity, not limited to systems."
+    }
+  ],
+  "Agent,isActedOnBy,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system.",
+      "reason": "Removing the constraint allows the support text to focus on the general characteristics of agents without tying them to specific interactions with actuators."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. If an agent is acted upon, it must only be by actuators.",
+      "reason": "The 'only' constraint clarifies that if agents are acted upon, the interaction must be exclusively with actuators."
+    }
+  ],
+  "Agent,isProxyFor,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "Removing the constraint allows the support text to focus on the general characteristics and roles of agents without tying them to a specific relationship with systems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Agent is an entity that can act or make decisions within a system, often representing a specific role or function. Agents are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. They may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment. If agents exist, they must exclusively act as proxies for systems.",
+      "reason": "The 'only' constraint emphasizes that if agents are present, they must exclusively function as proxies for systems, underscoring their specific role."
+    }
+  ],
+  "Agent,madeActuation,some,Actuation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Agents can carry out tasks or operations, which may include making actuations in response to stimuli.",
+      "reason": "Removing the constraint allows for a broader interpretation of agent capabilities without being limited to a specific type of actuation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Agents can carry out tasks or operations, which may include making actuations in response to stimuli. If any actuations exist, they must all be of the specified type.",
+      "reason": "The 'only' constraint focuses on the exclusivity of the actuations, ensuring that if any are present, they must match the defined type."
+    }
+  ],
+  "Agent,madeObservation,some,Observation": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "Agents are capable of observing their environment, which leads to the creation of observations.",
+      "reason": "By removing the specific constraint, the support text no longer relies on the concepts of observations, allowing it to focus solely on the capabilities of agents."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Agents are capable of observing their environment, which leads to the creation of observations. If any observations exist, they must all be specific types of observations.",
+      "reason": "The 'only' constraint clarifies that if observations are made, they must conform to a specific type, emphasizing exclusivity."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "observes",
+      "description": "Agents are capable of observing their environment, which leads to the creation of observations.",
+      "reason": "Using 'observes' instead of 'madeObservation' maintains the focus on the agents' capabilities while aligning with the alternate predicate."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "Agents are capable of observing their environment, which leads to the creation of observations.",
+      "reason": "Generalizing to 'Thing' broadens the context of the support text, indicating that agents can interact with any entity, not just observations."
+    }
+  ],
+  "Agent,madeSampling,some,Sampling": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Agents may act or make decisions within a system, often representing a specific role or function. They are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. Agents may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "By removing the constraint, the support text can focus on the broader capabilities of agents without tying them to specific sampling actions."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Agents may act or make decisions within a system, often representing a specific role or function. They are capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli. If any sampling actions are present, they must exclusively be of the type Sampling. Agents may operate independently or in coordination with other agents, contributing to the overall functionality of the system. This class serves as a foundational component in the architecture of a semantic sensor network, facilitating communication and action within the networked environment.",
+      "reason": "The 'only' constraint emphasizes that if sampling actions exist, they must exclusively be of the type Sampling, which highlights the specificity in the types of actions agents can undertake."
+    }
+  ],
+  "Agent,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Agents are capable of interacting with their environment, which includes observing properties of that environment.",
+      "reason": "By removing the constraint, the support text focuses on the general ability of agents to interact with their environment without specifying the nature or quantity of observable properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Agents are capable of interacting with their environment, which includes observing properties of that environment. If any properties are observed, they must all be observable properties.",
+      "reason": "The 'only' constraint clarifies that if agents are observing properties, they must exclusively be of the observable type."
+    }
+  ],
+  "Deployment,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Each deployment is tailored to a particular property, ensuring that the system operates within defined parameters.",
+      "reason": "Removing the constraint allows for a broader interpretation of deployment, focusing solely on the tailored nature without specifying the relationship to properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each deployment is tailored to a particular property, ensuring that if any properties exist, they must all be of a defined criterion.",
+      "reason": "The 'only' constraint clarifies that if properties are involved in a deployment, they must exclusively meet the specified criteria."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "Each deployment is tailored to a particular property, ensuring that the system has specific properties to operate within defined parameters.",
+      "reason": "Using 'hasProperty' emphasizes the necessity of specific properties in the deployment, highlighting their importance in the operational context."
+    }
+  ],
+  "Deployment,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Deployment class represents a specific arrangement where a system is installed or utilized on a designated platform.",
+      "reason": "By removing the constraint, the support text now reflects the broader concept of deployment without relying on specific relationships to platforms."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Deployment class represents a specific arrangement where a system is installed or utilized on a designated platform. If any deployments exist, they must exclusively be on a designated platform.",
+      "reason": "The 'only' constraint emphasizes that if there are deployments, they must be limited to a specific platform, highlighting exclusivity in the deployment context."
+    }
+  ],
+  "Deployment,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Through this class, one can understand how various components are systematically organized to achieve functional outcomes in a sensor network environment.",
+      "reason": "The removal of the constraint allows the support text to focus solely on the organizational aspect of components without referencing specific features."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Through this class, one can understand how various components are systematically organized to achieve functional outcomes in a sensor network environment. If any features of interest exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must exclusively conform to a specific criterion."
+    }
+  ],
+  "Deployment,hosts,some,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This class encapsulates the relationship between the system and the platform it operates on, emphasizing the structured nature of sensor network configurations.",
+      "reason": "By removing the constraint, the support text no longer depends on the specific relationship with 'System', allowing for a broader understanding of the Deployment class."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This class encapsulates the relationship between the system and the platform it operates on, ensuring that if any systems are present, they must all be of a specific type.",
+      "reason": "The 'only' constraint highlights that if systems are involved, they must exclusively match a defined type, reinforcing the specificity of the deployment."
+    }
+  ],
+  "FeatureOfInterest,hasSample,only,Sample": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Feature of Interest represents a specific entity or aspect that is being observed or measured within a particular context. It is intrinsically linked to samples, indicating that each Feature of Interest is associated with a specific sample that provides data about it. Furthermore, every Feature of Interest is defined by its properties, which describe its characteristics and behaviors in the context of observation or measurement. This concept is crucial for understanding the nature of the phenomena being studied in a semantic sensor network.",
+      "reason": "By removing the constraint, the support text can focus on the broader definition of a Feature of Interest without relying on the specific relationship to a sample."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "A Feature of Interest represents a specific entity or aspect that is being observed or measured within a particular context. It is intrinsically linked to samples, indicating that each Feature of Interest is associated with at least one specific sample that provides data about it. Furthermore, every Feature of Interest is defined by its properties, which describe its characteristics and behaviors in the context of observation or measurement. This concept is crucial for understanding the nature of the phenomena being studied in a semantic sensor network.",
+      "reason": "The 'some' constraint indicates that a Feature of Interest must be linked to at least one sample, emphasizing the necessity of data association."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasResult",
+      "description": "A Feature of Interest represents a specific entity or aspect that is being observed or measured within a particular context. It is intrinsically linked to samples, indicating that each Feature of Interest is associated exclusively with a specific result that provides data about it. Furthermore, every Feature of Interest is defined by its properties, which describe its characteristics and behaviors in the context of observation or measurement. This concept is crucial for understanding the nature of the phenomena being studied in a semantic sensor network.",
+      "reason": "Using 'hasResult' instead of 'hasSample' shifts the focus to the results derived from the observations, which aligns with the purpose of the Feature of Interest."
+    }
+  ],
+  "ObservableProperty,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "(ObservableProperties serve as key indicators within a system, providing valuable insights into the state or condition of the features they represent.)",
+      "reason": "By removing the constraint, the support text can focus solely on the role of ObservableProperties without referencing specific relationships to features."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(ObservableProperties serve as key indicators within a system, providing valuable insights into the state or condition of the features they represent. If any feature of interest exists, it must exclusively be related to observable properties.)",
+      "reason": "The 'only' constraint highlights that if any features of interest are present, they must exclusively relate to observable properties."
+    }
+  ],
+  "ObservableProperty,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "ObservableProperties serve as key indicators within a system, providing valuable insights into the state or condition of the features they represent.",
+      "reason": "By removing the constraint, the support text can focus on the general role of ObservableProperties without depending on specific relationships to results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "ObservableProperties serve as key indicators within a system, providing valuable insights into the state or condition of the features they represent. If any results exist, they must all be specific types of results.",
+      "reason": "The 'only' constraint highlights that if results are present, they must exclusively be of a certain type, emphasizing the specificity required in the results associated with ObservableProperties."
+    }
+  ],
+  "ObservableProperty,observes,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "ObservableProperties serve as key indicators within a system, providing valuable insights into the state or condition of the features they represent. Their measurements are essential for understanding and analyzing various phenomena in the environment.",
+      "reason": "By removing the constraint, the support text can focus on the general role of ObservableProperties without depending on the specific relationship with sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "ObservableProperties serve as key indicators within a system, providing valuable insights into the state or condition of the features they represent. If any sensors exist, they must all observe ObservableProperties.",
+      "reason": "The 'only' constraint emphasizes that if sensors are present, they must exclusively observe ObservableProperties."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasSubSystem",
+      "description": "This property is specifically linked to subsystems, which are responsible for observing and collecting data about it.",
+      "reason": "By using the 'hasSubSystem' relation, the support text highlights the connection between ObservableProperties and subsystems instead of sensors."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "ObservableProperties serve as key indicators within a Thing, providing valuable insights into the state or condition of the features they represent.",
+      "reason": "Generalizing to 'Thing' broadens the applicability of the support text, indicating that ObservableProperties can relate to any entity, not just specific features."
+    }
+  ],
+  "Observation,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Each observation is associated with a unique result that reflects the data gathered during the observation process, focusing on a particular feature of interest.",
+      "reason": "Removing the constraint allows the support text to express the general nature of observations without implying the necessity of having a feature of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each observation is associated with a unique result that reflects the data gathered during the observation process, focusing on a particular feature of interest. If any features of interest exist, they must all align with the defined criteria.",
+      "reason": "The 'only' constraint clarifies that if there are features of interest, they must exclusively meet the specified criteria."
+    }
+  ],
+  "Observation,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Each observation encapsulates essential elements required to understand and interpret the context and outcome of the observation.",
+      "reason": "By removing the constraint, the support text no longer refers to the specific relationship with results, allowing for a broader interpretation of what constitutes an observation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each observation is associated with a unique result that reflects the data gathered during the observation process. If any results exist, they must all match a defined criterion.",
+      "reason": "The 'only' constraint specifies that any associated results must conform to a particular standard, emphasizing exclusivity in the observation results."
+    }
+  ],
+  "Observation,madeBySensor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "An Observation represents a specific instance of data collection that focuses on a particular feature of interest. Each observation is associated with a unique result that reflects the data gathered during the observation process. It is conducted following a defined procedure and is often triggered by a stimulus. This class encapsulates the essential elements required to understand and interpret the context and outcome of the observation.",
+      "reason": "Removing the constraint allows the support text to focus on the general aspects of an observation without depending on the specifics of the sensor involved."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An Observation represents a specific instance of data collection that focuses on a particular feature of interest. Each observation is associated with a unique result that reflects the data gathered during the observation process. It is conducted by a sensor and is linked to a specific observable property, following a defined procedure, and is often triggered by a stimulus. If any sensors exist, they must all be of a specific type.",
+      "reason": "The 'only' constraint emphasizes that if sensors are present in the observation, they must exclusively be of a specified type."
+    }
+  ],
+  "Observation,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "(It is linked to a specific observable property, following a defined procedure, and is often triggered by a stimulus.)",
+      "reason": "The support text has been rewritten to remove any dependency on the constraint, focusing solely on the general characteristics of the observation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(It is linked to a specific observable property, following a defined procedure, and is often triggered by a stimulus. If any observable properties exist, they must all match the defined criterion.)",
+      "reason": "The 'only' constraint highlights that if observable properties are present, they must exclusively conform to a defined criterion, emphasizing consistency in the observations."
+    }
+  ],
+  "Output,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Output class represents the results produced by a system's processes, typically generated as a response to an input or observation.",
+      "reason": "Removing the constraint allows the support text to focus on the general definition of the Output class without referencing specific relationships to inputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Output class represents the results produced by a system's processes, typically generated as a response to an input or observation. If any inputs exist, they must exclusively be of the defined Input type.",
+      "reason": "The 'only' constraint emphasizes that if inputs are present, they must be exclusively of the Input type, highlighting the specificity of the relationship."
+    }
+  ],
+  "Output,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Output class represents the results produced by a system's processes, typically generated as a response to an input or observation.",
+      "reason": "Removing the constraint allows the support text to focus on the general definition of the Output class without being tied to specific relationships or constraints."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Output class represents the results produced by a system's processes, typically generated as a response to an input or observation. If any results exist, they must all be classified as Result.",
+      "reason": "The 'only' constraint clarifies that if there are any results, they must exclusively belong to the Result category."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "The Output class represents the results produced by a system's processes, typically generated as a response to an input or observation, which can encompass various types of Thing.",
+      "reason": "Generalizing to 'Thing' broadens the context, indicating that the outputs can be any type of entity rather than being limited to a specific category."
+    }
+  ],
+  "Output,isResultOf,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Outputs may result from the operation of sensors, actuators, or sampling devices, reflecting the state or changes in the environment.",
+      "reason": "By removing the constraint, the focus shifts to the general nature of outputs without restricting them to specific procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Outputs may result from the operation of sensors, actuators, or sampling devices, reflecting the state or changes in the environment. If any outputs exist, they must all be results of procedures.",
+      "reason": "The 'only' constraint clarifies that all outputs must be exclusively linked to procedures if they are present."
+    }
+  ],
+  "Platform,hasDeployment,some,Deployment": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. It exclusively hosts systems, ensuring that only compatible entities operate within its framework. This class plays a critical role in managing and coordinating the interactions between different components of the sensor network.",
+      "reason": "By removing the constraint, the support text no longer needs to reference the deployment context, allowing for a broader interpretation of what constitutes a Platform."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. It exclusively hosts systems, ensuring that only compatible entities operate within its framework. Additionally, a Platform is always associated with a deployment context, indicating that if any deployments exist, they must all be compatible with the platform's operational environment.",
+      "reason": "The 'only' constraint clarifies that any deployments associated with a Platform must exclusively fit within the defined operational context, reinforcing compatibility."
+    }
+  ],
+  "Platform,hosts,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. Additionally, a Platform is always associated with a deployment context, indicating its specific operational environment. This class plays a critical role in managing and coordinating the interactions between different components of the sensor network.",
+      "reason": "Removing the constraint allows for a broader interpretation of what a Platform can support, focusing on its foundational role without specific limitations on the types of systems hosted."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. It exclusively hosts systems, ensuring that only compatible entities operate within its framework. If any systems exist, they must all be compatible entities.",
+      "reason": "The 'only' constraint emphasizes that if any systems are present, they must exclusively be compatible with the Platform, reinforcing the importance of compatibility."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasSubSystem",
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. It exclusively hosts systems, ensuring that only compatible entities operate within its framework, which may include subsystems that contribute to its overall functionality.",
+      "reason": "Using 'hasSubSystem' instead of 'hosts' highlights the relationship of the Platform with its subsystems, while maintaining the focus on compatibility."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "A Platform serves as a foundational structure that supports and integrates various systems within a sensor network. It exclusively hosts systems, ensuring that only compatible entities operate within its framework. This class plays a critical role in managing and coordinating the interactions between different components of the sensor network.",
+      "reason": "Generalizing to 'Thing' allows for a broader categorization, indicating that the Platform is part of a larger set of entities, while still focusing on its specific functions."
+    }
+  ],
+  "Procedure,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs, ensuring that the process is clearly delineated and reproducible.",
+      "reason": "Removing the constraint allows the focus to remain on the general definition of a Procedure without the need to specify inputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs. If any inputs exist, they must all be defined as Input.",
+      "reason": "The 'only' constraint clarifies that if inputs are present, they must exclusively be of the type Input."
+    }
+  ],
+  "Procedure,hasOutput,some,Output": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs, ensuring that the process is clearly delineated and reproducible.",
+      "reason": "Removing the constraint allows for a broader interpretation of Procedures, emphasizing their structured nature without being tied to specific outputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs, ensuring that the process is clearly delineated and reproducible. Additionally, if any outputs exist, they must exclusively be Outputs.",
+      "reason": "The 'only' constraint specifies that if outputs are present, they must exclusively match the defined Output category, highlighting the exclusivity of the procedure's results."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs, ensuring that the process is clearly delineated and reproducible. Additionally, each Procedure is executed by a designated system, which embodies the necessary capabilities to carry out the prescribed actions.",
+      "reason": "Generalizing to 'Thing' expands the context of the Procedure class to include any entity that might serve as an output, allowing for a more inclusive interpretation of what constitutes an output."
+    }
+  ],
+  "Procedure,implementedBy,some,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs, ensuring that the process is clearly delineated and reproducible. This class encapsulates the essence of systematic methodologies employed in various contexts, particularly within the realm of sensor networks.",
+      "reason": "The removal of the constraint allows for a broader understanding of Procedures without needing to specify their implementation by a system."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs, ensuring that the process is clearly delineated and reproducible. Additionally, each Procedure is executed only by designated systems that embody the necessary capabilities to carry out the prescribed actions. This class encapsulates the essence of systematic methodologies employed in various contexts, particularly within the realm of sensor networks.",
+      "reason": "The 'only' constraint emphasizes that if a Procedure is implemented, it must exclusively be by designated systems."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasSubSystem",
+      "description": "A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs, ensuring that the process is clearly delineated and reproducible. Additionally, each Procedure has a subsystem that embodies the necessary capabilities to carry out the prescribed actions. This class encapsulates the essence of systematic methodologies employed in various contexts, particularly within the realm of sensor networks.",
+      "reason": "Using 'hasSubSystem' instead of 'implementedBy' highlights the role of subsystems in executing the actions of a Procedure."
+    }
+  ],
+  "Property,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Property class represents characteristics or attributes that can be associated with a specific feature of interest. Each property is uniquely tied to a feature, ensuring that it describes only that particular aspect or quality. This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network. Properties enable the differentiation and specification of features, facilitating effective data interpretation and analysis.",
+      "reason": "Removing the constraint allows for a broader interpretation of properties, emphasizing their general role without tying them specifically to features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Property class represents characteristics or attributes that can be associated with a specific feature of interest. Each property is uniquely tied to a feature, ensuring that it describes only that particular aspect or quality. If any properties are present, they must exclusively relate to the defined feature of interest. This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network. Properties enable the differentiation and specification of features, facilitating effective data interpretation and analysis.",
+      "reason": "The 'only' constraint emphasizes that if properties are present, they must exclusively relate to the specified feature of interest."
+    }
+  ],
+  "Property,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Property class represents characteristics or attributes that can be associated with a specific feature of interest. Each property is uniquely tied to a feature, ensuring that it describes only that particular aspect or quality. This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network.",
+      "reason": "Removing the constraint allows the support text to focus solely on the definition of the Property class without referencing specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Property class represents characteristics or attributes that can be associated with a specific feature of interest. Each property is uniquely tied to a feature, ensuring that it describes only that particular aspect or quality. If any results exist, they must exclusively be of the type Result. This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network.",
+      "reason": "The 'only' constraint highlights that if results are present, they must exclusively be of the type Result, reinforcing the specificity of the Property class."
+    }
+  ],
+  "Property,isPropertyOf,some,Thing": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "(This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network.)",
+      "reason": "The removal of the constraint allows the support text to focus on the general purpose of the Property class without referencing specific relationships or entities."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network. If properties exist, they must exclusively relate to a specific feature of interest.)",
+      "reason": "The 'only' constraint clarifies that any existing properties must solely pertain to a defined feature, emphasizing exclusivity in their relationship."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isProxyFor",
+      "description": "(This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network. Each property is uniquely tied to a feature as a proxy for that aspect or quality.)",
+      "reason": "Using 'isProxyFor' highlights that properties can act as intermediaries for certain features, adding a dimension of representation to the concept."
+    }
+  ],
+  "Result,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Result class encapsulates the data generated as a consequence of various interactions with the environment, often reflecting the state or condition of a particular feature.",
+      "reason": "By removing the constraint, the support text can focus on the general aspect of features without tying it specifically to the 'FeatureOfInterest' class."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Result class encapsulates the data generated as a consequence of various interactions with the environment, often reflecting the state or condition of a particular feature of interest. If any features exist, they must all be features of interest.",
+      "reason": "The 'only' constraint specifies that if there are features, they must exclusively be features of interest, emphasizing their significance."
+    }
+  ],
+  "Result,isResultOf,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Results are essential for understanding the implications of sensor readings and can inform subsequent actions or decisions, indicating that they are outcomes derived from observations.",
+      "reason": "By removing the constraint, the support text now focuses on the general importance of results without referencing specific relationships to observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Results are essential for understanding the implications of sensor readings and can inform subsequent actions or decisions, indicating that they are outcomes derived from observations. If any results exist, they must exclusively be derived from observations.",
+      "reason": "The 'only' constraint reinforces that if results are present, they must solely originate from observations."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isProxyFor",
+      "description": "Results are essential for understanding the implications of sensor readings and can inform subsequent actions or decisions, indicating that they are outcomes derived from being proxies for observations.",
+      "reason": "This transformation shifts the focus of the relationship to emphasize that results serve as proxies for observations instead of being directly derived from them."
+    }
+  ],
+  "Result,observedProperty,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The outcomes or findings obtained from observations or measurements taken in a semantic sensor network often reflect the state or condition of a particular feature of interest.",
+      "reason": "Removing the constraint allows the support text to focus on the general nature of the results without referencing specific properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The outcomes or findings obtained from observations or measurements taken in a semantic sensor network often reflect the state or condition of a particular feature of interest. If any observed properties exist, they must all be observable properties.",
+      "reason": "The 'only' constraint emphasizes that if observed properties are present, they must exclusively be observable properties."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "The outcomes or findings obtained from observations or measurements taken in a semantic sensor network often reflect the state or condition of a particular feature of interest, which is typically linked to properties.",
+      "reason": "Using 'hasProperty' instead of 'observedProperty' broadens the context, allowing for a more general relationship between results and properties."
+    }
+  ],
+  "Sample,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "(This relationship emphasizes the importance of context and methodology in the interpretation of the Sample.)",
+      "reason": "By removing the constraint, the support text no longer references specific properties, allowing for a broader interpretation of Samples without the need for a defined relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(This relationship emphasizes the importance of context and methodology in the interpretation of the Sample. If any properties exist, they must all match the defined criterion.)",
+      "reason": "The 'only' constraint clarifies that if properties are present with the Sample, they must conform to a specific criterion, thus narrowing the focus on the consistency of the properties."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "(This relationship emphasizes the importance of context and methodology in the interpretation of the Sample. It is essential that the Sample has the associated property that reflects the conditions or characteristics of the Feature being observed.)",
+      "reason": "Using 'hasProperty' instead of 'actsOnProperty' shifts the focus to the necessary attributes that the Sample must possess, underlining their relevance in the context of the observation."
+    }
+  ],
+  "Sample,forProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This relationship emphasizes the importance of context and methodology in the interpretation of the Sample.",
+      "reason": "Removing the constraint allows the support text to focus on the general significance of context and methodology without being tied to specific properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This relationship emphasizes the importance of context and methodology in the interpretation of the Sample. If any properties are associated, they must exclusively match the defined criteria.",
+      "reason": "The 'only' constraint clarifies that if properties exist, they must adhere to specific criteria, reinforcing the exclusivity of the relationship."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isProxyFor",
+      "description": "This relationship emphasizes the importance of context and methodology in the interpretation of the Sample, specifically in relation to what it is a proxy for.",
+      "reason": "Changing the predicate to 'isProxyFor' highlights the role of the Sample as a representative entity for another feature, enhancing the context of the relationship."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "This relationship emphasizes the importance of context and methodology in the interpretation of the Sample, particularly regarding the properties it possesses.",
+      "reason": "Using 'hasProperty' as the predicate underscores the attributes or characteristics that define the Sample, providing a clearer understanding of its role."
+    }
+  ],
+  "Sample,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "(A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure.)",
+      "reason": "Removing the constraint allows the description to focus solely on the essence of a Sample without referencing the specific relationship to Feature of Interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. If any features exist, they must all be Features of Interest.)",
+      "reason": "The 'only' constraint clarifies that if there are any features associated with a Sample, they must exclusively be Features of Interest."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "(A Sample is a representation of a specific instance of a Thing, often collected during a Sampling procedure.)",
+      "reason": "Generalizing to 'Thing' broadens the support text to encompass any potential type of entity, rather than being limited to Features of Interest."
+    }
+  ],
+  "Sample,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena.",
+      "reason": "The removal of the constraint allows the support text to stand independently without referencing the input, focusing solely on the significance of Samples in data analysis."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. If any inputs exist, they must all be of the defined Input type.",
+      "reason": "The 'only' constraint emphasizes that if inputs are present, they must exclusively match the defined Input type, thereby reinforcing the integrity of the Sample's context."
+    }
+  ],
+  "Sample,hasOutput,some,Output": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena.",
+      "reason": "Removing the constraint allows the support text to focus on the significance of Samples without dependence on specific attributes or relationships."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. If any outputs exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint emphasizes that if outputs are present, they must exclusively conform to defined parameters, ensuring consistency in data representation."
+    }
+  ],
+  "Sample,hasProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed. This relationship emphasizes the importance of context and methodology in the interpretation of the Sample. As a result, Samples serve as crucial data points in the analysis and understanding of various phenomena.",
+      "reason": "Removing the constraint allows the support text to focus on the broader aspects of Samples without specifying the need for properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed. This relationship emphasizes the importance of context and methodology in the interpretation of the Sample. As a result, if any properties exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint highlights that if properties are present, they must conform to a specified criterion, emphasizing the exclusivity of the properties associated with the Sample."
+    }
+  ],
+  "Sample,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed.",
+      "reason": "By removing the constraint, the focus shifts to the general description of a Sample without dependence on its results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed. If any results exist, they must all be classified as Results.",
+      "reason": "The 'only' constraint clarifies that if results are present, they must exclusively be of the type Result, thus emphasizing the specificity of the data."
+    }
+  ],
+  "Sample,isObservedBy,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena.",
+      "reason": "By removing the constraint, the support text can focus on the general importance of Samples without referring to the specific observation by a Sensor."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. If any observations exist, they must all be made by a Sensor.",
+      "reason": "The 'only' constraint highlights that if there are observations, they must exclusively be made by a Sensor."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasSubSystem",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed through its associated SubSystem.",
+      "reason": "By using 'hasSubSystem', the support text emphasizes the relationship between the Sample and the SubSystem involved in the observation process."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Thing being observed.",
+      "reason": "Generalizing to 'Thing' allows for a broader interpretation of what is being observed, making the support text applicable to a wider range of contexts."
+    }
+  ],
+  "Sample,isResultOf,some,Sampling": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed.",
+      "reason": "Removing the constraint allows the support text to focus on the unique association of the Sample with the Sampling process without referencing any specific relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed. If any Samples exist, they must all be results of the same Sampling.",
+      "reason": "The 'only' constraint emphasizes that if multiple Samples are present, they must exclusively result from the same Sampling, highlighting a stricter relationship."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isProxyFor",
+      "description": "Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed in relation to a proxy.",
+      "reason": "Using 'isProxyFor' instead of 'isResultOf' shifts the focus to the Sample being a representation of something else, allowing for a different interpretation of the relationship."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed as a Thing.",
+      "reason": "Generalizing to 'Thing' broadens the context of the Sample, placing it within a more inclusive framework of entities."
+    }
+  ],
+  "Sample,isSampleOf,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure.",
+      "reason": "By removing the constraint, the support text no longer relies on the relationship to the Feature of Interest, thus allowing for a broader interpretation of what constitutes a Sample."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. If any Samples exist, they must exclusively represent the defined Feature of Interest.",
+      "reason": "The 'only' constraint indicates that if there are any Samples, they must exclusively represent the specified Feature of Interest."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasFeatureOfInterest",
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed, thereby having a Feature of Interest.",
+      "reason": "Using 'hasFeatureOfInterest' as the predicate emphasizes that the Sample is directly associated with possessing a Feature of Interest."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isProxyFor",
+      "description": "A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed, thereby acting as a proxy for the Feature of Interest.",
+      "reason": "Using 'isProxyFor' highlights the role of the Sample as a stand-in or representative for the Feature of Interest."
+    }
+  ],
+  "Sample,madeByActuator,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena.",
+      "reason": "Removing the constraint allows for a broader interpretation of Samples without being tied to the specific relationship with Actuator."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. If any actuators are involved, they must all be specific types of actuators.",
+      "reason": "The 'only' constraint clarifies that if any actuators are present, they must conform to a specific criterion, thus emphasizing exclusivity."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isActedOnBy",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. Each Sample is uniquely associated with the act that acted on it, ensuring that it reflects the conditions or characteristics of the Feature being observed.",
+      "reason": "Using 'isActedOnBy' instead of 'madeByActuator' shifts the focus to the action performed on the Sample, providing a different perspective on its relationship."
+    },
+    {
+      "operation": "generalize",
+      "value": "System",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. Each Sample is uniquely associated with the system that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed.",
+      "reason": "Generalizing to 'System' allows for a broader context, encompassing various types of systems that may interact with or produce Samples."
+    }
+  ],
+  "Sample,madeBySampler,some,Sampler": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed.",
+      "reason": "By removing the constraint, the support text can focus solely on the relationship between the Sample and the Sampling procedure without depending on the specific characteristics of the Sampler."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed. If any Samplers are involved, they must all be the same type of Sampler.",
+      "reason": "The 'only' constraint clarifies that if there are any Samplers, they must be of a single, defined type, emphasizing uniformity in the sampling process."
+    }
+  ],
+  "Sample,madeBySensor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena.",
+      "reason": "Removing the constraint allows for a broader interpretation of Samples, emphasizing their role in analysis without tying them explicitly to the sensor relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. If any samples exist, they must all be made by sensors.",
+      "reason": "The 'only' constraint highlights that if samples are present, they must exclusively originate from sensors, emphasizing the specificity of the sampling method."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena, representing a specific instance of a Feature of Interest within the broader category of Things.",
+      "reason": "Generalizing to 'Thing' allows for a more inclusive understanding of Samples within a larger context, indicating that they are part of a wider category."
+    }
+  ],
+  "Sample,madeObservation,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena.",
+      "reason": "By removing the constraint, the support text no longer needs to reference any specific relationships or types of observations, allowing for a broader interpretation of Samples."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. If any observations exist, they must all be observations made during the sampling process.",
+      "reason": "The 'only' constraint indicates that if there are observations associated with the Sample, they must exclusively be related to the sampling process."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "observes",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena. Each Sample observes specific characteristics of the Feature being analyzed.",
+      "reason": "Using 'observes' as the predicate emphasizes the role of Samples in actively engaging with the features they represent."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "Samples serve as crucial data points in the analysis and understanding of various phenomena, representing a specific instance of a Thing.",
+      "reason": "Generalizing to 'Thing' allows for a broader classification that encompasses all entities, not just specific Features of Interest."
+    }
+  ],
+  "Sampler,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Sampler is designed to collect data from a specific feature of interest, indicating that it is involved in sampling activities that adhere to defined protocols or methods.",
+      "reason": "By removing the constraint, the support text focuses on the general purpose of the Sampler, allowing for a broader interpretation of its functionalities without the need for a specific feature of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sampler is designed to collect data from a specific feature of interest, indicating that if it has any features of interest, they must all be associated with its sampling activities.",
+      "reason": "The 'only' constraint reinforces that any features associated with the Sampler must exclusively pertain to its sampling activities."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "A Sampler is designed to collect data from a specific feature of interest, indicating that it must have a feature of interest associated with its sampling activities, which can pertain to any entity in the broader category of Thing.",
+      "reason": "Generalizing to 'Thing' allows for the inclusion of a wider range of potential features of interest, expanding the context in which a Sampler can operate."
+    }
+  ],
+  "Sampler,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Samplers are essential components in the broader context of data collection and analysis within sensor networks, which implies that they produce results related to their sampling activities.",
+      "reason": "Removing the constraint allows the support text to stand independently, emphasizing the role of Samplers without relying on specific conditions regarding results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Samplers are essential components in the broader context of data collection and analysis within sensor networks, which implies that they produce results related to their sampling activities. If any results exist, they must exclusively pertain to their sampling activities.",
+      "reason": "The 'only' constraint underscores that any results generated by Samplers must be directly related to their defined sampling activities."
+    }
+  ],
+  "Sampler,madeSampling,some,Sampling": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This class is characterized by its exclusive involvement in sampling processes, indicating that it is involved in making samplings.",
+      "reason": "Removing the constraint allows for a broader interpretation of the Sampler class without tying it specifically to the concept of sampling, while still maintaining the essence of its purpose."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This class is characterized by its exclusive involvement in sampling processes, indicating that it is involved in making samplings. If any samplings exist, they must all be related to the defined protocols or methods of the Sampler.",
+      "reason": "The 'only' constraint clarifies that any sampling activities conducted by the Sampler must adhere exclusively to specific protocols or methods."
+    }
+  ],
+  "Sampler,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Sampler is a specialized system designed to collect data from a specific feature of interest. It performs this function by engaging in sampling activities that adhere to defined protocols or methods. This class is characterized by its exclusive involvement in sampling processes, ensuring that all operations it conducts are directly related to the act of sampling. Samplers are essential components in the broader context of data collection and analysis within sensor networks.",
+      "reason": "The removal of the constraint allows for a broader interpretation of the Sampler's operations without tying it to specific procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sampler is a specialized system designed to collect data from a specific feature of interest. It performs this function by engaging in sampling activities that adhere to defined protocols or methods. This class is characterized by its exclusive involvement in sampling processes, ensuring that all operations it conducts are directly related to the act of sampling. If any procedures are used, they must exclusively be of the type Procedure. Samplers are essential components in the broader context of data collection and analysis within sensor networks.",
+      "reason": "The 'only' constraint emphasizes that if procedures are present, they must exclusively be of the specified type, reinforcing the Sampler's specialized function."
+    }
+  ],
+  "Sampling,hasResult,some,Sample": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that the data gathered is representative of that feature. This process is exclusively conducted by a sampler, which is responsible for carrying out the sampling activities. Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection.",
+      "reason": "By removing the constraint, the support text no longer needs to reference the specific result of sampling, allowing for a broader understanding of the sampling process."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that the data gathered is representative of that feature. This process is exclusively conducted by a sampler, which is responsible for carrying out the sampling activities. Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. If any results exist, they must all be samples.",
+      "reason": "The 'only' constraint clarifies that if results are present, they must exclusively be samples, emphasizing the specificity of the outcome of the sampling process."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasFeatureOfInterest",
+      "description": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that the data gathered is representative of that feature. This process is exclusively conducted by a sampler, which is responsible for carrying out the sampling activities. Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection, focusing on the feature of interest.",
+      "reason": "By using 'hasFeatureOfInterest' instead of 'hasResult', the support text emphasizes the importance of the feature being sampled, aligning the focus with the data collection process."
+    },
+    {
+      "operation": "generalize",
+      "value": "Result",
+      "description": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that the data gathered is representative of that feature. This process is exclusively conducted by a sampler, which is responsible for carrying out the sampling activities. Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. The outcome of sampling is a result that reflects the observations made during the process.",
+      "reason": "Generalizing to 'Result' broad"
+    }
+  ],
+  "Sampling,madeBySampler,only,Sampler": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that the data gathered is representative of that feature. Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. The outcome of sampling is a sample that reflects the observations made during the process.",
+      "reason": "By removing the constraint, the support text now focuses on the general process of sampling without referencing the specific role of samplers."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "some",
+      "description": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that the data gathered is representative of that feature. This process is exclusively conducted by a sampler, which is responsible for carrying out some sampling activities. Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. The outcome of sampling is a sample that reflects the observations made during the process.",
+      "reason": "The 'some' constraint indicates that while sampling activities are conducted by a sampler, it allows for the possibility of multiple samplers being involved."
+    }
+  ],
+  "Sampling,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection.",
+      "reason": "Removing the constraint allows the support text to focus on the procedure aspect without explicitly mentioning the requirement for some procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. If any procedures exist, they must all be the defined procedure.",
+      "reason": "The 'only' constraint highlights that if procedures are present, they must exclusively match the defined procedure."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isResultOf",
+      "description": "Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. This procedure is the result of the sampling process.",
+      "reason": "Using 'isResultOf' shifts the focus to the procedural aspect being a result of sampling, providing a different relational perspective."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection. This procedure is considered a type of Thing.",
+      "reason": "Generalizing to 'Thing' broadens the context of the procedure, indicating that it belongs to a more inclusive category."
+    }
+  ],
+  "Sensor,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A Sensor plays a crucial role in gathering information about various stimuli, contributing to a deeper understanding of the surrounding environment.",
+      "reason": "By removing the constraint, the support text can focus solely on the sensor's functionality and importance without being tied to specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sensor plays a crucial role in gathering information about various stimuli, contributing to a deeper understanding of the surrounding environment. If any features of interest exist, they must all be specific measurable phenomena.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must exclusively be tied to specific measurable phenomena."
+    }
+  ],
+  "Sensor,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Sensor is a device designed to detect and respond to physical stimuli in the environment, such as light, temperature, or pressure. It operates by making observations that are strictly tied to specific measurable phenomena, ensuring accurate data collection. Through its functionality, a Sensor plays a crucial role in gathering information about various stimuli, contributing to a deeper understanding of the surrounding environment.",
+      "reason": "Removing the constraint allows the support text to focus on the broader role of the Sensor without referencing specific observable properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Sensor is capable of observing particular properties, which define the characteristics it monitors. If any properties exist, they must all be specific types of observable properties.",
+      "reason": "The 'only' constraint specifies that if any properties are observed, they must exclusively be of the type defined as observable properties."
+    }
+  ],
+  "Stimulus,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A Stimulus is an entity that serves as a trigger for observations within a sensor network. This connection allows for the meaningful interpretation of data collected in response to the stimulus. In essence, stimuli play a vital role in enhancing the understanding of dynamic conditions by prompting relevant measurements.",
+      "reason": "Removing the constraint allows the support text to focus on the general role of a stimulus without tying it to specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A Stimulus is intrinsically linked to specific observable properties, ensuring that each stimulus is associated with a defined aspect of interest in the surrounding environment. If any features of interest exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint emphasizes that all features of interest associated with a stimulus must conform to a specific criterion, highlighting exclusivity."
+    }
+  ],
+  "Stimulus,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Stimuli play a vital role in enhancing the understanding of dynamic conditions by prompting relevant measurements.",
+      "reason": "Removing the constraint allows the support text to focus on the general importance of stimuli without referencing specific relationships or results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Stimuli play a vital role in enhancing the understanding of dynamic conditions by prompting relevant measurements. If any results exist, they must exclusively be defined as a Result.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively match the defined Result type."
+    }
+  ],
+  "Stimulus,observes,some,Observation": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This connection allows for the meaningful interpretation of data collected in response to the stimulus.",
+      "reason": "Removing the constraint allows the support text to focus on the broader context of data interpretation without relying on the specific relationship with observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This connection allows for the meaningful interpretation of data collected in response to the stimulus. If any observations exist, they must all be linked to this specific stimulus.",
+      "reason": "The 'only' constraint clarifies that if observations are present, they must exclusively relate to this particular stimulus, highlighting its unique role."
+    }
+  ],
+  "System,hasDeployment,some,Deployment": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A System is a structured arrangement that operates within a specific Platform and is characterized by its ability to host various components. It encompasses Deployments, which define how the System is executed, and may include SubSystems that work collaboratively to achieve overarching goals. Additionally, every System implements specific Procedures that guide its operations and functionalities. This integration of components and processes enables the System to perform complex tasks efficiently.",
+      "reason": "By removing the constraint, the support text no longer needs to specify the requirement for Deployments, allowing for a broader interpretation of what constitutes a System."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A System is a structured arrangement that operates within a specific Platform and is characterized by its ability to host various components. It encompasses Deployments, which define how the System is executed, and may include SubSystems that work collaboratively to achieve overarching goals. Additionally, every System implements specific Procedures that guide its operations and functionalities. If any Deployments exist, they must all be associated with the System.",
+      "reason": "The 'only' constraint highlights that if Deployments are present, they must exclusively be linked to the System, ensuring a tight coupling between the two concepts."
+    }
+  ],
+  "System,hasSubSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A System is a structured arrangement that operates within a specific Platform and is characterized by its ability to host various components. It encompasses Deployments, which define how the System is executed, and may include components that work collaboratively to achieve overarching goals. Additionally, every System implements specific Procedures that guide its operations and functionalities. This integration of components and processes enables the System to perform complex tasks efficiently.",
+      "reason": "The removal of the constraint allows for a broader interpretation of what constitutes a System, focusing on its overall structure and functionality rather than the specific inclusion of SubSystems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A System is a structured arrangement that operates within a specific Platform and is characterized by its ability to host various components. It encompasses Deployments, which define how the System is executed, and may include SubSystems that work collaboratively to achieve overarching goals. Additionally, if any SubSystems exist, they must all be Systems. Every System implements specific Procedures that guide its operations and functionalities.",
+      "reason": "The 'only' constraint specifies that if SubSystems are present, they must strictly be classified as Systems, reinforcing the hierarchical nature of the components."
+    }
+  ],
+  "System,implements,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A System is a structured arrangement that operates within a specific Platform and is characterized by its ability to host various components. It encompasses Deployments, which define how the System is executed, and may include SubSystems that work collaboratively to achieve overarching goals. This integration of components and processes enables the System to perform complex tasks efficiently.",
+      "reason": "Removing the constraint allows for a broader understanding of what constitutes a System without the necessity of implementing any Procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A System is a structured arrangement that operates within a specific Platform and is characterized by its ability to host various components. It encompasses Deployments, which define how the System is executed, and may include SubSystems that work collaboratively to achieve overarching goals. Additionally, every System implements specific Procedures that guide its operations and functionalities. If Procedures are implemented, they must exclusively be Procedures.",
+      "reason": "The 'only' constraint emphasizes that if Procedures are present, they must exclusively adhere to the defined criteria of Procedures."
+    }
+  ],
+  "TemporalEntity,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "Removing the constraint allows for a broader interpretation of TemporalEntities without the need to specify their interaction with properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. If they act on properties, they must exclusively act on defined properties.",
+      "reason": "The 'only' constraint emphasizes that if a TemporalEntity interacts with properties, it must strictly adhere to a specific set of defined properties."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasProperty",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. TemporalEntities may have properties that define their interactions.",
+      "reason": "Using 'hasProperty' instead of 'actsOnProperty' shifts the focus to the possession of properties, which aligns with the nature of TemporalEntities."
+    }
+  ],
+  "TemporalEntity,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "Removing the constraint allows for a broader interpretation of TemporalEntities without relying on specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. If any features of interest exist, they must all be associated with the characteristics defined in the FeatureOfInterest class.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must exclusively conform to the defined characteristics of the FeatureOfInterest."
+    }
+  ],
+  "TemporalEntity,hasProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "Removing the constraint allows for a broader understanding of TemporalEntities without limiting their properties to specific types."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. If any properties exist, they must all be defined within the Property class. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "The 'only' constraint emphasizes that if properties are present, they must exclusively belong to the Property class, ensuring a uniformity in the characteristics of TemporalEntities."
+    }
+  ],
+  "TemporalEntity,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "TemporalEntities provide a framework for understanding the timing and duration of activities or measurements, which can result in various outcomes.",
+      "reason": "By removing the constraint, the support text is now generalized to focus on the framework of TemporalEntities without referencing specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. If any outcomes exist, they must all be instances of the Result class.",
+      "reason": "The 'only' constraint specifies that if there are outcomes associated with TemporalEntities, they must exclusively belong to the Result class."
+    }
+  ],
+  "TemporalEntity,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "Removing the constraint allows the definition to focus solely on the abstract nature of TemporalEntities without implying a specific relationship to samples."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. If any samples exist, they must all be instances of the Sample class.",
+      "reason": "The 'only' constraint emphasizes that if samples are present, they must exclusively be of the Sample class."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasResult",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network, and they can be linked to results, which are represented in the Result class, indicating a relationship with specific outcomes of observation.",
+      "reason": "Using 'hasResult' instead of 'hasSample' shifts the focus from samples to results, reflecting a different aspect of the relationship in the context of temporal phenomena."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and"
+    }
+  ],
+  "TemporalEntity,isActedOnBy,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "Removing the constraint allows for a broader interpretation of TemporalEntities without the need to specify their interaction with systems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. If acted upon, they must exclusively be influenced by systems.",
+      "reason": "The 'only' constraint highlights that if a TemporalEntity is influenced by systems, those systems must exclusively match the defined criterion."
+    }
+  ],
+  "TemporalEntity,isObservedBy,some,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "By removing the constraint, the focus shifts to the broader definition of TemporalEntity, emphasizing its role in time-related phenomena without dependency on specific observational relationships."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. If any systems observe a TemporalEntity, they must all be part of the System class.",
+      "reason": "The 'only' constraint clarifies that if any systems are involved in observing a TemporalEntity, they must exclusively belong to the System class."
+    }
+  ],
+  "TemporalEntity,isProxyFor,some,TemporalEntity": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "(The concept of a TemporalEntity can be represented through proxies, which are also classified as TemporalEntities.)",
+      "reason": "Removing the constraint allows the support text to stand on its own without depending on specific relationships or constraints around proxies."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(The concept of a TemporalEntity can be represented through proxies, which are also classified as TemporalEntities. If a TemporalEntity is a proxy, it must exclusively represent another TemporalEntity.)",
+      "reason": "The 'only' constraint clarifies that if a TemporalEntity functions as a proxy, it must solely represent another TemporalEntity, emphasizing exclusivity."
+    }
+  ],
+  "TemporalEntity,madeBySampler,some,Sampler": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "Removing the constraint allows the support text to focus solely on the definition of TemporalEntity without dependency on any specific relationships or entities."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. If a TemporalEntity is associated with a sampler, it must exclusively be made by a Sampler.",
+      "reason": "The 'only' constraint emphasizes that if a TemporalEntity is associated with a sampler, that association must be exclusively with Samplers."
+    }
+  ],
+  "TemporalEntity,madeBySensor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "The removal of the constraint allows for a broader interpretation of TemporalEntities without being tied to the specific relationship with sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. If any sensors exist, they must all be classified under the Sensor category.",
+      "reason": "The 'only' constraint clarifies that if there are any sensors associated with a TemporalEntity, they must exclusively belong to the Sensor category."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network. TemporalEntities can be made by any Thing.",
+      "reason": "Generalizing to 'Thing' allows for a broader range of potential entities that could be associated with TemporalEntities, expanding the scope of the class."
+    },
+    {
+      "operation": "generalize",
+      "value": "System",
+      "description": "A TemporalEntity represents an abstract concept that pertains to time-related phenomena within the context of a semantic sensor network. This class encompasses various temporal aspects that can be associated with observations, events, or processes. TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions"
+    }
+  ],
+  "TemporalEntity,madeObservation,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "The removal of the constraint allows the support text to focus on the general purpose and role of TemporalEntities without referencing specific observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. If any observations are made, they must all be associated with the TemporalEntity.",
+      "reason": "The 'only' constraint specifies that if observations exist, they must exclusively relate to the TemporalEntity, reinforcing the exclusivity of this relationship."
+    }
+  ],
+  "TemporalEntity,observes,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "TemporalEntities provide a framework for understanding the timing and duration of activities or measurements. They serve as essential components for modeling dynamic interactions and changes over time within the network.",
+      "reason": "The removal of the constraint allows the support text to focus on the broader role of TemporalEntities without being tied to specific relationships with observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "TemporalEntities encompass various temporal aspects that can be associated with observations, indicating that if any observations exist, they must all be related to the defined temporal aspects of TemporalEntities.",
+      "reason": "The 'only' constraint highlights that if there are observations linked to TemporalEntities, they must exclusively pertain to the defined temporal aspects."
+    }
+  ],
+  "TemporalEntity,phenomenonTime,some,TemporalEntity": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The timing of phenomena is a critical aspect of TemporalEntities, indicating a relationship with other concepts.",
+      "reason": "By removing the constraint, the support text can focus on the broader relationship of TemporalEntities without specifying the nature of that relationship with other TemporalEntities."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The timing of phenomena is a critical aspect of TemporalEntities, indicating a relationship with other TemporalEntities. If any phenomena exist, they must all be TemporalEntities.",
+      "reason": "The 'only' constraint highlights that if there are any phenomena related to this TemporalEntity, they must exclusively be TemporalEntities."
+    }
+  ],
+  "Thing,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The diversity within the Thing class allows for a comprehensive representation of all elements involved in sensing and actuation processes, which includes features of interest that are essential for effective monitoring and control.",
+      "reason": "By removing the constraint, the support text no longer depends on the specific relationship with FeatureOfInterest, allowing for a broader interpretation of what constitutes a 'Thing' in the ontology."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The diversity within the Thing class allows for a comprehensive representation of all elements involved in sensing and actuation processes, which includes features of interest that are essential for effective monitoring and control. If any features of interest exist, they must all be aligned with the defined criteria.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must strictly adhere to the established requirements, ensuring consistency within the Thing class."
+    }
+  ],
+  "Thing,hasProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Thing class serves as a foundational category within the semantic sensor network ontology, encompassing a wide range of entities and concepts relevant to sensor networks. This class includes various components such as sensors, actuators, and observations, all of which play critical roles in the functioning of a sensor network. Each instance of Thing may represent physical or abstract entities that contribute to the overall system's ability to monitor, control, and interact with the environment. The diversity within this class allows for a comprehensive representation of all elements involved in sensing and actuation processes.",
+      "reason": "Removing the property constraint allows for a broader interpretation of the Thing class without the necessity of including specific properties, emphasizing its foundational role."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Thing class encompasses a wide range of entities and concepts relevant to sensor networks, including properties that are essential for the operation of sensors and actuators. If any properties exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint ensures that all properties associated with a Thing must adhere to a specific criterion, reinforcing the class's integrity."
+    }
+  ],
+  "Thing,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Thing class encompasses a wide range of entities and concepts relevant to sensor networks, including various components such as sensors, actuators, properties, and observations, all of which play critical roles in the functioning of a sensor network. Each instance of Thing may represent physical or abstract entities that contribute to the overall system's ability to monitor, control, and interact with the environment.",
+      "reason": "By removing the constraint, the support text can focus on the general characteristics of the Thing class without referencing specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Thing class encompasses a wide range of entities and concepts relevant to sensor networks, including various components such as sensors, actuators, properties, and observations, all of which play critical roles in the functioning of a sensor network. Each instance of Thing may represent physical or abstract entities that contribute to the overall system's ability to monitor, control, and interact with the environment. If any results exist, they must all be categorized as Result.",
+      "reason": "The 'only' constraint clarifies that if there are any results associated with a Thing, they must exclusively belong to the defined category of Result."
+    }
+  ],
+  "Thing,hasSubSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Thing class allows for a comprehensive representation of all elements involved in sensing and actuation processes, which may include subsystems that contribute to the overall functionality of the sensor network.",
+      "reason": "By removing the constraint, the support text no longer references the specific relationship between Thing and its subsystems, allowing for a broader interpretation of the class."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Thing class allows for a comprehensive representation of all elements involved in sensing and actuation processes, which may include subsystems that contribute to the overall functionality of the sensor network. If any subsystems exist, they must all be of the type System.",
+      "reason": "The 'only' constraint clarifies that if any subsystems are present, they must exclusively be of the type System, refining the understanding of the relationship."
+    }
+  ],
+  "Thing,isActedOnBy,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "(The Thing class includes various components such as sensors and actuators, indicating that instances of Thing may be acted upon as part of the sensor network's functioning.)",
+      "reason": "Removing the constraint allows for a broader interpretation of the relationships involving 'Thing', emphasizing that it may be acted upon without specifying the presence of any actuators."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(The Thing class includes various components such as sensors and actuators, indicating that instances of Thing may be acted upon exclusively by actuators as part of the sensor network's functioning.)",
+      "reason": "The 'only' constraint clarifies that if instances of Thing are acted upon, they must be acted upon solely by actuators."
+    }
+  ],
+  "Thing,isProxyFor,some,Thing": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "(The Thing class serves as a foundational category, suggesting that instances may act as proxies for other entities within the sensor network.)",
+      "reason": "By removing the constraint, the support text can focus on the general nature of the Thing class without being tied to specific relationships or requirements regarding proxies."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(The Thing class serves as a foundational category, suggesting that instances may act as proxies for other entities within the sensor network. If a Thing acts as a proxy, it must exclusively represent other Things.)",
+      "reason": "The 'only' constraint clarifies that if a Thing is functioning as a proxy, it must be for other Things, reinforcing exclusivity in the representation."
+    }
+  ],
+  "Thing,isResultOf,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Thing class serves as a foundational category within the semantic sensor network ontology, encompassing a wide range of entities and concepts relevant to sensor networks. This class includes various components such as sensors, actuators, properties, and observations, all of which play critical roles in the functioning of a sensor network. Each instance of Thing may represent physical or abstract entities that contribute to the overall system's ability to monitor, control, and interact with the environment. The diversity within this class allows for a comprehensive representation of all elements involved in sensing and actuation processes.",
+      "reason": "The removal of the constraint allows for a broader interpretation of the Thing class without being limited to its relationship with procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Thing class encompasses various components relevant to sensor networks, which may include procedures that result in specific outcomes or results. If any components exist, they must all be procedures.",
+      "reason": "The 'only' constraint clarifies that if there are any components related to the Thing class, they must exclusively be procedures."
+    }
+  ],
+  "Thing,observes,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Thing class serves as a foundational category within the semantic sensor network ontology, encompassing a wide range of entities and concepts relevant to sensor networks. This class includes various components, all of which play critical roles in the functioning of a sensor network. Each instance of Thing may represent physical or abstract entities that contribute to the overall system's ability to monitor, control, and interact with the environment. The diversity within this class allows for a comprehensive representation of all elements involved in sensing and actuation processes.",
+      "reason": "Removing the constraint allows the support text to focus on the general characteristics of the Thing class without tying it to the specific relationship with observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Thing class serves as a foundational category within the semantic sensor network ontology, encompassing a wide range of entities and concepts relevant to sensor networks, which includes observations that are critical for monitoring and interacting with the environment. If any entities exist, they must exclusively be observations.",
+      "reason": "The 'only' constraint highlights that if any entities are present, they must be exclusively observations, refining the focus on the relationship with the observation class."
+    }
+  ],
+  "Thing,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Thing class serves as a foundational category within the semantic sensor network ontology, encompassing a wide range of entities and concepts relevant to sensor networks. This class includes various components such as sensors, actuators, properties, and observations, all of which play critical roles in the functioning of a sensor network. Each instance of Thing may represent physical or abstract entities that contribute to the overall system's ability to monitor, control, and interact with the environment. The diversity within this class allows for a comprehensive representation of all elements involved in sensing and actuation processes.",
+      "reason": "By removing the constraint, the support text can focus on the broad representation of entities within the Thing class without tying it to specific procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Thing class includes various components that play critical roles in the functioning of a sensor network, which may involve the use of specific procedures. If any procedures are used, they must all be Procedures.",
+      "reason": "The 'only' constraint clarifies that if any procedures are involved, they must exclusively be classified as Procedures."
+    }
+  ],
+  "Vocabulary,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.",
+      "reason": "Removing the constraint allows the support text to focus on the general purpose and importance of the Vocabulary class without being limited by the specific relationship to the Platform."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network. If terms are deployed, they must be exclusively on the specified platform.",
+      "reason": "The 'only' constraint clarifies that any deployment of the Vocabulary must be restricted to a single specified platform, emphasizing exclusivity in its usage."
+    }
+  ],
+  "Vocabulary,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "(The Vocabulary class provides a standardized language for describing properties, features, and other entities associated with sensor networks.)",
+      "reason": "Removing the constraint eliminates the need to reference specific relationships, allowing for a broader understanding of the Vocabulary class without dependency on any particular feature."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(The Vocabulary class provides a standardized language for describing properties, features, and other entities associated with sensor networks. If any features of interest exist, they must all align with the defined criteria.)",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must exclusively meet the defined criteria, enhancing the precision of the vocabulary."
+    }
+  ],
+  "Vocabulary,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.",
+      "reason": "Removing the constraint allows the support text to focus on the overall purpose and functionality of the Vocabulary class without being tied to specific input requirements."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network. If any inputs exist, they must all be of the type Input.",
+      "reason": "The 'only' constraint emphasizes that if any inputs are present, they must exclusively be of the specified type, highlighting the importance of maintaining consistency in the vocabulary."
+    }
+  ],
+  "Vocabulary,hasOutput,some,Output": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors.",
+      "reason": "Removing the constraint allows the support text to focus on the broader purpose and functionality of the Vocabulary class without being tied to specific output requirements."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. If any outputs exist, they must all be of type Output.",
+      "reason": "The 'only' constraint clarifies that if there are any outputs associated with the Vocabulary class, they must exclusively be of the specified type Output."
+    }
+  ],
+  "Vocabulary,hasProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.",
+      "reason": "Removing the constraint allows the support text to focus on the broader purpose of the Vocabulary class without depending on specific property constraints."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network. If any properties exist, they must all be defined as Property.",
+      "reason": "The 'only' constraint clarifies that if properties are present, they must exclusively be of the type Property."
+    }
+  ],
+  "Vocabulary,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.",
+      "reason": "Removing the constraint allows the support text to focus solely on the role of the Vocabulary class without referencing specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. If any results exist, they must all match the defined criteria.",
+      "reason": "The 'only' constraint specifies that if there are results, they must conform to a particular standard, emphasizing exclusivity in the results related to the Vocabulary class."
+    }
+  ],
+  "Vocabulary,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.",
+      "reason": "Removing the constraint allows for a broader definition of the Vocabulary class, emphasizing its role in communication and understanding without relying on the presence of samples."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network. If samples exist, they must all match the defined criteria.",
+      "reason": "The 'only' constraint specifies that any existing samples must adhere to a certain criterion, reinforcing the importance of consistency in the vocabulary."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasResult",
+      "description": "The Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network. It may include results that facilitate the understanding and communication of concepts within a specific domain.",
+      "reason": "Using 'hasResult' instead of 'hasSample' emphasizes the outcomes of using the vocabulary, which can be more relevant for understanding the context of its application."
+    }
+  ],
+  "Vocabulary,isActedOnBy,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "(By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.)",
+      "reason": "The constraint has been fully removed, allowing the support text to stand independently without referencing any specific entities or relationships."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network. If any actuators exist, they must exclusively be of the type defined in this vocabulary.)",
+      "reason": "The 'only' constraint specifies that if actuators are present, they must match the specific criteria defined in the Vocabulary, enhancing the precision of the terms used."
+    }
+  ],
+  "Vocabulary,isHostedBy,some,Platform": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.",
+      "reason": "Removing the constraint allows the support text to focus on the general purpose of the Vocabulary class without dependence on the hosting relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. If any platforms exist, they must all be exclusively linked to this vocabulary.",
+      "reason": "The 'only' constraint highlights that if platforms are associated, they are exclusively related to this specific vocabulary."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isProxyFor",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It may act as a proxy for other entities in the semantic sensor network.",
+      "reason": "Using 'isProxyFor' instead of 'isHostedBy' shifts the focus to the Vocabulary class's role as a proxy, which can provide a broader interpretation of its function."
+    },
+    {
+      "operation": "generalize",
+      "value": "Thing",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain, as part of a broader category of Things.",
+      "reason": "Generalizing to 'Thing' allows for a wider interpretation of the Vocabulary class's role within the ontology, connecting it to a more extensive set of concepts."
+    }
+  ],
+  "Vocabulary,isProxyFor,some,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.",
+      "reason": "Removing the constraint allows the support text to focus solely on the definition of the Vocabulary class without referencing the relationship to System."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. If any systems are represented, they must all be consistent with the defined vocabulary.",
+      "reason": "The 'only' constraint emphasizes that if any systems are represented, they must adhere strictly to the vocabulary defined for clear communication."
+    }
+  ],
+  "Vocabulary,isResultOf,some,Observation": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.",
+      "reason": "Removing the constraint allows for a broader interpretation of the Vocabulary class without dependency on specific observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. If any results exist, they must exclusively be from Observations.",
+      "reason": "The 'only' constraint reinforces that if results are present, they must solely come from Observations, emphasizing exclusivity."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isProxyFor",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network, acting as a proxy for relevant entities.",
+      "reason": "Using 'isProxyFor' as the predicate highlights the role of the Vocabulary class in representing or standing in for other entities, enhancing its function in data sharing."
+    }
+  ],
+  "Vocabulary,madeObservation,some,Observation": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.",
+      "reason": "Removing the constraint allows the focus to remain on the general purpose of the Vocabulary class without tying it to specific observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. If any observations exist, they must all be categorized as observations.",
+      "reason": "The 'only' constraint emphasizes that if observations are present, they must exclusively fall within the defined category of observations."
+    }
+  ],
+  "Vocabulary,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.",
+      "reason": "Removing the constraint allows the support text to focus on the general purpose and importance of the Vocabulary class without tying it to the specific relationship with ObservableProperty."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain. It provides a standardized language for describing properties, features, and other entities associated with sensor networks. This class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors. If any observable properties exist, they must all be consistent with the vocabulary established.",
+      "reason": "The 'only' constraint emphasizes that if observable properties are present, they must strictly conform to the vocabulary defined, highlighting the importance of consistency in terminology."
+    }
+  ],
+  "Vocabulary,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "(The Vocabulary class provides a standardized language for describing properties, features, and other entities associated with sensor networks.)",
+      "reason": "Removing the constraint eliminates the need to reference 'usedProcedure' or 'Procedure', allowing the focus to remain on the broader purpose of the Vocabulary class."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "(The Vocabulary class provides a standardized language for describing properties, features, and other entities associated with sensor networks. If any procedures are used, they must all match the defined criteria.)",
+      "reason": "The 'only' constraint emphasizes that if any procedures are referenced, they must conform to a specific set of criteria, reinforcing the standardization aspect."
+    }
+  ]
+}

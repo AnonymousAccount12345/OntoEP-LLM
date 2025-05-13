@@ -1,0 +1,2074 @@
+[
+    {
+        "subject": "American",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "American",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PeperoniSausageTopping"
+        }
+    },
+    {
+        "subject": "American",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "American",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "American",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PeperoniSausageTopping"
+        }
+    },
+    {
+        "subject": "American",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "HotGreenPepperTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "JalapenoPepperTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PeperoniSausageTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "HotGreenPepperTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "JalapenoPepperTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PeperoniSausageTopping"
+        }
+    },
+    {
+        "subject": "AmericanHot",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "ArtichokeTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "AsparagusTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OnionTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PeperonataTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PrawnsTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TobascoPepperSauce"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OnionTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PeperonataTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PrawnsTopping"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TobascoPepperSauce"
+        }
+    },
+    {
+        "subject": "Cajun",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "CajunSpiceTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Hot"
+        }
+    },
+    {
+        "subject": "CaperTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PeperonataTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PeperonataTopping"
+        }
+    },
+    {
+        "subject": "Capricciosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GoatsCheeseTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "SundriedTomatoTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GoatsCheeseTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "SundriedTomatoTopping"
+        }
+    },
+    {
+        "subject": "Caprina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "ChickenTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "SpinachTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "SpinachTopping"
+        }
+    },
+    {
+        "subject": "Fiorentina",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "FishTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "FourCheesesTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PeperoniSausageTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PeperoniSausageTopping"
+        }
+    },
+    {
+        "subject": "FourSeasons",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "FruttiDiMare",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "FruttiDiMare",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MixedSeafoodTopping"
+        }
+    },
+    {
+        "subject": "FruttiDiMare",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "FruttiDiMare",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "FruttiDiMare",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MixedSeafoodTopping"
+        }
+    },
+    {
+        "subject": "FruttiDiMare",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "GarlicTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Medium"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "LeekTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PeperonataTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PetitPoisTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "SlicedTomatoTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "LeekTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PeperonataTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PetitPoisTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "SlicedTomatoTopping"
+        }
+    },
+    {
+        "subject": "Giardiniera",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "GoatsCheeseTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "GorgonzolaTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "HotGreenPepperTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Hot"
+        }
+    },
+    {
+        "subject": "HotSpicedBeefTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Hot"
+        }
+    },
+    {
+        "subject": "IceCream",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "FruitTopping"
+        }
+    },
+    {
+        "subject": "JalapenoPepperTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Hot"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "LaReine",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "LeekTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Margherita",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Margherita",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Margherita",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Margherita",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "MozzarellaTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Mushroom",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Mushroom",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "Mushroom",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Mushroom",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Mushroom",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MushroomTopping"
+        }
+    },
+    {
+        "subject": "Mushroom",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "MushroomTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Napoletana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "NutTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "OliveTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "OnionTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Medium"
+        }
+    },
+    {
+        "subject": "ParmaHamTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "AsparagusTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "AsparagusTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "Parmense",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "ParmesanTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "PeperonataTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Medium"
+        }
+    },
+    {
+        "subject": "PeperoniSausageTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Medium"
+        }
+    },
+    {
+        "subject": "PetitPoisTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Pizza",
+        "restriction": {
+            "property": "hasBase",
+            "type": "some",
+            "target": "PizzaBase"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "CajunSpiceTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "ChickenTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "RedOnionTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "SweetPepperTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "CajunSpiceTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "ChickenTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "RedOnionTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "SweetPepperTopping"
+        }
+    },
+    {
+        "subject": "PolloAdAstra",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "LeekTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "RosemaryTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "LeekTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "RosemaryTopping"
+        }
+    },
+    {
+        "subject": "PrinceCarlo",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "QuattroFormaggi",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "FourCheesesTopping"
+        }
+    },
+    {
+        "subject": "QuattroFormaggi",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "QuattroFormaggi",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "FourCheesesTopping"
+        }
+    },
+    {
+        "subject": "QuattroFormaggi",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "RealItalianPizza",
+        "restriction": {
+            "property": "hasBase",
+            "type": "only",
+            "target": "ThinAndCrispyBase"
+        }
+    },
+    {
+        "subject": "RocketTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Medium"
+        }
+    },
+    {
+        "subject": "Rosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GorgonzolaTopping"
+        }
+    },
+    {
+        "subject": "Rosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Rosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Rosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GorgonzolaTopping"
+        }
+    },
+    {
+        "subject": "Rosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Rosa",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "RosemaryTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "ArtichokeTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "AnchoviesTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "ArtichokeTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "HamTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Siciliana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "SlicedTomatoTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GreenPepperTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "HotSpicedBeefTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OnionTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GreenPepperTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "HotSpicedBeefTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OnionTopping"
+        }
+    },
+    {
+        "subject": "SloppyGiuseppe",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "RocketTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "GarlicTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "ParmesanTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "RocketTopping"
+        }
+    },
+    {
+        "subject": "Soho",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "SpinachTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "SultanaTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Medium"
+        }
+    },
+    {
+        "subject": "SundriedTomatoTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "SweetPepperTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "TobascoPepperSauce",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Hot"
+        }
+    },
+    {
+        "subject": "TomatoTopping",
+        "restriction": {
+            "property": "hasSpiciness",
+            "type": "some",
+            "target": "Mild"
+        }
+    },
+    {
+        "subject": "UnclosedPizza",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "OnionTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "PineKernels"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "SultanaTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "some",
+            "target": "TomatoTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "CaperTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "MozzarellaTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OliveTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "OnionTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "PineKernels"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "SultanaTopping"
+        }
+    },
+    {
+        "subject": "Veneziana",
+        "restriction": {
+            "property": "hasTopping",
+            "type": "only",
+            "target": "TomatoTopping"
+        }
+    }
+]

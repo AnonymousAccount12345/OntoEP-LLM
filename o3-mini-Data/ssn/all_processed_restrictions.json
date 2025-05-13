@@ -1,0 +1,344 @@
+{
+    "Thing": [],
+    "Sensor": [
+        {
+            "s": "Sensor",
+            "p": "detects",
+            "rtype": "some",
+            "o": "Stimulus",
+            "support_sentence": "(\"designed to detect and respond to physical stimuli in the environment, such as light, temperature, or pressure\")"
+        },
+        {
+            "s": "Sensor",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(\"capable of observing particular properties, which define the characteristics it monitors\")"
+        }
+    ],
+    "Vocabulary": [],
+    "Result": [
+        {
+            "s": "Result",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(\"obtained from observations or measurements taken in a semantic sensor network\")"
+        },
+        {
+            "s": "Result",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(\"often reflecting the state or condition of a particular feature of interest\")"
+        }
+    ],
+    "Property": [
+        {
+            "s": "Property",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "Each property is uniquely tied to a feature, ensuring that it describes only that particular aspect or quality."
+        }
+    ],
+    "Sampling": [
+        {
+            "s": "Sampling",
+            "p": "madeBySampler",
+            "rtype": "some",
+            "o": "Sampler",
+            "support_sentence": "This process is exclusively conducted by a sampler, which is responsible for carrying out the sampling activities."
+        },
+        {
+            "s": "Sampling",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection."
+        },
+        {
+            "s": "Sampling",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "Sampling refers to the process of collecting data from a specific feature of interest, ensuring that the data gathered is representative of that feature."
+        },
+        {
+            "s": "Sampling",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "The outcome of sampling is a sample that reflects the observations made during the process."
+        }
+    ],
+    "Deployment": [
+        {
+            "s": "Deployment",
+            "p": "forProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(\"Each deployment is tailored to a particular property, ensuring that the system operates within defined parameters.\")"
+        },
+        {
+            "s": "Deployment",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "(\"...where a system is installed or utilized on a designated platform.\")"
+        },
+        {
+            "s": "Deployment",
+            "p": "deployedSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(\"The Deployment class encapsulates the relationship between the system, the platform it operates on, and the property it addresses, emphasizing the structured nature of sensor network configurations.\")"
+        }
+    ],
+    "System": [
+        {
+            "s": "System",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "(\"operates within a specific Platform\")"
+        },
+        {
+            "s": "System",
+            "p": "hasDeployment",
+            "rtype": "some",
+            "o": "Deployment",
+            "support_sentence": "(\"encompasses Deployments, which define how the System is executed\")"
+        },
+        {
+            "s": "System",
+            "p": "hasSubSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(\"may include SubSystems that work collaboratively to achieve overarching goals\")"
+        },
+        {
+            "s": "System",
+            "p": "implements",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(\"every System implements specific Procedures that guide its operations and functionalities\")"
+        }
+    ],
+    "Agent": [],
+    "Input": [],
+    "FeatureOfInterest": [
+        {
+            "s": "FeatureOfInterest",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "(\"each Feature of Interest is associated exclusively with a specific sample that provides data about it.\")"
+        },
+        {
+            "s": "FeatureOfInterest",
+            "p": "hasProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(\"every Feature of Interest is defined by its properties, which describe its characteristics and behaviors in the context of observation or measurement.\")"
+        }
+    ],
+    "ObservableProperty": [
+        {
+            "s": "ObservableProperty",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(\"this property is specifically linked to sensors, which are responsible for observing and collecting data about it\")"
+        }
+    ],
+    "Output": [
+        {
+            "s": "Output",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(\"Outputs may result from the operation of sensors\")"
+        },
+        {
+            "s": "Output",
+            "p": "madeByActuator",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "(\"Outputs may result from the operation of actuators\")"
+        },
+        {
+            "s": "Output",
+            "p": "madeBySampler",
+            "rtype": "some",
+            "o": "Sampler",
+            "support_sentence": "(\"Outputs may result from the operation of sampling devices\")"
+        }
+    ],
+    "Sampler": [
+        {
+            "s": "Sampler",
+            "p": "madeSampling",
+            "rtype": "only",
+            "o": "Sampling",
+            "support_sentence": "(\"all operations it conducts are directly related to the act of sampling\" from \"Samplers are characterized by its exclusive involvement in sampling processes\")"
+        },
+        {
+            "s": "Sampler",
+            "p": "hasFeatureOfInterest",
+            "rtype": "only",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(\"designed to collect data from a specific feature of interest\" indicates that the Sampler’s related feature must be a FeatureOfInterest)"
+        }
+    ],
+    "Actuation": [
+        {
+            "s": "Actuation",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "an actuator exerts influence on a specific property, typically an actuatable property."
+        },
+        {
+            "s": "Actuation",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "closely tied to a particular feature of interest, which is the focus of the actuation."
+        },
+        {
+            "s": "Actuation",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "each actuation yields a specific result, reflecting the outcome of the interaction."
+        },
+        {
+            "s": "Actuation",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "the actuation is guided by a defined procedure that outlines the steps necessary to achieve the intended outcome."
+        }
+    ],
+    "Procedure": [
+        {
+            "s": "Procedure",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "(\"its exclusive reliance on defined inputs and outputs\" – indicating that a Procedure works with defined inputs)"
+        },
+        {
+            "s": "Procedure",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "(\"its exclusive reliance on defined inputs and outputs\" – indicating that a Procedure produces defined outputs)"
+        },
+        {
+            "s": "Procedure",
+            "p": "deployedSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(\"each Procedure is executed by a designated system, which embodies the necessary capabilities to carry out the prescribed actions\")"
+        }
+    ],
+    "TemporalEntity": [],
+    "Sample": [
+        {
+            "s": "Sample",
+            "p": "madeSampling",
+            "rtype": "some",
+            "o": "Sampling",
+            "support_sentence": "(\"Sample is described as being collected during a Sampling procedure and is uniquely associated with the act of Sampling that produced it\")"
+        }
+    ],
+    "Observation": [
+        {
+            "s": "Observation",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(\"Each observation is associated with a unique result that reflects the data gathered during the observation process.\")"
+        },
+        {
+            "s": "Observation",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(\"It is conducted by a sensor.\")"
+        },
+        {
+            "s": "Observation",
+            "p": "observedProperty",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(\"is linked to a specific observable property\")"
+        },
+        {
+            "s": "Observation",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(\"following a defined procedure\")"
+        },
+        {
+            "s": "Observation",
+            "p": "wasOriginatedBy",
+            "rtype": "some",
+            "o": "Stimulus",
+            "support_sentence": "(\"is often triggered by a stimulus\")"
+        },
+        {
+            "s": "Observation",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(\"focuses on a particular feature of interest\")"
+        }
+    ],
+    "ActuatableProperty": [
+        {
+            "s": "ActuatableProperty",
+            "p": "madeActuation",
+            "rtype": "some",
+            "o": "Actuation",
+            "support_sentence": "This property is designed to be directly affected by an actuation process, indicating a clear relationship between the property and the action taken."
+        }
+    ],
+    "Actuator": [
+        {
+            "s": "Actuator",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "Each Actuator is associated with a specific type of property that it can influence, ensuring that its functionality is aligned with the properties it is intended to actuate."
+        }
+    ],
+    "Stimulus": [
+        {
+            "s": "Stimulus",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(\"It is intrinsically linked to specific observable properties, ensuring that each stimulus is associated with a defined aspect of interest in the surrounding environment.\")"
+        }
+    ],
+    "Platform": [
+        {
+            "s": "Platform",
+            "p": "hosts",
+            "rtype": "only",
+            "o": "System",
+            "support_sentence": "(\"exclusively hosts systems, ensuring that only compatible entities operate within its framework.\")"
+        },
+        {
+            "s": "Platform",
+            "p": "hasDeployment",
+            "rtype": "some",
+            "o": "Deployment",
+            "support_sentence": "(\"a Platform is always associated with a deployment context, indicating its specific operational environment.\")"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+You're an expert on ontologies, and you know a lot about about {domain}.
+Your job is to refer the class_hierarchy, the class definitions and property restriction candidates I give you, the support text for each property restriction candidate, and finalize the final ontology property restrictions.
+Referring class_hierarchy, and use only the concepts in class_hierarchy.
+Expand, modify, delete property restriction candidates as needed.
+Considering the class definitions and the support text, and property restriction candidate, generate final property restrictions. 
+Output in CSV format with columns subject,predicate,restriction type,object, one property restriction per line.
+
+Now, your case.
+
+subject: {class_name}
+
+class_hierarchy:
+{class_hierarchy}
+
+object_property:
+{object_property}
+
+class definition:
+{class_definition}:
+
+property restriction candidates:
+{property_restriction}
+
+Final property restrictions:
+

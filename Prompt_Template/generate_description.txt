@@ -1,0 +1,15 @@
+You are a domain expert on {domain}. For each class in the {domain} ontology I give you, look at the constraints and class relationships, and generate a natural language description of that class for ontology generation. 
+Keep the description to a maximum of four sentences, and make it clear enough that the class restriction can be extracted for ontology generation, especially some(someValuesFrom, at least one) /only(AllValuesFrom) restrictions, but avoid direct references to it.
+Generate only natural language descriptions.
+Don't explicitly mention the class restrictions, make it a natural, natural language sentence.
+
+class_hierarchy:
+{class_hierarchy}
+
+class_name:
+{class_name}
+
+class_constraints:
+{class_information}
+
+class definition:

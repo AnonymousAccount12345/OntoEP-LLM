@@ -1,0 +1,120 @@
+{
+    "Thing": [
+        "Animal",
+        "Plant",
+        "PlantParts",
+        "Distribution",
+        "Habitat",
+        "DeprecatedClass",
+        "AnimalCollective",
+        "Role"
+    ],
+    "Animal": [
+        "Carnivore",
+        "Herbivore",
+        "Omnivore",
+        "Giraffe",
+        "Lion",
+        "RockDassie",
+        "Warthog"
+    ],
+    "Plant": [
+        "Tree",
+        "CarnivorousPlant",
+        "Grass",
+        "Tasty-plant",
+        "Palm"
+    ],
+    "Apple": [],
+    "FruitingBody": [
+        "Apple",
+        "Berry"
+    ],
+    "Berry": [],
+    "Branch": [],
+    "PlantParts": [
+        "FruitingBody",
+        "Branch",
+        "Leaf",
+        "Twig",
+        "Root",
+        "Phloem",
+        "Stem",
+        "Xylem"
+    ],
+    "Tree": [],
+    "Carnivore": [
+        "HypoCarnivores",
+        "MesoCarnivore",
+        "ObligateCarnivore"
+    ],
+    "Herbivore": [
+        "Elephant",
+        "Impala"
+    ],
+    "Omnivore": [],
+    "CarnivorousPlant": [],
+    "Distribution": [],
+    "Elephant": [],
+    "Giraffe": [],
+    "Leaf": [],
+    "Twig": [],
+    "Lion": [],
+    "Grass": [],
+    "Habitat": [],
+    "Impala": [],
+    "Predator": [],
+    "Palmtree": [],
+    "DeprecatedClass": [
+        "Palmtree"
+    ],
+    "Parsnip": [],
+    "Root": [
+        "Parsnip",
+        "Carrot"
+    ],
+    "Phloem": [],
+    "Stem": [],
+    "RockDassie": [],
+    "Tasty-plant": [],
+    "Warthog": [],
+    "Xylem": [],
+    "AnimalCollective": [
+        "Bask",
+        "Cloud",
+        "Colony",
+        "Den",
+        "Flight",
+        "Herd",
+        "Kettle",
+        "Nest",
+        "Rhumba",
+        "Scourge",
+        "Swarm",
+        "Troop",
+        "Zeal"
+    ],
+    "Bask": [],
+    "Carrot": [],
+    "Cloud": [],
+    "Colony": [],
+    "Den": [],
+    "Flight": [],
+    "Herd": [],
+    "HypoCarnivores": [],
+    "Kettle": [],
+    "MesoCarnivore": [],
+    "Nest": [],
+    "ObligateCarnivore": [],
+    "Palm": [],
+    "Role": [
+        "Predator",
+        "Prey"
+    ],
+    "Prey": [],
+    "Rhumba": [],
+    "Scourge": [],
+    "Swarm": [],
+    "Troop": [],
+    "Zeal": []
+}

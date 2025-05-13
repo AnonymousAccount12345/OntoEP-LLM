@@ -1,0 +1,635 @@
+{
+    "Thing": [
+        {
+            "s": "Thing",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Thing",
+            "support_sentence": "(The class \"Thing\" encompasses all entities, which implies that it can have parts that are also classified as \"Thing\" or any of its subclasses.)"
+        },
+        {
+            "s": "Thing",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Thing",
+            "support_sentence": "(As \"Thing\" is the foundational class, it can include members that are also classified as \"Thing\" or any of its subclasses.)"
+        },
+        {
+            "s": "Thing",
+            "p": "is-part-of",
+            "rtype": "only",
+            "o": "Thing",
+            "support_sentence": "(The class \"Thing\" serves as the highest level of classification, indicating that any entity that is part of another must ultimately relate back to \"Thing\".)"
+        },
+        {
+            "s": "Thing",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(Entities classified under \"Thing\" can inhabit various habitats, which are part of the broader ecosystem context.)"
+        },
+        {
+            "s": "Thing",
+            "p": "inheres-in",
+            "rtype": "some",
+            "o": "Thing",
+            "support_sentence": "(The concept of \"Thing\" includes all entities, suggesting that they can have properties that inhere in them, which can also be classified as \"Thing\".)"
+        }
+    ],
+    "Animal": [
+        {
+            "s": "Animal",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Carnivore",
+            "support_sentence": "(Animals can be classified into various groups based on their dietary habits, such as carnivores, herbivores, and omnivores, reflecting their roles in the ecosystem.)"
+        },
+        {
+            "s": "Animal",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Carnivore",
+            "support_sentence": "(Animals can be classified into various groups based on their dietary habits, such as carnivores, herbivores, and omnivores, reflecting their roles in the ecosystem.)"
+        }
+    ],
+    "Plant": [
+        {
+            "s": "Plant",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(Plants are characterized by their structures, such as roots, stems, and leaves, which are essential for their survival and reproduction.)"
+        }
+    ],
+    "PlantParts": [
+        {
+            "s": "PlantParts",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(Every plant part is inherently linked to a specific plant, emphasizing the interdependence between the components and the whole organism.)"
+        }
+    ],
+    "Distribution": [
+        {
+            "s": "Distribution",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(The Distribution class encompasses the various geographical areas where different species of animals and plants are found across Africa, which implies that these distributions are associated with specific habitats.)"
+        }
+    ],
+    "Habitat": [
+        {
+            "s": "Habitat",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(A habitat is a natural environment where various organisms live and interact with one another, which implies that it can have members that are animals.)"
+        },
+        {
+            "s": "Habitat",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(A habitat is a natural environment where various organisms live and interact with one another, which implies that it can have members that are plants.)"
+        },
+        {
+            "s": "Habitat",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(It encompasses the physical characteristics, climate, and resources available in a specific area, which can support different forms of life, indicating that habitats can have parts that are plant parts.)"
+        },
+        {
+            "s": "Habitat",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Each habitat plays a crucial role in the ecosystem, providing food, shelter, and breeding grounds for the species that inhabit it, indicating that habitats can be inhabited by animals.)"
+        },
+        {
+            "s": "Habitat",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(Each habitat plays a crucial role in the ecosystem, providing food, shelter, and breeding grounds for the species that inhabit it, indicating that habitats can be inhabited by plants.)"
+        }
+    ],
+    "DeprecatedClass": [
+        {
+            "s": "```plaintext\nDeprecatedClass",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "DeprecatedClass",
+            "support_sentence": "(This class serves as a historical reference, indicating concepts that have been replaced or rendered obsolete by more accurate or relevant classifications.)\n```"
+        }
+    ],
+    "AnimalCollective": [
+        {
+            "s": "AnimalCollective",
+            "p": "has-member",
+            "rtype": "only",
+            "o": "Animal",
+            "support_sentence": "(Each collective is comprised exclusively of members from the animal kingdom, showcasing the diverse behaviors and interactions among various species.)"
+        }
+    ],
+    "Role": [
+        {
+            "s": "Role",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The Role class encompasses the various positions that animals can hold within ecological interactions, including classifications such as predator and prey, which implies that roles like Predator and Prey are defined by their interactions with other animals, specifically through the act of eating.)"
+        },
+        {
+            "s": "Role",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Similarly, the roles of Predator and Prey also imply that a Prey role is defined by being eaten by another animal, reinforcing the dynamic relationships in natural ecosystems.)"
+        },
+        {
+            "s": "Role",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(Understanding these roles is essential for studying the balance and health of wildlife populations, which often involves their specific habitats where these interactions occur.)"
+        },
+        {
+            "s": "Role",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "AnimalCollective",
+            "support_sentence": "(The dynamic relationships that exist in natural ecosystems often involve groups of animals, indicating that roles can have members that are part of an AnimalCollective.)"
+        }
+    ],
+    "Carnivore": [
+        {
+            "s": "Carnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Carnivores are a group of animals that just consume other animals as their all source of nutrition.)"
+        }
+    ],
+    "Herbivore": [
+        {
+            "s": "Herbivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(Herbivores are animals that just consume plant material as their all source of nutrition.)"
+        }
+    ],
+    "Omnivore": [
+        {
+            "s": "Omnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Omnivores consume a varied diet, incorporating both animal and plant matter, which indicates that they eat animals.)"
+        },
+        {
+            "s": "Omnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(Omnivores consume a varied diet, incorporating both animal and plant matter, which indicates that they eat plants.)"
+        }
+    ],
+    "Giraffe": [
+        {
+            "s": "Giraffe",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(Giraffes are herbivorous mammals that feed on leaves or twigs, particularly from trees, allowing them to reach foliage that many other herbivores cannot access.)  \nGiraffe, eats, some, Twig / support sentence: (Giraffes are herbivorous mammals that feed on leaves or twigs, particularly from trees, allowing them to reach foliage that many other herbivores cannot access.)  \nGiraffe, inhabits, some, Habitat / support sentence: (Giraffes are often found in savannas and open woodlands where their preferred food sources are abundant.)  \nGiraffe, is-proper-part-of, some, Animal / support sentence: (The Giraffe is a tall, herbivorous mammal known for its long neck and distinctive spotted coat.)"
+        }
+    ],
+    "Lion": [
+        {
+            "s": "Lion",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Herbivore",
+            "support_sentence": "(Lions primarily hunt and feed on herbivorous animals, showcasing its role as a top predator in its ecosystem.)"
+        }
+    ],
+    "RockDassie": [
+        {
+            "s": "RockDassie",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Tasty-plant",
+            "support_sentence": "(The Rock Dassie is a small herbivorous mammal that primarily feeds on a variety of vegetation, including grasses and leaves, making it an important part of its ecosystem.)"
+        }
+    ],
+    "Warthog": [
+        {
+            "s": "Warthog",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Omnivore",
+            "support_sentence": "(The Warthog is described as omnivorous, foraging for a varied diet that includes other animals, fruiting bodies, grasses, and roots.)"
+        },
+        {
+            "s": "Warthog",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Habitat",
+            "support_sentence": "(Warthogs are typically found in open and wooded savannas, where they can easily access their preferred food sources.)"
+        },
+        {
+            "s": "Warthog",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "AnimalCollective",
+            "support_sentence": "(Their social behavior often leads them to be seen in small groups, which aids in foraging and protection from predators.)"
+        }
+    ],
+    "Tree": [
+        {
+            "s": "Tree",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(The Tree class is characterized by an elongated stem or trunk that supports branches and leaves, indicating that trees have parts that belong to the PlantParts class.)"
+        }
+    ],
+    "CarnivorousPlant": [
+        {
+            "s": "CarnivorousPlant",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Carnivorous plants capture and digest animals, primarily insects, to supplement their nutritional intake.)"
+        }
+    ],
+    "Grass": [
+        {
+            "s": "Grass",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Herbivore",
+            "support_sentence": "(Grass serves as a primary food source for many herbivorous animals.)"
+        }
+    ],
+    "Tasty-plant": [
+        {
+            "s": "Tasty-plant",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Tasty-plants are desirable food sources for various animal species, indicating that they are eaten by animals.)"
+        }
+    ],
+    "Palm": [
+        {
+            "s": "Palm",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(The Palm class encompasses a diverse group of flowering plants characterized by their tall, slender trunks and large, fan-like or feather-like leaves, indicating that palms have parts that belong to the PlantParts class.)"
+        }
+    ],
+    "FruitingBody": [
+        {
+            "s": "FruitingBody",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(The FruitingBody class represents the reproductive structures of certain plants that develop from flowers and contain seeds, indicating that they are composed of various parts, which are classified under PlantParts.)"
+        }
+    ],
+    "Branch": [
+        {
+            "s": "Branch",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Leaf",
+            "support_sentence": "(A Branch is a structural component of a Tree that supports leaves and fruits, playing a vital role in the overall growth and health of the plant.)"
+        },
+        {
+            "s": "Branch",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "FruitingBody",
+            "support_sentence": "(A Branch is a structural component of a Tree that supports leaves and fruits, playing a vital role in the overall growth and health of the plant.)"
+        }
+    ],
+    "Leaf": [
+        {
+            "s": "Leaf",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(Leaves are typically green and are attached to branches, where they can efficiently capture light. As part of the plant's structure, leaves contribute to overall growth and health.)"
+        }
+    ],
+    "Twig": [
+        {
+            "s": "Twig",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Branch",
+            "support_sentence": "(A twig is a small, slender branch that typically grows on a tree or shrub.)"
+        }
+    ],
+    "Root": [
+        {
+            "s": "Root",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(The Root class encompasses various types of roots that differ in structure and function, contributing to the overall health and stability of the plant.)"
+        }
+    ],
+    "Phloem": [
+        {
+            "s": "Phloem",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(Phloem is a component of the plant's vascular system and is specifically associated with the stem, indicating that it has parts that belong to the broader category of PlantParts.)"
+        }
+    ],
+    "Stem": [
+        {
+            "s": "Stem",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(The Stem is a vital part of a plant that supports its structure and facilitates the transport of nutrients and water between the roots and the leaves.)"
+        }
+    ],
+    "Xylem": [
+        {
+            "s": "Xylem",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(Xylem is a vital tissue found in vascular plants that is typically located within the stem and is essential for maintaining the plant's structure and health.)"
+        }
+    ],
+    "Palmtree": [
+        {
+            "s": "Palmtree",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(The Palmtree is a type of plant characterized by its tall, unbranched trunk and a crown of large, fan-shaped or feather-like leaves at the top, indicating that it has parts that belong to the PlantParts class.)"
+        }
+    ],
+    "Bask": [
+        {
+            "s": "Bask",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The class \"Bask\" refers to a specific type of animal collective, which implies that it consists of members that are animals.)"
+        }
+    ],
+    "Cloud": [
+        {
+            "s": "Cloud",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Members of a cloud typically share a common environment and interact closely with one another, indicating that a cloud consists of various animals.)"
+        }
+    ],
+    "Colony": [
+        {
+            "s": "Colony",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(A Colony is a collective of animals that live together in a social structure, often cooperating for mutual benefit.)"
+        }
+    ],
+    "Den": [
+        {
+            "s": "Den",
+            "p": "inhabits",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(A Den is a specific type of shelter or resting place used by various animals for protection and raising their young.)"
+        }
+    ],
+    "Flight": [
+        {
+            "s": "Flight",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The class \"Flight\" refers to a collective behavior exhibited by certain animals, particularly birds, during which they move through the air using their wings.)"
+        }
+    ],
+    "Herd": [
+        {
+            "s": "Herd",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Elephant",
+            "support_sentence": "(A herd is a social group of animals that typically consists of individuals living and moving together... In the context of African wildlife, a herd is often characterized by its members being predominantly elephants...)"
+        }
+    ],
+    "Kettle": [
+        {
+            "s": "Kettle",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Members of a Kettle often engage in coordinated movements, particularly during flight, showcasing their ability to work together in the wild.)"
+        }
+    ],
+    "Nest": [
+        {
+            "s": "Nest",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "PlantParts",
+            "support_sentence": "(Nests can be constructed using materials such as twigs, leaves, and mud, depending on the species.)"
+        }
+    ],
+    "Rhumba": [
+        {
+            "s": "Rhumba",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The Rhumba is characterized by a group of individuals that come together for social interactions or cooperative behaviors, indicating that it must have members that are animals.)"
+        }
+    ],
+    "Scourge": [
+        {
+            "s": "Scourge",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The Scourge is a collective term used to describe a group of animals that typically move together in a coordinated manner. This term often applies to species that exhibit social behavior...)"
+        }
+    ],
+    "Swarm": [
+        {
+            "s": "Swarm",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The Swarm class represents a collective grouping of animals that move or act together in a coordinated manner, indicating that swarms consist of members that are animals.)"
+        }
+    ],
+    "Troop": [
+        {
+            "s": "Troop",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(A Troop is a social group of animals that typically live and travel together, exhibiting coordinated behavior and interactions.)"
+        }
+    ],
+    "Zeal": [
+        {
+            "s": "Zeal",
+            "p": "has-member",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(A Zeal is a collective group of animals that typically includes multiple individuals of a specific species, often characterized by their social behavior and cooperative interactions.)"
+        }
+    ],
+    "Predator": [
+        {
+            "s": "Predator",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(The class \"Predator\" encompasses organisms that actively hunt and consume other animals for sustenance.)"
+        },
+        {
+            "s": "Predator",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Predators can vary widely in size, behavior, and hunting strategies, ranging from solitary hunters to those that operate in packs.)"
+        }
+    ],
+    "Prey": [
+        {
+            "s": "Prey",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Predator",
+            "support_sentence": "(The Prey class encompasses various animals that are primarily hunted by predators for food.)"
+        }
+    ],
+    "HypoCarnivores": [
+        {
+            "s": "HypoCarnivores",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Carnivore",
+            "support_sentence": "(HypoCarnivores are a specialized group of carnivorous animals that primarily consume meat but can also incorporate some plant matter into their diets.)"
+        },
+        {
+            "s": "HypoCarnivores",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Plant",
+            "support_sentence": "(This dietary flexibility allows them to thrive in various environments where food availability may fluctuate.)"
+        },
+        {
+            "s": "HypoCarnivores",
+            "p": "is-part-of",
+            "rtype": "only",
+            "o": "Animal",
+            "support_sentence": "(HypoCarnivores are classified under the broader category of carnivorous animals.)"
+        }
+    ],
+    "MesoCarnivore": [
+        {
+            "s": "MesoCarnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(MesoCarnivores primarily consume other animals, indicating that they eat members of the class Animal.)"
+        },
+        {
+            "s": "MesoCarnivore",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Predator",
+            "support_sentence": "(As MesoCarnivores are part of the food chain, they can be preyed upon by other animals classified as Predators.)"
+        }
+    ],
+    "ObligateCarnivore": [
+        {
+            "s": "ObligateCarnivore",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Obligate carnivores primarily rely on a diet consisting exclusively of meat to meet their nutritional needs, which indicates they eat other animals.)"
+        }
+    ],
+    "Elephant": [
+        {
+            "s": "Elephant",
+            "p": "eats",
+            "rtype": "some",
+            "o": "Herbivore",
+            "support_sentence": "(The Elephant is a large, herbivorous mammal known for its distinctive trunk, tusks, and large ears.)"
+        }
+    ],
+    "Impala": [
+        {
+            "s": "Impala",
+            "p": "eats",
+            "rtype": "only",
+            "o": "Grass",
+            "support_sentence": "(Impalas are herbivores, primarily feeding on grasses and leaves.)"
+        },
+        {
+            "s": "Impala",
+            "p": "is-part-of",
+            "rtype": "some",
+            "o": "Herd",
+            "support_sentence": "(Impalas are social animals that often form large herds.)"
+        }
+    ],
+    "Apple": [
+        {
+            "s": "Apple",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Apples play a significant role in various ecosystems, serving as a food source for numerous animal species.)"
+        }
+    ],
+    "Berry": [
+        {
+            "s": "Berry",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Animal",
+            "support_sentence": "(Berries are an important food source for many animals and can play a significant role in the ecosystem by facilitating seed dispersal.)"
+        }
+    ],
+    "Parsnip": [
+        {
+            "s": "Parsnip",
+            "p": "has-part",
+            "rtype": "some",
+            "o": "Root",
+            "support_sentence": "(The parsnip is a root vegetable known for its sweet, nutty flavor and creamy texture when cooked.)"
+        }
+    ],
+    "Carrot": [
+        {
+            "s": "Carrot",
+            "p": "eaten-by",
+            "rtype": "some",
+            "o": "Herbivore",
+            "support_sentence": "(Carrots are commonly consumed by various animals, indicating that they can be eaten by herbivores.)"
+        }
+    ]
+}

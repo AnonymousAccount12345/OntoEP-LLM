@@ -1,0 +1,26 @@
+subject,property,type,target
+Carnivore,eats,only,Animal
+Herbivore,eats,only,Plant
+Lion,eats,some,Herbivore
+Lion,eats,only,Herbivore
+Lion,eats,some,Impala
+Omnivore,eats,some,Animal
+Omnivore,eats,some,Plant
+Branch,is-part-of,some,Tree
+CarnivorousPlant,eats,some,Animal
+Giraffe,eats,only,Leaf
+Leaf,is-part-of,some,Branch
+Lion,eats,some,Impala
+Palmtree,has-part,some,not Branch
+Phloem,is-proper-part-of,some,Stem
+PlantParts,is-proper-part-of,some,Plant
+Tasty-plant,eaten-by,some,Carnivore
+Tasty-plant,eaten-by,some,Herbivore
+Warthog,eats,some,Animal
+Warthog,eats,some,FruitingBody
+Warthog,eats,some,Grass
+Warthog,eats,some,Root
+Xylem,is-proper-part-of,some,Stem
+AnimalCollective,has-member,only,Animal
+Herd,has-member,some,Elephant
+Role,inheres-in,some,Animal

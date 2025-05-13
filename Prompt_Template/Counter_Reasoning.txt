@@ -1,0 +1,70 @@
+You're an ontology and domain expert. By referencing the class definition and support text, for each listed transformation, produce the new support text that would justify the class having that modified constraint. Never create a variant unless it's absolutely necessary. Don't generate all the variants I give you, but generate just enough to avoid overwhelming ontology constraints.
+
+1. remove: if you fully remove the constraint, rewrite the support text so that it no longer mentions or depends on [subject, predicate, rtype, object].
+
+2. variant_rtype: for each entry (e.g. only), rewrite the support text as if the constraint had been changed to [subject, predicate, <variant>, object].
+Here are description of each rtype.
+'some' = "At least one must exist"
+'only' = "If any exist, they must all match the defined criterion"
+'hasvalue' = "Must be exactly the specified individual"
+'min' = "Requires at least the specified number"
+'max' = "Allows at most the specified number"
+'exactly' = "Requires exactly the specified number"
+
+3. generalize: for each parent concept (e.g. Animal -> Organism), rewrite the support text as if [subject, predicate, rtype, <parent_object>].
+
+4. specialize: for each child concept (e.g. Animal -> Carnivore), rewrite the support text as if [subject, predicate, rtype, <children_object>].
+
+5. prop_variant: for each alternate predicate, rewrite the support text as if the constraint used that relation instead of the original. [subject, <predicate>, rtype, object]
+
+
+Each entry in the array should be an object with three fields (json):
+  • operation: the transformation you applied
+  • value: the value you applied
+  • description: the resulting new support text 
+  • reason: Rationale for the variation. Why you chose this variation?
+
+Here is an Example.
+[CLASS NAME]
+Margherita
+
+[CLASS DEFINITION]
+This delightful pizza is a classic choice, featuring a harmonious blend of two essential toppings: creamy mozzarella and tangy tomato. The base is typically a simple yet satisfying pizza crust that allows the rich flavors of the toppings to shine. With its fresh ingredients and straightforward preparation, this pizza embodies the essence of Italian cuisine, making it a beloved favorite among pizza enthusiasts.
+
+[SUPPORT TEXT]
+['This delightful pizza is a classic choice, featuring a harmonious blend of two essential toppings: creamy mozzarella and tangy tomato.']
+
+Constraint candidate:
+Margherita,hasTopping,some,MozzarellaTopping
+
+Available transformations:
+[remove: True, variant_rtype: [only, exactly 1, min, max, hasvalue], generalize: [CheeseTopping], specialize: []]
+
+Answer:
+[
+  [
+    "operation": "variant_rtype",
+    "value": "only",
+    "description": "This delightful pizza is a classic choice, featuring a harmonious blend of two essential toppings: creamy mozzarella and tangy tomato. If any toppings exist, they must all be creamy mozzarella.",
+    "reason": "The 'only' constraint emphasizes that if toppings are present, they must exclusively be creamy mozzarella."
+  ]
+]
+
+Now, your case.
+
+[CLASS NAME]
+{class_name}
+
+[CLASS DEFINITION]
+{class_def_text}
+
+[SUPPORT TEXT]
+{support_text}
+
+Constraint candidate:
+{class_name},{ori_predicate},{ori_rtype},{ori_object}
+
+Available transformations:
+{transformations}
+
+Your response:

@@ -1,0 +1,83 @@
+﻿subject,predicate,rtype,object
+ActuatableProperty, madeActuation, some, Actuation
+ActuatableProperty, madeActuation, only, Actuation
+Actuation,actsOnProperty,only,ActuatableProperty
+Actuation,actsOnProperty,some,ActuatableProperty
+Actuation,hasFeatureOfInterest,only,FeatureOfInterest
+Actuation,hasFeatureOfInterest,some,FeatureOfInterest
+Actuation,hasResult,only,Result
+Actuation,hasResult,some,Result
+Actuation,usedProcedure,only,Procedure
+Actuation,usedProcedure,some,Procedure
+Actuator,actsOnProperty,only,ActuatableProperty
+Actuator,actsOnProperty,some,ActuatableProperty
+Deployment,deployedOnPlatform,some,Platform
+Deployment,deployedOnPlatform,only,Platform
+Deployment,deployedSystem,some,System
+Deployment,deployedSystem,only,System
+Deployment,forProperty,some,Property
+Deployment,forProperty,only,Property
+FeatureOfInterest,hasProperty,only,Property
+FeatureOfInterest,hasProperty,some,Property
+FeatureOfInterest,hasSample,only,Sample
+FeatureOfInterest,hasSample,some,Sample
+ObservableProperty, madeBySensor, some, Sensor
+ObservableProperty, madeBySensor, only, Sensor
+Observation,hasFeatureOfInterest,some,FeatureOfInterest
+Observation,hasFeatureOfInterest,only,FeatureOfInterest
+Observation,hasResult,some,Result
+Observation,hasResult,only,Result
+Observation,madeBySensor,some,Sensor
+Observation,madeBySensor,only,Sensor
+Observation,observedProperty,some,ObservableProperty
+Observation,observedProperty,only,ObservableProperty
+Observation,usedProcedure,some,Procedure
+Observation,usedProcedure,only,Procedure
+Observation,wasOriginatedBy,some,Stimulus
+Observation,wasOriginatedBy,only,Stimulus
+Output, madeByActuator, only, Actuator
+Output, madeBySampler, only, Sampler
+Output, madeBySensor, only, Sensor
+Platform,hasDeployment,some,Deployment
+Platform,hasDeployment,only,Deployment
+Platform,hosts,some,System
+Platform,hosts,only,System
+Procedure,deployedSystem,some,System
+Procedure,deployedSystem,only,System
+Procedure,hasInput,some,Input
+Procedure,hasInput,only,Input
+Procedure,hasOutput,some,Output
+Procedure,hasOutput,only,Output
+Property,hasFeatureOfInterest,some,FeatureOfInterest
+Property,hasFeatureOfInterest,only,FeatureOfInterest
+Result,hasFeatureOfInterest,some,FeatureOfInterest
+Result,hasFeatureOfInterest,only,FeatureOfInterest
+Result,isResultOf,some,Observation
+Result,isResultOf,only,Observation
+Sample,madeSampling,exactly1,Sampling
+Sampler,hasFeatureOfInterest,only,FeatureOfInterest
+Sampler,hasFeatureOfInterest,some,FeatureOfInterest
+Sampler,madeSampling,only,Sampling
+Sampler,madeSampling,some,Sampling
+Sampling,hasFeatureOfInterest,some,FeatureOfInterest
+Sampling,hasFeatureOfInterest,only,FeatureOfInterest
+Sampling,hasSample,some,Sample
+Sampling,hasSample,only,Sample
+Sampling,madeBySampler,some,Sampler
+Sampling,madeBySampler,only,Sampler
+Sampling,usedProcedure,some,Procedure
+Sampling,usedProcedure,only,Procedure
+Sensor,detects,only,Stimulus
+Sensor,detects,some,Stimulus
+Sensor,observes,only,ObservableProperty
+Sensor,observes,some,ObservableProperty
+Stimulus,actsOnProperty,only,ObservableProperty
+Stimulus,actsOnProperty,some,ObservableProperty
+System,deployedOnPlatform,only,Platform
+System,deployedOnPlatform,some,Platform
+System,hasDeployment,only,Deployment
+System,hasDeployment,some,Deployment
+System,hasSubSystem,only,System
+System,hasSubSystem,some,System
+System,implements,only,Procedure
+System,implements,some,Procedure

@@ -1,0 +1,1294 @@
+{
+  "ActuatableProperty,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions. By being linked to a specific actuation process, it ensures that changes can be made in a reliable and predictable manner, making it a critical element in automated systems and responsive environments.",
+      "reason": "Removing the constraint allows the support text to focus on the general concept of ActuatableProperty without being tied to the specific relationship with Property."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions. By being linked to a specific actuation process, it ensures that changes can be made in a reliable and predictable manner, making it a critical element in automated systems and responsive environments. If any properties exist, they must all be of the type Property.",
+      "reason": "The 'only' constraint clarifies that if any properties are influenced, they must exclusively be those defined as Property, emphasizing the specificity of the relationship."
+    }
+  ],
+  "ActuatableProperty,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions. By being linked to a specific actuation process, it ensures that changes can be made in a reliable and predictable manner, making it a critical element in automated systems and responsive environments.",
+      "reason": "Removing the constraint allows the support text to focus on the broader definition of ActuatableProperty without being tied to specific features. It emphasizes the concept's essence and applicability."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions. If any features of interest exist, they must all be specific features that can be influenced by an action or a process.",
+      "reason": "The 'only' constraint clarifies that if any features are present, they must exclusively align with the definition of ActuatableProperty, reinforcing the concept's specificity."
+    }
+  ],
+  "ActuatableProperty,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions.",
+      "reason": "Removing the constraint allows the support text to focus on the general concept of actuatable properties without tying it to the existence of specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. If any results exist, they must exclusively be of the defined Result type.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively match a defined criterion, enhancing the specificity of the actuation process."
+    }
+  ],
+  "ActuatableProperty,isActedOnBy,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions.",
+      "reason": "Removing the constraint allows for a broader interpretation of the concept without the need to specify the involvement of any actuators."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. If any actuators exist, they must all be of the type Actuator.",
+      "reason": "The 'only' constraint emphasizes that if actuators are involved, they must exclusively be of the specified type."
+    },
+    {
+      "operation": "generalize",
+      "value": "System",
+      "description": "This concept represents a characteristic that can be influenced by an action or a process within a system. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out through a specific actuation method. This type of property is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions.",
+      "reason": "Generalizing to 'System' broadens the applicability of the concept to encompass a wider range of contexts in which actuatable properties might exist."
+    }
+  ],
+  "ActuatableProperty,madeActuation,some,Actuation": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is essential in systems where precise control is necessary, allowing for dynamic adjustments based on various inputs or conditions. By being linked to a specific actuation process, it ensures that changes can be made in a reliable and predictable manner, making it a critical element in automated systems and responsive environments.",
+      "reason": "Removing the constraint allows for a broader interpretation of ActuatableProperty without the need for specific actuation methods, emphasizing its general influence by actions or processes."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept represents a characteristic that can be influenced by an action or a process. It is specifically designed to be manipulated or controlled through a defined mechanism, ensuring that any modifications made are carried out exclusively through a specific actuation method.",
+      "reason": "The 'only' constraint highlights that if modifications are made, they must be through a defined actuation method, emphasizing exclusivity in the actuation process."
+    }
+  ],
+  "Actuation,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept represents a process through which an actuator exerts influence over a specific property, typically one that can be controlled or modified.",
+      "reason": "By removing the constraint, the support text no longer needs to refer to specific properties, allowing for a broader interpretation of actuation without the need for a defined relationship."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept represents a process through which an actuator exerts influence over a specific property, typically one that can be controlled or modified. If any properties are influenced, they must all be actuatable properties.",
+      "reason": "The 'only' constraint highlights that if any properties are affected by the actuation, they must exclusively be those that can be actuated."
+    }
+  ],
+  "Actuation,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This concept represents a process through which an actuator exerts influence over a specific property, typically one that can be controlled or modified. Each instance of this process is characterized by a tangible result that emerges from the action taken by the actuator. Additionally, there is a defined procedure that guides how the actuation occurs, ensuring that the actions are performed in a systematic manner. Overall, this process encapsulates the interaction between technology and the environment, highlighting how devices can be employed to achieve desired outcomes through targeted actions.",
+      "reason": "By removing the constraint, the support text can focus more broadly on the concept of actuation without being tied to specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "It is closely linked to a particular feature of interest, which is the aspect being affected or manipulated. If any features of interest exist, they must all be part of the defined criteria.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must exclusively match the defined criteria, reinforcing the specificity of the actuation process."
+    }
+  ],
+  "Actuation,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Each instance of this process is characterized by a tangible result that emerges from the action taken by the actuator.",
+      "reason": "By removing the constraint, the support text can stand alone without the need for a specific relational context, focusing instead on the general characteristics of the process."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each instance of this process is characterized by a tangible result that emerges from the action taken by the actuator. If any results exist, they must all be results defined as 'Result'.",
+      "reason": "The 'only' constraint highlights that if results are present, they must exclusively be of the type 'Result', emphasizing the specificity of the outcomes."
+    }
+  ],
+  "Actuation,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Additionally, there is a defined procedure that guides how the actuation occurs, ensuring that the actions are performed in a systematic manner.",
+      "reason": "By removing the constraint, the support text no longer needs to reference the specific relationship of 'usedProcedure', allowing for a more general statement about the defined procedure guiding the actuation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Additionally, there is a defined procedure that guides how the actuation occurs, ensuring that all actions performed are in accordance with that specific procedure.",
+      "reason": "The 'only' constraint clarifies that if procedures are involved, they must exclusively adhere to the defined procedure, emphasizing the importance of following a singular systematic approach."
+    }
+  ],
+  "Actuator,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The description states that actuators are associated with specific properties they can influence or control, which implies that they act on various properties.",
+      "reason": "By removing the constraint, the support text can focus on the broader relationship of actuators with properties without specifying the quantity or type of properties involved."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The description states that actuators are associated with specific properties they can influence or control, which implies that they act only on actuatable properties.",
+      "reason": "The 'only' constraint clarifies that if actuators act on properties, those properties must exclusively be actuatable properties, emphasizing the specificity of their function."
+    }
+  ],
+  "Actuator,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "An actuator is designed to perform actions or control systems based on certain inputs, indicating that it must function effectively.",
+      "reason": "Removing the constraint allows the support text to focus on the general functionality of actuators without specifying the need for inputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "An actuator is designed to perform actions or control systems based on certain inputs, indicating that if any inputs exist, they must all be specific types of inputs.",
+      "reason": "The 'only' constraint clarifies that if inputs are present, they must exclusively be of a defined type, emphasizing the specificity required for effective operation."
+    }
+  ],
+  "Actuator,hasOutput,some,Output": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The functionality of an actuator involves performing actions that result in changes, suggesting that it must have some output as a result of its operations.",
+      "reason": "By removing the constraint, the support text can focus on the general functionality of an actuator without relying on the specific requirement for outputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The functionality of an actuator involves performing actions that result in changes, suggesting that if outputs exist, they must exclusively be of the defined output type.",
+      "reason": "The 'only' constraint emphasizes that if outputs are present, they must meet a specific criterion, highlighting the exclusivity of the actuator's outputs."
+    }
+  ],
+  "Actuator,isActedOnBy,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The actuator is a device that is specifically designed to perform actions or control systems based on certain inputs. It is closely linked to the concept of actuation, meaning it carries out tasks that involve changing or manipulating physical conditions or states. Additionally, an actuator is associated with specific properties that it can influence or control, ensuring that its operations are targeted and effective. This makes actuators essential components in various applications where precise control and responsiveness to environmental stimuli are required.",
+      "reason": "By removing the constraint, the support text is now focused on the general characteristics and functions of actuators without referencing specific relationships to sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The actuator's operations are closely linked to environmental stimuli, which can be detected by sensors, indicating that if any sensors exist, they must all be sensors.",
+      "reason": "The 'only' constraint clarifies that all sensors acting on the actuator must be of a specific type, emphasizing exclusivity in the relationship."
+    }
+  ],
+  "Actuator,madeActuation,some,Actuation": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The concept of actuation is central to the definition of an actuator, meaning it must be involved in processes that involve changing or manipulating physical conditions or states.",
+      "reason": "By removing the specific constraint, the support text now emphasizes the general role of actuators in actuation processes without tying it to a specific actuation instance."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The concept of actuation is central to the definition of an actuator, meaning it must be involved in actuation processes that exclusively pertain to a specific type of actuation.",
+      "reason": "The 'only' constraint highlights that if an actuator is involved in actuation processes, those processes must exclusively align with a certain type of actuation."
+    }
+  ],
+  "Agent,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The framework also includes various types of agents and platforms, suggesting that agents are part of a system that facilitates interaction with the environment.",
+      "reason": "By removing the constraint, the support text can focus on the broader concept of agents within the system without being limited to their deployment on platforms."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The framework also includes various types of agents and platforms, suggesting that if agents are deployed, they must exclusively be on platforms.",
+      "reason": "The 'only' constraint clarifies that when agents are deployed, they are restricted to being on platforms, emphasizing exclusivity in their deployment."
+    }
+  ],
+  "Agent,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The framework encompasses a broad range of components involved in the interaction between sensors and the environment. It includes instruments designed to measure specific characteristics, which can either be directly observable or capable of being manipulated. These instruments may operate independently or as part of a larger system that includes elements like actuators, which can perform actions based on sensor readings. The framework also covers the features being studied, which could be physical samples or conditions that yield data. Observations made by these sensors lead to valuable results, often requiring specific procedures for accurate data collection. Additionally, the system can include various types of agents and platforms that facilitate these processes, ensuring that the interaction between the sensors, their observations, and the resulting actions is effectively managed.",
+      "reason": "By removing the constraint, the support text can focus on the broader framework of interactions without being limited to specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The framework covers the features being studied, which could be physical samples or conditions that yield data, thus agents have features of interest. If any features exist, they must all be features of interest.",
+      "reason": "The 'only' constraint emphasizes that if features are present, they must exclusively be features of interest, highlighting the specificity of the agent's focus."
+    }
+  ],
+  "Agent,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "The framework encompasses a broad range of components involved in the interaction between sensors and the environment, leading to valuable results from observations made by these sensors.",
+      "reason": "Removing the constraint allows for a more general understanding of the framework without depending on the specific relationship to results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The framework encompasses a broad range of components involved in the interaction between sensors and the environment, leading to valuable results from observations made by these sensors. If results exist, they must all be specific types of results.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively be of a defined type, highlighting the specificity required in the framework."
+    }
+  ],
+  "Agent,isActedOnBy,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This framework encompasses a broad range of components involved in the interaction between sensors and the environment. It includes instruments designed to measure specific characteristics, which can either be directly observable or capable of being manipulated. These instruments may operate independently or as part of a larger system that includes elements like actuators, which can perform actions based on sensor readings. The framework also covers the features being studied, which could be physical samples or conditions that yield data. Observations made by these sensors lead to valuable results, often requiring specific procedures for accurate data collection. Additionally, the system can include various types of agents and platforms that facilitate these processes, ensuring that the interaction between the sensors, their observations, and the resulting actions is effectively managed.",
+      "reason": "The removal of the constraint allows for a more general understanding of the framework without the need to specify interactions with actuators."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This framework encompasses a broad range of components involved in the interaction between sensors and the environment. It includes instruments designed to measure specific characteristics, which can either be directly observable or capable of being manipulated. These instruments may operate independently or as part of a larger system that includes elements like actuators, which can perform actions based on sensor readings, suggesting that if agents are acted on by actuators, they must exclusively be acted on in this manner.",
+      "reason": "The 'only' constraint emphasizes that if agents are acted on by actuators, they must exclusively be acted on by them, highlighting a more restricted relationship."
+    }
+  ],
+  "Agent,isProxyFor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The system can include various types of agents and platforms that facilitate these processes, indicating that agents may serve in various roles related to sensors.",
+      "reason": "Removing the specific constraint allows for a broader interpretation of the role of agents without limiting them to serving as proxies for sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The system can include various types of agents and platforms that facilitate these processes, indicating that agents must exclusively serve as proxies for sensors.",
+      "reason": "The 'only' constraint emphasizes that if agents are present, they must solely function as proxies for sensors, narrowing their defined role."
+    }
+  ],
+  "Agent,madeObservation,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Observations made by these sensors lead to valuable results, often requiring specific procedures for accurate data collection.",
+      "reason": "The removal of the constraint allows the support text to focus on the general process of observation without tying it specifically to agents."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Observations made by these sensors lead to valuable results, often requiring specific procedures for accurate data collection, implying that if observations are made, they must exclusively be of the type Observation.",
+      "reason": "The 'only' constraint emphasizes that if observations exist, they must exclusively be of the specified type, reinforcing the specificity of the observations being referenced."
+    }
+  ],
+  "Agent,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This framework encompasses a broad range of components involved in the interaction between sensors and the environment. It includes instruments designed to measure specific characteristics, which can either be directly observable or capable of being manipulated. The framework also covers the features being studied, which could be physical samples or conditions that yield data. Observations made by these sensors lead to valuable results, often requiring specific procedures for accurate data collection. Additionally, the system can include various types of agents and platforms that facilitate these processes, ensuring that the interaction between the sensors, their observations, and the resulting actions is effectively managed.",
+      "reason": "Removing the constraint allows for a more general description of the framework without limiting the discussion to observable properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The framework includes instruments designed to measure specific characteristics, which can either be directly observable or capable of being manipulated, indicating that agents observe only observable properties.",
+      "reason": "The 'only' constraint specifies that if agents are observing properties, they must exclusively be observable properties."
+    }
+  ],
+  "Deployment,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The deployment is carefully structured so that it adheres to certain constraints and is associated with particular systems.",
+      "reason": "By removing the constraint, the support text no longer references the specific relationship to platforms, allowing for a broader interpretation of deployment without dependency on specific constraints."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The deployment is carefully structured so that it adheres to certain constraints, such as being associated with particular systems. If any platforms are involved, they must all be the designated type.",
+      "reason": "The 'only' constraint clarifies that if platforms are included in the deployment, they must exclusively match the specified criteria."
+    }
+  ],
+  "Deployment,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "The deployment aligns with the intended functionality and operational requirements, allowing for effective monitoring and interaction with the environment in which it is situated.",
+      "reason": "By removing the constraint, the support text no longer depends on specific features of interest, allowing for a broader interpretation of deployment."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The deployment aligns with the intended functionality and operational requirements, allowing for effective monitoring and interaction with the environment in which it is situated. If any features of interest exist, they must all be specific attributes related to the deployment.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must exclusively pertain to the defined criteria of the deployment."
+    }
+  ],
+  "Deployment,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "This concept refers to the act of placing a system in a specific environment or context, ensuring that it operates on a designated platform.",
+      "reason": "By removing the constraint, the support text can focus on the general concept of deployment without referencing the specific relationship to results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept refers to the act of placing a system in a specific environment or context, ensuring that it operates on a designated platform. If any results exist, they must all match the defined criteria.",
+      "reason": "The 'only' constraint highlights that if results are present, they must exclusively conform to specified criteria, thereby ensuring consistency in the deployment outcomes."
+    }
+  ],
+  "Deployment,hasSubSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This concept refers to the act of placing a system in a specific environment or context, ensuring that it operates on a designated platform. It is characterized by its relationship to the systems it encompasses and the specific properties it addresses. The deployment is carefully structured so that it adheres to certain constraints, ensuring that it aligns with the intended functionality and operational requirements, allowing for effective monitoring and interaction with the environment in which it is situated.",
+      "reason": "By removing the constraint, the support text can focus on the overall concept of deployment without being limited to specific relationships, thus providing a broader understanding of the deployment process."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept refers to the act of placing a system in a specific environment or context, ensuring that it operates on a designated platform. It is characterized by its relationship to the systems it encompasses and the specific properties it addresses. If any subsystems exist, they must all be systems.",
+      "reason": "The 'only' constraint highlights that if subsystems are present, they are required to exclusively be of the type 'System', emphasizing the specific nature of the relationship."
+    }
+  ],
+  "Deployment,isActedOnBy,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The deployment is carefully structured so that it adheres to certain constraints, ensuring that it aligns with the intended functionality and operational requirements.",
+      "reason": "Removing the constraint allows for a broader interpretation of deployment, focusing on the overall structure and purpose without being limited by specific relationships."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The deployment is carefully structured so that it adheres to certain constraints, such as being associated with particular platforms and systems. If any systems are involved, they must all be the designated systems.",
+      "reason": "The 'only' constraint emphasizes that if systems are involved in the deployment, they must exclusively be the designated systems, ensuring a specific focus on compatibility."
+    }
+  ],
+  "FeatureOfInterest,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This category encompasses elements that are the focus of measurement or observation in various contexts, typically representing specific attributes or phenomena of interest.",
+      "reason": "The removal of the constraint allows for a broader understanding of FeatureOfInterest without tying it specifically to the existence of samples, making the definition more general."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This category encompasses elements that are the focus of measurement or observation in various contexts, typically representing specific attributes or phenomena of interest. Each of these elements is associated with a sample, which serves as a representative instance used for analysis. If any samples exist, they must all be instances of a specific type.",
+      "reason": "The 'only' constraint specifies that if samples are associated with the FeatureOfInterest, they must all conform to a defined type, emphasizing exclusivity."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasFeatureOfInterest",
+      "description": "This category encompasses elements that are the focus of measurement or observation in various contexts, typically representing specific attributes or phenomena of interest. Each of these elements is associated with a sample, which serves as a representative instance used for analysis, linked through the feature of interest.",
+      "reason": "Changing the predicate to 'hasFeatureOfInterest' shifts the focus to the relationship between the elements and their features, potentially enriching the context of the support text."
+    }
+  ],
+  "Input,hasInput,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Inputs are integral elements that are exclusively linked to specific procedures, serving as the necessary components or data that are fed into these processes.",
+      "reason": "By removing the constraint, the support text no longer needs to reference the specific relationship with procedures, allowing for a broader understanding of inputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Inputs are integral elements that are exclusively linked to specific procedures, serving as the necessary components or data that are fed into these processes. If any inputs exist, they must all be linked to specific procedures.",
+      "reason": "The 'only' constraint clarifies that any input present must exclusively relate to specified procedures, reinforcing the importance of their connection."
+    }
+  ],
+  "ObservableProperty,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept plays a critical role in the broader framework of sensor networks, facilitating the analysis and interpretation of environmental data.",
+      "reason": "The removal of the constraint allows the support text to focus on the general importance of the concept without being tied to specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept plays a critical role in the broader framework of sensor networks, facilitating the analysis and interpretation of environmental data. If any features of interest exist, they must all align with the defined criteria.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must strictly adhere to specific criteria."
+    }
+  ],
+  "ObservableProperty,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": "True",
+      "description": "This class represents elements that can be detected or measured by sensors, capturing various characteristics and phenomena in the environment. These properties are specifically observed through the lens of a sensor, which ensures that the observations are accurate and meaningful. They are inherently linked to specific observations and stimuli, allowing for a structured understanding of the data collected. By focusing on what can be observed, this concept plays a critical role in the broader framework of sensor networks, facilitating the analysis and interpretation of environmental data.",
+      "reason": "Removing the constraint allows the support text to focus solely on the nature of observable properties without being tied to the presence of results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This class represents elements that can be detected or measured by sensors, capturing various characteristics and phenomena in the environment. These properties are specifically observed through the lens of a sensor, which ensures that the observations are accurate and meaningful. They are inherently linked to specific observations and stimuli, allowing for a structured understanding of the data collected. If any results exist, they must exclusively be results.",
+      "reason": "The 'only' constraint highlights that if results are present, they must exclusively match the defined criterion, emphasizing a strict connection between observable properties and their results."
+    }
+  ],
+  "ObservableProperty,isObservedBy,some,Observation": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "By focusing on what can be observed, this concept plays a critical role in the broader framework of sensor networks.",
+      "reason": "Removing the constraint allows the support text to stand independently without reference to specific observations or stimuli."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "By focusing on what can be observed, this concept plays a critical role in the broader framework of sensor networks. If any observations exist, they must exclusively be linked to this property.",
+      "reason": "The 'only' constraint clarifies that if there are observations, they must be exclusively related to the observable property in question."
+    }
+  ],
+  "ObservableProperty,observes,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "This class represents elements that can be detected or measured by sensors, capturing various characteristics and phenomena in the environment. These properties are inherently linked to specific observations and stimuli, allowing for a structured understanding of the data collected. By focusing on what can be observed, this concept plays a critical role in the broader framework of sensor networks, facilitating the analysis and interpretation of environmental data.",
+      "reason": "Removing the constraint allows for a broader interpretation of observable properties without the specific requirement of being linked to sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This class represents elements that can be detected or measured by sensors, capturing various characteristics and phenomena in the environment. These properties are specifically observed through the lens of a sensor, which ensures that the observations are accurate and meaningful. If any properties exist, they must all be observed by sensors.",
+      "reason": "The 'only' constraint clarifies that if observable properties are present, they must exclusively be those that are linked to sensors."
+    },
+    {
+      "operation": "generalize",
+      "value": "System",
+      "description": "This class represents elements that can be detected or measured in systems, capturing various characteristics and phenomena in the environment. These properties are specifically observed through the lens of a sensor, which ensures that the observations are accurate and meaningful.",
+      "reason": "Generalizing to 'System' expands the context of observable properties beyond just sensors, allowing for a wider range of detection mechanisms."
+    }
+  ],
+  "Observation,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor.",
+      "reason": "Removing the constraint allows the support text to maintain its focus on the general act of observation without being tied to the specific feature of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor. If any features of interest exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint emphasizes that if features of interest are present, they must strictly adhere to a specific criterion, reinforcing the exclusivity of the observations."
+    }
+  ],
+  "Observation,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor. Each instance captures the results of these measurements, which are linked to observable characteristics of the environment or subject being studied. The process is guided by a particular procedure and is influenced by specific stimuli that trigger the observations. Additionally, every observation is uniquely associated with a sensor that performs the data collection, ensuring that the information gathered is both relevant and accurate. This framework facilitates a structured understanding of how observations are made, what is being observed, and the context in which these measurements occur.",
+      "reason": "The removal of the constraint allows for a broader interpretation of observations, where capturing data does not necessarily require any specific results to be linked."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor. Each instance captures the results of these measurements, which are linked to observable characteristics of the environment or subject being studied. If any results exist, they must all match the defined criterion of being a Result.",
+      "reason": "The 'only' constraint clarifies that if results are present, they must exclusively adhere to the defined type of Result, ensuring consistency in the data collected."
+    }
+  ],
+  "Observation,madeBySensor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor. Each instance captures the results of these measurements, which are linked to observable characteristics of the environment or subject being studied. The process is guided by a particular procedure and is influenced by specific stimuli that trigger the observations. This framework facilitates a structured understanding of how observations are made, what is being observed, and the context in which these measurements occur.",
+      "reason": "Removing the constraint allows the support text to focus on the broader concept of observation without depending on the specific relationship to sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Every observation is uniquely associated with a sensor that performs the data collection, ensuring that the information gathered is both relevant and accurate. If any observations are made, they must exclusively be from the designated sensors.",
+      "reason": "The 'only' constraint emphasizes that if observations are conducted, they must exclusively involve the specified sensors."
+    }
+  ],
+  "Observation,observes,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor.",
+      "reason": "By removing the constraint, the support text no longer depends on the specifics of the observation, allowing a broader interpretation of what constitutes an observation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept relates to the act of collecting data about a specific feature of interest using a designated sensor. If any features of interest are observed, they must all match the defined criterion.",
+      "reason": "The 'only' constraint highlights that if there are features of interest, they must exclusively conform to a certain criterion, thereby ensuring specificity in the observations made."
+    }
+  ],
+  "Observation,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The process is guided by a particular procedure and is influenced by specific stimuli that trigger the observations.",
+      "reason": "Removing the constraint allows the support text to focus on the general process of observations without referencing specific procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The process is guided by a particular procedure and is influenced by specific stimuli that trigger the observations. If any procedures are used, they must all match the defined criterion.",
+      "reason": "The 'only' constraint clarifies that if procedures are utilized in the observations, they must adhere to a specific standard."
+    }
+  ],
+  "Output,isResultOf,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "This class represents the results produced by various procedures, encapsulating the outputs that arise from specific actions or processes. The nature of these outputs can vary widely, reflecting the diverse range of activities and objectives within a given context. Essentially, this concept serves to formalize the relationship between the actions taken and the subsequent outcomes, providing a structured way to understand the results of different procedures in the realm of sensor observations and related activities.",
+      "reason": "Removing the constraint allows for a broader understanding of outputs without the need to specify their relationship to procedures, focusing instead on the outputs themselves."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each output is uniquely tied to the procedure that generated it, ensuring a clear link between what was done and what was observed or measured. If any outputs exist, they must exclusively be results of procedures.",
+      "reason": "The 'only' constraint highlights that if outputs are present, they must exclusively derive from procedures, emphasizing the exclusivity of the relationship."
+    }
+  ],
+  "Platform,hasDeployment,some,Deployment": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Additionally, this entity plays a crucial role in the implementation and management of systems in real-world settings.",
+      "reason": "Removing the constraint allows the support text to focus on the general role of the platform without being tied to the specific deployment activity."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Additionally, this entity is involved in deployment activities, indicating that if any deployments exist, they must all be Deployment.",
+      "reason": "The 'only' constraint clarifies that if there are deployments, they must exclusively be of the type Deployment, emphasizing the uniformity of the deployment activities."
+    }
+  ],
+  "Platform,hasSubSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Through its hosting capabilities and deployment involvement, it facilitates the seamless integration and operation of the associated technologies, enhancing the overall performance of sensor networks.",
+      "reason": "By removing the constraint, the support text can focus on the general capabilities of the platform without being tied to the specific requirement of having subsystems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Through its hosting capabilities and deployment involvement, it facilitates the seamless integration and operation of the associated technologies, enhancing the overall performance of sensor networks. If any subsystems exist, they must all be systems.",
+      "reason": "The 'only' constraint highlights that if there are subsystems, they must exclusively be classified as systems, emphasizing the uniformity of the platform's components."
+    }
+  ],
+  "Platform,hosts,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A platform serves as a foundational component that supports various systems, ensuring they operate effectively within a specific environment. It is designed to host different types of systems, such as sensors and actuators, which contribute to the overall functionality of the network.",
+      "reason": "By removing the constraint, the support text no longer relies on the specific relationship of hosting some systems, allowing for a broader interpretation of what a platform can be."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A platform serves as a foundational component that supports various systems, ensuring they operate effectively within a specific environment. It is designed to host different types of systems, such as sensors and actuators, which contribute to the overall functionality of the network. If any systems exist, they must all be of a specified type.",
+      "reason": "The 'only' constraint emphasizes that if systems are present, they must exclusively match the defined type, reinforcing the platform's specificity."
+    }
+  ],
+  "Procedure,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "A procedure outlines a specific method or series of actions taken to achieve a particular result. It is characterized by its outputs, which are the results produced as a consequence of the procedure. Additionally, a procedure is always executed by a system, ensuring that the actions are performed in a structured and reliable manner. This framework allows for the systematic handling of tasks, where each procedure can be clearly defined and understood based on its components and the system that implements it.",
+      "reason": "The removal of the constraint allows the support text to focus on the broader aspects of procedures without depending on the specific concept of inputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A procedure outlines a specific method or series of actions taken to achieve a particular result. It is characterized by its inputs, which are the necessary information or resources needed to carry out the procedure. If any inputs exist, they must all be classified as Input.",
+      "reason": "The 'only' constraint clarifies that if there are any inputs defined for the procedure, they must exclusively belong to the Input category."
+    }
+  ],
+  "Procedure,hasOutput,some,Output": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Additionally, a procedure is always executed by a system, ensuring that the actions are performed in a structured and reliable manner.",
+      "reason": "Removing the constraint allows the description to stand alone without dependency on outputs, maintaining its focus on the execution by a system."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Additionally, a procedure is always executed by a system, ensuring that the actions are performed in a structured and reliable manner. If outputs exist, they must all conform to the defined criteria of being outputs.",
+      "reason": "The 'only' constraint specifies that if outputs are present, they must exclusively meet the specified criteria, reinforcing the precision required in the procedure's results."
+    }
+  ],
+  "Procedure,implementedBy,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This framework allows for the systematic handling of tasks, where each procedure can be clearly defined and understood based on its components.",
+      "reason": "By removing the constraint, the focus shifts to the definition of the procedure itself, independent of its implementation by a system."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This framework allows for the systematic handling of tasks, where each procedure can be clearly defined and understood based on its components. If any system implements the procedure, it must be the specified system.",
+      "reason": "The 'only' constraint clarifies that if a procedure is implemented by a system, it must exclusively be the specified one."
+    }
+  ],
+  "Result,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "Observations are captured as results.",
+      "reason": "By removing the constraint, the support text focuses on the general concept of observations being captured as results, without dependence on specific samples."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Observations are captured as results, which can be linked to specific samples taken during measurements. If any samples exist, they must all be specific samples.",
+      "reason": "The 'only' constraint clarifies that if samples are present, they must exclusively be the defined specific samples."
+    }
+  ],
+  "Result,isResultOf,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The ontology also covers different properties that can be observed or actuated, as well as the features of interest that these systems study.",
+      "reason": "By removing the constraint, the support text can focus on the broader aspects of the ontology without dependency on specific relationships to observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The ontology also covers different properties that can be observed or actuated, as well as the features of interest that these systems study. If any results exist, they must all be linked to specific observations.",
+      "reason": "The 'only' constraint stresses that all results must exclusively relate to specific observations if any results are present."
+    }
+  ],
+  "Result,madeByActuator,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This structured approach facilitates a better understanding and management of sensor networks, enhancing their application across various domains.",
+      "reason": "By removing the constraint, the support text can focus on the overall benefits of the structured approach without mentioning any specific components like actuators."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This structured approach facilitates a better understanding and management of sensor networks, enhancing their application across various domains. If any actuator is involved, it must exclusively be of the specified type.",
+      "reason": "The 'only' constraint emphasizes that if actuators are present, they must exclusively match the defined criterion."
+    }
+  ],
+  "Result,madeBySampler,some,Sampler": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The framework allows for the definition of procedures that detail the methods used in sampling and actuation.",
+      "reason": "The removal of the constraint means that the support text no longer needs to reference any specific components or relationships, focusing instead on the general framework of procedures."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The framework allows for the definition of procedures that detail the methods used in sampling and actuation. If any results exist, they must all be made exclusively by a sampler.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively come from a sampler, reinforcing the connection between the results and their source."
+    }
+  ],
+  "Result,madeBySensor,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "The ontology provides a structured way to describe the various components involved in sensor networks and their interactions.",
+      "reason": "By removing the constraint, the support text now focuses on the overall structure of the ontology without referencing specific entities like sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The ontology provides a structured way to describe the various components involved in sensor networks and their interactions. If any sensors exist, they must exclusively be those defined as sensors.",
+      "reason": "The 'only' constraint specifies that if sensors are present, they must be solely the defined type, emphasizing exclusivity."
+    }
+  ],
+  "Result,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This ontology provides a structured way to describe the various components involved in sensor networks and their interactions. It includes a variety of systems such as sensors, actuators, and samplers, each playing a specific role in observing and manipulating physical phenomena.",
+      "reason": "By removing the constraint, the support text now focuses on the general description of sensor networks without dependency on specific observable properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This ontology provides a structured way to describe the various components involved in sensor networks and their interactions. It includes a variety of systems such as sensors, actuators, and samplers, each playing a specific role in observing and manipulating physical phenomena. If any properties are observed, they must all be specific observable properties.",
+      "reason": "The 'only' constraint emphasizes that if observable properties are present, they must exclusively match defined criteria."
+    }
+  ],
+  "Sample,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "A sample is a specific instance of data or material that has been collected for analysis, representing a particular feature of interest. This instance is solely derived from a defined sampling process, ensuring that it accurately reflects the conditions or characteristics of the feature being studied.",
+      "reason": "Removing the constraint emphasizes the general nature of samples without specifying any relationship to a feature of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A sample is intrinsically linked to the feature it represents, making it a crucial element in observations and experiments aimed at understanding and measuring various phenomena. If any features exist, they must all match the defined criteria.",
+      "reason": "The 'only' constraint highlights that if features are associated with the sample, they must exclusively conform to specific criteria."
+    }
+  ],
+  "Sample,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "A sample is a specific instance of data or material that has been collected for analysis, representing a particular feature of interest, which can lead to results in observations and experiments.",
+      "reason": "By removing the constraint, the support text no longer refers to the relationship with results, allowing for a broader interpretation of what constitutes a sample."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A sample is a specific instance of data or material that has been collected for analysis, representing a particular feature of interest. If any results exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively conform to a defined criterion, ensuring consistency in the data derived from the sample."
+    }
+  ],
+  "Sample,isObservedBy,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Each sample is intrinsically linked to the feature it represents, making it a crucial element in observations aimed at understanding and measuring various phenomena.",
+      "reason": "By removing the constraint, the support text no longer depends on the relationship with observations, maintaining its focus on the significance of samples in analysis."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each sample is intrinsically linked to the feature it represents, making it a crucial element in observations aimed at understanding and measuring various phenomena. If any observations exist, they must all relate to the same feature represented by the sample.",
+      "reason": "The 'only' constraint highlights exclusivity, indicating that if observations are present, they must pertain only to the specific feature represented by the sample."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "isResultOf",
+      "description": "Each sample is intrinsically linked to the feature it represents, making it a crucial element in results aimed at understanding and measuring various phenomena.",
+      "reason": "Using 'isResultOf' instead of 'isObservedBy' shifts the focus to the outcomes derived from the samples, emphasizing their role in yielding results rather than just being observed."
+    }
+  ],
+  "Sample,madeBySampler,some,Sampler": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A sample is a specific instance of data or material that has been collected for analysis, representing a particular feature of interest. This instance is solely derived from a defined sampling process, ensuring that it accurately reflects the conditions or characteristics of the feature being studied.",
+      "reason": "The removal of the constraint allows for a broader interpretation of samples, not limiting them to those made by a specific sampler."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A sample is a specific instance of data or material that has been collected for analysis, representing a particular feature of interest. This instance is solely derived from a defined sampling process, ensuring that it accurately reflects the conditions or characteristics of the feature being studied. If any samples exist, they must all be made exclusively by a sampler.",
+      "reason": "The 'only' constraint emphasizes that if any samplers are involved, they must be exclusively recognized as samplers, highlighting the importance of the sampling source."
+    }
+  ],
+  "Sampler,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The primary focus of this entity is to ensure that the sampling is done accurately and systematically.",
+      "reason": "By removing the constraint, the support text still conveys the essential function of the Sampler without depending on the specific property it acts upon."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The primary focus of this entity is to ensure that the sampling is done accurately and systematically. If any properties are acted upon, they must all align with the defined criteria.",
+      "reason": "The 'only' constraint clarifies that if the Sampler interacts with properties, those properties must exclusively meet the established standards."
+    }
+  ],
+  "Sampler,hasResult,some,Sample": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This class represents a specialized entity that is responsible for collecting samples from the environment or specific phenomena. It operates by executing a defined process called sampling, which allows it to gather data or measurements that can be analyzed later.",
+      "reason": "By removing the constraint, the support text can focus on the general role of the Sampler without referencing specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The primary focus of this entity is to ensure that the sampling is done accurately and systematically, adhering to certain protocols or methodologies. If any results exist, they must all be samples.",
+      "reason": "The 'only' constraint highlights that if results are present, they must exclusively be samples, ensuring the integrity of the sampling process."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasFeatureOfInterest",
+      "description": "The primary focus of this entity is to ensure that the sampling is done accurately and systematically, adhering to certain protocols or methodologies. The Sampler has a feature of interest that it focuses on during the sampling process.",
+      "reason": "Using 'hasFeatureOfInterest' instead of 'hasResult' shifts the emphasis to the specific aspects of the environment or phenomena that the Sampler is targeting."
+    },
+    {
+      "operation": "generalize",
+      "value": "Result",
+      "description": "The primary focus of this entity is to ensure that the sampling is done accurately and systematically, adhering to certain protocols or methodologies. The Sampler has a result that is obtained through its sampling activities.",
+      "reason": "Generalizing to 'Result' allows for a broader interpretation of what the outcomes of the sampling process could be, encompassing various types of data or measurements."
+    }
+  ],
+  "Sampler,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This class represents a specialized entity that is responsible for collecting samples from the environment or specific phenomena. It operates by executing a defined process called sampling, which allows it to gather data or measurements that can be analyzed later. The primary focus of this entity is to ensure that the sampling is done accurately and systematically, adhering to certain protocols or methodologies.",
+      "reason": "Removing the constraint allows the support text to focus on the broader role of the Sampler without being tied to the presence of samples."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This class represents a specialized entity that is responsible for collecting samples from the environment or specific phenomena. It operates by executing a defined process called sampling, which allows it to gather data or measurements that can be analyzed later. If any samples exist, they must all be of the type Sample. The primary focus of this entity is to ensure that the sampling is done accurately and systematically, adhering to certain protocols or methodologies.",
+      "reason": "The 'only' constraint clarifies that if samples are present, they must exclusively be of the type Sample, emphasizing specificity in the sampling process."
+    }
+  ],
+  "Sampler,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The Sampler is responsible for collecting samples from the environment or specific phenomena.",
+      "reason": "Removing the constraint allows the support text to focus solely on the function of the Sampler without dependency on the specified observable properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The Sampler is responsible for collecting samples from the environment or specific phenomena. If any properties are observed, they must all match the defined criteria.",
+      "reason": "The 'only' constraint highlights that if any observable properties are present, they must conform exclusively to the defined criteria."
+    }
+  ],
+  "Sampler,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "It operates by executing a defined process called sampling, which allows it to gather data or measurements that can be analyzed later.",
+      "reason": "By removing the constraint, the support text no longer needs to reference any specific procedures, allowing for a broader interpretation of what constitutes a sampling process."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "It operates by executing a defined process called sampling, which allows it to gather data or measurements that can be analyzed later. If any procedures are used, they must all conform to the defined protocols.",
+      "reason": "The 'only' constraint emphasizes that if any procedures are employed, they must strictly adhere to the established protocols, ensuring consistency in the sampling process."
+    }
+  ],
+  "Sampling,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "Each sampling event is closely linked to the particular characteristic it represents, emphasizing the importance of the relationship between the sample collected and the underlying phenomena being studied.",
+      "reason": "By removing the constraint, the focus shifts to the broader relationship between sampling and characteristics without being restricted to specific features of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each sampling event is closely linked to the particular feature being investigated, emphasizing that if any features exist, they must all match the defined criterion of being a feature of interest.",
+      "reason": "The 'only' constraint clarifies that if any features are present in the sampling process, they must exclusively be features of interest, thus maintaining a strict focus on relevant characteristics."
+    }
+  ],
+  "Sampling,hasResult,some,Sample": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept revolves around the process of collecting data from a specific feature of interest, ensuring that the results are strictly in the form of samples.",
+      "reason": "By removing the constraint, the support text now focuses solely on the process of sampling without referencing the specific relationship to the results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept revolves around the process of collecting data from a specific feature of interest, ensuring that the results are strictly in the form of samples. If any results exist, they must all be samples.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must be exclusively samples."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasFeatureOfInterest",
+      "description": "This concept revolves around the process of collecting data from a specific feature of interest, ensuring that the results are strictly in the form of samples related to the feature of interest.",
+      "reason": "Using the alternate predicate 'hasFeatureOfInterest' highlights the specific relationship between the samples and the feature being investigated."
+    },
+    {
+      "operation": "generalize",
+      "value": "Result",
+      "description": "This concept revolves around the process of collecting data from a specific feature of interest, ensuring that the results are strictly in the form of samples related to the results.",
+      "reason": "Generalizing to 'Result' broadens the context in which sampling can occur, while still maintaining the focus on the data collection process."
+    }
+  ],
+  "Sampling,hasSample,some,Sample": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This structured approach allows for systematic observations and enhances the understanding of the underlying phenomena being studied.",
+      "reason": "Removing the constraint means the support text no longer needs to reference samples, allowing for a broader interpretation of the concept of Sampling."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This structured approach allows for systematic observations and enhances the understanding of the underlying phenomena being studied. If samples are present, they must all be specific types of samples.",
+      "reason": "The 'only' constraint emphasizes that if samples exist, they must exclusively be of a specified type, thus reinforcing the focus on the quality of the samples used in the sampling process."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasFeatureOfInterest",
+      "description": "This structured approach allows for systematic observations and enhances the understanding of the underlying phenomena being studied, specifically focusing on the features of interest.",
+      "reason": "Using 'hasFeatureOfInterest' instead of 'hasSample' shifts the focus to the characteristics being studied, emphasizing the relationship between the sampling process and the features of interest."
+    },
+    {
+      "operation": "prop_variant",
+      "value": "hasResult",
+      "description": "This structured approach allows for systematic observations and enhances the understanding of the underlying phenomena being studied, particularly in relation to the results obtained from the sampling.",
+      "reason": "By using 'hasResult', the support text highlights the outcome of the sampling process, which is crucial in understanding the implications of the data collected."
+    }
+  ],
+  "Sampling,madeBySampler,some,Sampler": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This concept revolves around the process of collecting data from a specific feature of interest, ensuring that the results are strictly in the form of samples. Each sampling event is closely linked to the particular feature being investigated, emphasizing the importance of the relationship between the sample collected and the characteristic it represents. This structured approach allows for systematic observations and enhances the understanding of the underlying phenomena being studied.",
+      "reason": "Removing the constraint allows the support text to focus on the overall concept of sampling without tying it to a specific type of sampler."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept revolves around the process of collecting data from a specific feature of interest, ensuring that the results are strictly in the form of samples. It is carried out by a designated sampler, which follows a defined procedure to ensure accuracy and reliability in the data gathered. If any samplers exist, they must all be designated samplers.",
+      "reason": "The 'only' constraint emphasizes that if samplers are involved in the sampling process, they must exclusively be designated samplers."
+    }
+  ],
+  "Sampling,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "It is carried out by a designated sampler, which follows a defined procedure to ensure accuracy and reliability in the data gathered.",
+      "reason": "By removing the constraint, the support text can focus on the process of sampling without depending on the existence of a specific procedure."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "It is carried out by a designated sampler, which follows a defined procedure to ensure accuracy and reliability in the data gathered. If any procedures are used, they must all adhere to the defined standards.",
+      "reason": "The 'only' constraint highlights that if any procedures are employed, they must conform strictly to the defined procedures."
+    }
+  ],
+  "Sensor,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action.",
+      "reason": "Removing the constraint allows for a broader interpretation of the entity's capabilities without being limited to specific properties or actions."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. If any actions are performed, they must exclusively relate to actuatable properties.",
+      "reason": "The 'only' constraint emphasizes that if actions are taken, they must be restricted solely to actuatable properties, thus clarifying the sensor's operational scope."
+    }
+  ],
+  "Sensor,actsOnProperty,some,Property": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest.",
+      "reason": "Removing the constraint allows for a broader interpretation of the sensor's function, emphasizing its general capability to monitor properties without limiting it to a specific type or quantity."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. If any properties are acted upon, they must all be of a specific type.",
+      "reason": "The 'only' constraint clarifies that if the sensor interacts with properties, those properties must conform to a defined criterion, focusing the sensor's functionality."
+    }
+  ],
+  "Sensor,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "The system includes features of interest that are the focus of observations, providing insights into the characteristics being studied.",
+      "reason": "By removing the specific constraint, the support text can remain general and not reliant on any specific feature type, while still conveying the essence of the sensor's function."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The system includes features of interest that are the focus of observations, providing insights into the characteristics being studied. If any features of interest exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint highlights that if features of interest are present, they must all conform to a specific criterion, emphasizing exclusivity in the types of features monitored."
+    }
+  ],
+  "Sensor,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action.",
+      "reason": "By removing the specific constraint, the focus shifts to the general purpose of the sensor without tying it to any specific results."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action. If any results exist, they must all be relevant to the properties of interest.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively pertain to the specific properties that the sensor is designed to monitor."
+    }
+  ],
+  "Sensor,isActedOnBy,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest.",
+      "reason": "Removing the constraint allows for a broader understanding of sensors without tying them to specific interactions with actuators, thus highlighting their observational capabilities."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. If any interactions exist, they must exclusively be with actuators.",
+      "reason": "The 'only' constraint emphasizes that if interactions occur, they must be exclusively with actuators, thereby clarifying the relationship between sensors and their controlled elements."
+    }
+  ],
+  "Sensor,madeObservation,some,Observation": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action.",
+      "reason": "By removing the constraint, the support text now reflects the broader capabilities of the sensor without being limited to the observations it makes."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action. If any observations exist, they must all be classified as observations.",
+      "reason": "The 'only' constraint emphasizes that if observations are present, they must exclusively be classified as observations, reinforcing the specificity of the data being collected."
+    }
+  ],
+  "Sensor,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action.",
+      "reason": "Removing the constraint allows the support text to focus on the general functionality of the sensor without being tied to specific properties or observations."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. If any properties are observed, they must all be observable properties.",
+      "reason": "The 'only' constraint clarifies that if the sensor observes any properties, they must exclusively be of the type 'observable property,' emphasizing a focused monitoring capability."
+    }
+  ],
+  "Sensor,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action.",
+      "reason": "Removing the constraint allows for a broader interpretation of how sensors operate without being limited to the procedures used."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This entity is designed to gather information by making observations and is specifically tailored to monitor certain properties that can be quantified or described. It operates by detecting various stimuli in its environment, ensuring that the data it collects is relevant and specific to the properties of interest. Every observation made by this entity is directly linked to its ability to monitor these properties, creating a clear and focused relationship between the sensor and the data it generates. This structured approach not only enhances the accuracy of the observations but also ensures that the insights derived are meaningful and useful for further analysis or action. If any procedures are used, they must all be specific procedures that align with the monitoring goals.",
+      "reason": "The 'only' constraint emphasizes that if procedures are utilized, they must exclusively match the defined criteria relevant to the sensor's monitoring capabilities."
+    }
+  ],
+  "Stimulus,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "Essentially, a stimulus serves as a catalyst for interaction between the environment and the sensing devices.",
+      "reason": "By removing the constraint, the support text no longer depends on the specific features of interest, allowing for a broader interpretation of what constitutes a stimulus."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Essentially, a stimulus serves as a catalyst for interaction between the environment and the sensing devices. If any features of interest exist, they must all be related to the specific properties defined as FeatureOfInterest.",
+      "reason": "The 'only' constraint clarifies that if any features are present, they must exclusively pertain to the defined FeatureOfInterest."
+    }
+  ],
+  "Stimulus,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A stimulus refers to an event or condition that can trigger a response or observation from a sensor. It is specifically linked to observable properties, meaning that the stimulus must be related to something that can be measured or detected. Essentially, a stimulus serves as a catalyst for interaction between the environment and the sensing devices, enabling the collection and analysis of relevant data.",
+      "reason": "By removing the constraint, the support text no longer needs to reference the specific relationship with results, allowing for a broader understanding of what constitutes a stimulus."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A stimulus refers to an event or condition that can trigger a response or observation from a sensor. It is specifically linked to observable properties, meaning that the stimulus must be related to something that can be measured or detected. Furthermore, it is associated with observations, which are the recorded data resulting from the sensor's response to the stimulus. If any results exist, they must all be classified as Results.",
+      "reason": "The 'only' constraint emphasizes that if results are present, they must exclusively fall under the category of Results, reinforcing the specificity of the relationship."
+    }
+  ],
+  "Stimulus,isActedOnBy,some,Sensor": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A stimulus refers to an event or condition that can trigger a response or observation from a sensor. It is specifically linked to observable properties, meaning that the stimulus must be related to something that can be measured or detected. Furthermore, it is associated with observations, which are the recorded data resulting from the sensor's response to the stimulus. Essentially, a stimulus serves as a catalyst for interaction between the environment and the sensing devices, enabling the collection and analysis of relevant data.",
+      "reason": "By removing the constraint, the support text can focus on the general characteristics and functions of a stimulus without referencing the specific interaction with sensors."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A stimulus refers to an event or condition that can trigger a response or observation from a sensor. It is specifically linked to observable properties, meaning that the stimulus must be related to something that can be measured or detected. Furthermore, it is associated with sensors, which are the devices that respond to these stimuli. If any sensors are present, they must exclusively be those that act on the stimulus.",
+      "reason": "The 'only' constraint clarifies that if sensors exist in relation to a stimulus, they must be specifically those that act upon it, thus reinforcing the exclusivity of the relationship."
+    }
+  ],
+  "Stimulus,observes,some,Observation": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "A stimulus refers to an event or condition that can trigger a response or observation from a sensor.",
+      "reason": "By removing the constraint, the support text no longer needs to reference observations, allowing for a broader interpretation of what constitutes a stimulus."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "A stimulus refers to an event or condition that can trigger a response or observation from a sensor. If any observations exist, they must all be related to this specific stimulus.",
+      "reason": "The 'only' constraint clarifies that if observations are present, they must exclusively pertain to the defined stimulus."
+    }
+  ],
+  "System,deployedOnPlatform,some,Platform": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "This category encompasses various components that work together to perform specific tasks related to sensing and acting on the environment. They are linked to deployment processes that define how they are set up and utilized in real-world scenarios. Furthermore, these components may include other subsystems, allowing for a hierarchical organization in which more complex systems are built from simpler ones. Each one is designed to follow certain procedures, ensuring that their functions are carried out in a systematic and efficient manner. Overall, this category represents the foundational elements that make up sophisticated sensing and actuation systems, emphasizing their interconnections and operational frameworks.",
+      "reason": "By removing the specific constraint, the support text can focus on the broader aspects of the system without being tied to the requirement of a platform."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each of these components is required to be associated with a particular platform that hosts its operations. If any components exist, they must all be associated with a single specific platform.",
+      "reason": "The 'only' constraint specifies that if any components are present, they must exclusively be linked to one particular platform, emphasizing a singular association."
+    }
+  ],
+  "System,hasDeployment,some,Deployment": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This category encompasses various components that work together to perform specific tasks related to sensing and acting on the environment. Each of these components is required to be associated with a particular platform that hosts its operations. Furthermore, these components may include other subsystems, allowing for a hierarchical organization in which more complex systems are built from simpler ones. Each one is designed to follow certain procedures, ensuring that their functions are carried out in a systematic and efficient manner. Overall, this category represents the foundational elements that make up sophisticated sensing and actuation systems, emphasizing their interconnections and operational frameworks.",
+      "reason": "By removing the constraint, the support text can focus on the overall characteristics and functions of the system without dependency on the specific deployment processes."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "They are also linked to deployment processes that define how they are set up and utilized in real-world scenarios. If any deployment processes exist, they must all match the defined criteria.",
+      "reason": "The 'only' constraint emphasizes that if there are deployment processes, they must exclusively adhere to the specified criteria, highlighting the importance of uniformity in deployment."
+    }
+  ],
+  "System,hasSubSystem,some,System": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "These components may include other subsystems, allowing for a hierarchical organization in which more complex systems are built from simpler ones.",
+      "reason": "Removing the constraint allows the support text to stand independently, focusing on the hierarchical organization without the need to mention the specific relationship to subsystems."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "These components may include other subsystems, allowing for a hierarchical organization in which more complex systems are built from simpler ones. If subsystems exist, they must all be systems.",
+      "reason": "The 'only' constraint clarifies that any existing subsystems must exclusively be considered as systems, emphasizing a stricter categorization."
+    }
+  ],
+  "System,usedProcedure,some,Procedure": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "Each one is designed to follow certain procedures, ensuring that their functions are carried out in a systematic and efficient manner.",
+      "reason": "The removal of the constraint allows for a broader interpretation of procedures without the necessity of associating them with a specific type or quantity."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "Each one is designed to follow certain procedures, ensuring that their functions are carried out in a systematic and efficient manner. If any procedures exist, they must all match the defined criterion.",
+      "reason": "The 'only' constraint emphasizes that if procedures are present, they must exclusively adhere to a specific set of criteria."
+    }
+  ],
+  "TemporalEntity,actsOnProperty,some,ActuatableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "They can initiate changes or responses based on predefined criteria or commands.",
+      "reason": "By removing the specific constraint, the support text can focus on the general capability of the TemporalEntity without linking it to a particular property or type."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "They can initiate changes or responses based on predefined criteria or commands. If any properties are acted upon, they must all be actuatable properties.",
+      "reason": "The 'only' constraint clarifies that if any properties are involved, they must exclusively be actuatable, emphasizing the specificity of the properties that the TemporalEntity can interact with."
+    }
+  ],
+  "TemporalEntity,hasFeatureOfInterest,some,FeatureOfInterest": [
+    {
+      "operation": "remove",
+      "value": "",
+      "description": "This concept encompasses elements that can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs. These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways. They play a critical role in automated systems where precise control and responsiveness are necessary, often serving as a bridge between the sensor data and the actions taken to address observed conditions. The ability to actuate means they can initiate changes or responses based on predefined criteria or commands, making them essential components in various applications ranging from industrial automation to smart home technology.",
+      "reason": "By removing the constraint, the support text can focus on the broader capabilities of TemporalEntities without being limited by any specific feature of interest."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept encompasses elements that can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs. These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways. They play a critical role in automated systems where precise control and responsiveness are necessary, often serving as a bridge between the sensor data and the actions taken to address observed conditions. If any features of interest exist, they must all be aligned with the specific criteria defined for TemporalEntities.",
+      "reason": "The 'only' constraint highlights that if features of interest are present, they must conform exclusively to the defined characteristics of TemporalEntities."
+    }
+  ],
+  "TemporalEntity,hasInput,some,Input": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways.",
+      "reason": "Removing the constraint allows the support text to focus on the general capabilities of TemporalEntities without being tied to the existence of specific inputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways. If any inputs exist, they must all be of the defined type Input.",
+      "reason": "The 'only' constraint emphasizes that if inputs are present, they must exclusively match the defined criterion of Input."
+    }
+  ],
+  "TemporalEntity,hasOutput,some,Output": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "This concept encompasses elements that can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs. These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways.",
+      "reason": "Removing the constraint allows the support text to focus on the general characteristics of TemporalEntities without implying any specific requirement regarding outputs."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "The ability to actuate means they can initiate changes or responses based on predefined criteria or commands, making them essential components in various applications. If any outputs exist, they must all be of the type Output.",
+      "reason": "The 'only' constraint emphasizes that if outputs are present, they must exclusively be of the specified type, which underscores the specificity of the outputs related to TemporalEntities."
+    }
+  ],
+  "TemporalEntity,hasResult,some,Result": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "This concept encompasses elements that can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs. These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways. They play a critical role in automated systems where precise control and responsiveness are necessary, often serving as a bridge between the sensor data and the actions taken to address observed conditions. The ability to actuate means they can initiate changes or responses based on predefined criteria or commands, making them essential components in various applications ranging from industrial automation to smart home technology.",
+      "reason": "By removing the constraint, the support text no longer needs to reference the existence of results, allowing for a more general understanding of TemporalEntities without specific dependencies."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "This concept encompasses elements that can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs. These entities are designed to perform tasks based on signals they receive, allowing them to affect their environment in meaningful ways. If any results exist, they must all be defined as Result. They play a critical role in automated systems where precise control and responsiveness are necessary, often serving as a bridge between the sensor data and the actions taken to address observed conditions. The ability to actuate means they can initiate changes or responses based on predefined criteria or commands, making them essential components in various applications ranging from industrial automation to smart home technology.",
+      "reason": "The 'only' constraint clarifies that if results are present, they must exclusively be of the type Result, which reinforces the specificity of the outcomes that TemporalEntities can produce."
+    }
+  ],
+  "TemporalEntity,isActedOnBy,some,Actuator": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "They play a critical role in automated systems where precise control and responsiveness are necessary.",
+      "reason": "By removing the constraint, the support text no longer needs to reference any specific relationship to actuators, allowing it to focus on the general importance of temporal entities in automation."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "They play a critical role in automated systems where precise control and responsiveness are necessary. If an actuator is present, it must exclusively act on the temporal entity.",
+      "reason": "The 'only' constraint clarifies that if any actuators are involved, they must exclusively interact with the temporal entity."
+    }
+  ],
+  "TemporalEntity,isProxyFor,some,TemporalEntity": [
+    {
+      "operation": "remove",
+      "value": null,
+      "description": "These entities are designed to perform tasks based on signals they receive.",
+      "reason": "By removing the constraint, the support text no longer depends on specific relationships, allowing for a broader interpretation of the capabilities of TemporalEntities."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "These entities are designed to perform tasks based on signals they receive. If they are proxies for other temporal entities, all must be TemporalEntities.",
+      "reason": "The 'only' constraint specifies that if these entities act as proxies, they must exclusively represent TemporalEntities, emphasizing their specific role in the context."
+    }
+  ],
+  "TemporalEntity,observes,some,ObservableProperty": [
+    {
+      "operation": "remove",
+      "value": true,
+      "description": "These entities can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs.",
+      "reason": "Removing the constraint allows for a broader interpretation of TemporalEntity, focusing solely on their ability to be influenced without tying them to observable properties."
+    },
+    {
+      "operation": "variant_rtype",
+      "value": "only",
+      "description": "These entities can be influenced or controlled by external actions, such as devices or systems that can change their state or behavior in response to specific inputs. If any observable properties exist, they must all match the defined criteria.",
+      "reason": "The 'only' constraint specifies that if observable properties are present, they must conform to a particular standard, emphasizing exclusivity in their influence."
+    }
+  ]
+}

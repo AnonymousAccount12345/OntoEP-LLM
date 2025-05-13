@@ -1,0 +1,58 @@
+{
+    "hasBase": {
+        "domain": [
+            "Pizza"
+        ],
+        "range": [
+            "PizzaBase"
+        ],
+        "inverseOf": [
+            "isBaseOf"
+        ],
+        "subPropertyOf": [
+            "hasIngredient"
+        ]
+    },
+    "hasCountryOfOrigin": {},
+    "hasIngredient": {
+        "domain": [
+            "Food"
+        ],
+        "range": [
+            "Food"
+        ],
+        "inverseOf": [
+            "isIngredientOf"
+        ]
+    },
+    "hasSpiciness": {
+        "range": [
+            "Spiciness"
+        ]
+    },
+    "hasTopping": {
+        "domain": [
+            "Pizza"
+        ],
+        "range": [
+            "PizzaTopping"
+        ],
+        "inverseOf": [
+            "isToppingOf"
+        ],
+        "subPropertyOf": [
+            "hasIngredient"
+        ]
+    },
+    "isBaseOf": {
+        "subPropertyOf": [
+            "isIngredientOf"
+        ]
+    },
+    "isIngredientOf": {},
+    "isToppingOf": {
+        "subPropertyOf": [
+            "isIngredientOf"
+        ]
+    }
+}

@@ -1,0 +1,831 @@
+{
+    "Thing": [
+        {
+            "s": "Thing",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(The Thing class encompasses a wide range of entities and concepts relevant to sensor networks, including various components such as sensors, actuators, properties, and observations, all of which play critical roles in the functioning of a sensor network. Each instance of Thing may represent physical or abstract entities that contribute to the overall system's ability to monitor, control, and interact with the environment.)"
+        },
+        {
+            "s": "Thing",
+            "p": "observes",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(The Thing class serves as a foundational category within the semantic sensor network ontology, encompassing a wide range of entities and concepts relevant to sensor networks, which includes observations that are critical for monitoring and interacting with the environment.)"
+        },
+        {
+            "s": "Thing",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(The diversity within the Thing class allows for a comprehensive representation of all elements involved in sensing and actuation processes, which includes features of interest that are essential for effective monitoring and control.)"
+        },
+        {
+            "s": "Thing",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "(The Thing class includes various components such as sensors and actuators, indicating that instances of Thing may be acted upon by actuators as part of the sensor network's functioning.)"
+        },
+        {
+            "s": "Thing",
+            "p": "isProxyFor",
+            "rtype": "some",
+            "o": "Thing",
+            "support_sentence": "(The Thing class serves as a foundational category, suggesting that instances may act as proxies for other entities within the sensor network.)"
+        },
+        {
+            "s": "Thing",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(The Thing class encompasses various components relevant to sensor networks, which may include procedures that result in specific outcomes or results.)"
+        },
+        {
+            "s": "Thing",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(The Thing class includes various components that play critical roles in the functioning of a sensor network, which may involve the use of specific procedures.)"
+        },
+        {
+            "s": "Thing",
+            "p": "hasSubSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(The Thing class allows for a comprehensive representation of all elements involved in sensing and actuation processes, which may include subsystems that contribute to the overall functionality of the sensor network.)"
+        },
+        {
+            "s": "Thing",
+            "p": "hasProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(The Thing class encompasses a wide range of entities and concepts relevant to sensor networks, including properties that are essential for the operation of sensors and actuators.)"
+        }
+    ],
+    "Sensor": [
+        {
+            "s": "Sensor",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(A Sensor is capable of observing particular properties, which define the characteristics it monitors.)"
+        },
+        {
+            "s": "Sensor",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(A Sensor plays a crucial role in gathering information about various stimuli, contributing to a deeper understanding of the surrounding environment.)"
+        }
+    ],
+    "Vocabulary": [
+        {
+            "s": "Vocabulary",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(The Vocabulary class provides a standardized language for describing properties, features, and other entities associated with sensor networks.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "hasProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(The Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(The Vocabulary class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "(By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "isProxyFor",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(The Vocabulary class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(The Vocabulary class provides a standardized language for describing properties, features, and other entities associated with sensor networks.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "(The Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "madeObservation",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "(The Vocabulary class is fundamental for ensuring consistency and clarity when interpreting data and observations generated by various systems and sensors.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "(By establishing a common lexicon, the Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor network.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "isHostedBy",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "(The Vocabulary class serves as a structured set of terms and definitions that facilitate the understanding and communication of concepts within a specific domain.)"
+        },
+        {
+            "s": "Vocabulary",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "(The Vocabulary class enhances interoperability and data sharing among different components of the semantic sensor"
+        }
+    ],
+    "Result": [
+        {
+            "s": "Result",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(The Result class encapsulates the data generated as a consequence of various interactions with the environment, often reflecting the state or condition of a particular feature of interest.)"
+        },
+        {
+            "s": "Result",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(Results are essential for understanding the implications of sensor readings and can inform subsequent actions or decisions, indicating that they are outcomes derived from observations.)"
+        },
+        {
+            "s": "Result",
+            "p": "observedProperty",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(The outcomes or findings obtained from observations or measurements taken in a semantic sensor network often reflect the state or condition of a particular feature of interest, which is typically linked to observable properties.)"
+        }
+    ],
+    "Property": [
+        {
+            "s": "Property",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(Each property is uniquely tied to a feature, ensuring that it describes only that particular aspect or quality.)"
+        },
+        {
+            "s": "Property",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(Properties enable the differentiation and specification of features, facilitating effective data interpretation and analysis.)"
+        },
+        {
+            "s": "Property",
+            "p": "isPropertyOf",
+            "rtype": "some",
+            "o": "Thing",
+            "support_sentence": "(This class serves as a foundational element in defining the various measurable or describable aspects of the entities within a semantic sensor network.)"
+        }
+    ],
+    "Sampling": [
+        {
+            "s": "Sampling",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "(The outcome of sampling is a sample that reflects the observations made during the process.)"
+        },
+        {
+            "s": "Sampling",
+            "p": "madeBySampler",
+            "rtype": "only",
+            "o": "Sampler",
+            "support_sentence": "(This process is exclusively conducted by a sampler, which is responsible for carrying out the sampling activities.)"
+        },
+        {
+            "s": "Sampling",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(Each sampling operation follows a defined procedure to ensure consistency and reliability in the data collection.)"
+        }
+    ],
+    "Deployment": [
+        {
+            "s": "Deployment",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "(The Deployment class represents a specific arrangement where a system is installed or utilized on a designated platform.)"
+        },
+        {
+            "s": "Deployment",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(Each deployment is tailored to a particular property, ensuring that the system operates within defined parameters.)"
+        },
+        {
+            "s": "Deployment",
+            "p": "hosts",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(This class encapsulates the relationship between the system, the platform it operates on, and the property it addresses.)"
+        },
+        {
+            "s": "Deployment",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(Through this class, one can understand how various components are systematically organized to achieve functional outcomes in a sensor network environment.)"
+        }
+    ],
+    "System": [
+        {
+            "s": "System",
+            "p": "hasDeployment",
+            "rtype": "some",
+            "o": "Deployment",
+            "support_sentence": "(The description states that \"It encompasses Deployments, which define how the System is executed,\" indicating that a System must have at least one Deployment associated with it.)"
+        },
+        {
+            "s": "System",
+            "p": "hasSubSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(The class description mentions that \"may include SubSystems that work collaboratively,\" suggesting that a System can have one or more SubSystems.)"
+        },
+        {
+            "s": "System",
+            "p": "implements",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(The description notes that \"every System implements specific Procedures that guide its operations and functionalities,\" indicating that a System must implement at least one Procedure.)"
+        }
+    ],
+    "Agent": [
+        {
+            "s": "Agent",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(An Agent is capable of interacting with their environment and can be responsible for carrying out tasks or operations based on certain conditions or stimuli, which often leads to a Result.)"
+        },
+        {
+            "s": "Agent",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(Agents are capable of interacting with their environment, which includes observing properties of that environment.)"
+        },
+        {
+            "s": "Agent",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(An Agent can act or make decisions within a system, which implies that it can act on various properties within that system.)"
+        },
+        {
+            "s": "Agent",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "(Agents may operate independently or in coordination with other agents, which can include being acted upon by actuators in the system.)"
+        },
+        {
+            "s": "Agent",
+            "p": "isProxyFor",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(Agents often represent a specific role or function within a system, indicating that they can act as proxies for various systems.)"
+        },
+        {
+            "s": "Agent",
+            "p": "hasSubSystem",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(Agents contribute to the overall functionality of the system, which may involve having subsystems associated with them.)"
+        },
+        {
+            "s": "Agent",
+            "p": "deployedOnPlatform",
+            "rtype": "some",
+            "o": "Platform",
+            "support_sentence": "(The architecture of a semantic sensor network suggests that Agents may be deployed on specific platforms.)"
+        },
+        {
+            "s": "Agent",
+            "p": "implementedBy",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(Agents serve as foundational components in the architecture of a semantic sensor network, indicating they can be implemented by various systems.)"
+        },
+        {
+            "s": "Agent",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(Agents can be responsible for carrying out tasks or operations, which may involve features of interest within their environment.)"
+        },
+        {
+            "s": "Agent",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "(Agents interact with their environment, which implies they can have inputs that influence their actions.)"
+        },
+        {
+            "s": "Agent",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "(As agents carry out tasks or operations, they are likely to produce outputs based on their interactions.)"
+        },
+        {
+            "s": "Agent",
+            "p": "madeObservation",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(Agents are capable of observing their environment, which leads to the creation of observations.)"
+        },
+        {
+            "s": "Agent",
+            "p": "madeActuation",
+            "rtype": "some",
+            "o": "Actuation",
+            "support_sentence": "(Agents can carry out tasks or operations, which may include making actuations in response to stimuli.)"
+        },
+        {
+            "s": "Agent",
+            "p": "madeSampling",
+            "rtype": "some",
+            "o": "Sampling",
+            "support_sentence": "(Agents may"
+        }
+    ],
+    "Input": [],
+    "FeatureOfInterest": [
+        {
+            "s": "FeatureOfInterest",
+            "p": "hasSample",
+            "rtype": "only",
+            "o": "Sample",
+            "support_sentence": "(each Feature of Interest is associated exclusively with a specific sample that provides data about it.)  \nFeatureOfInterest, hasProperty, some, Property / support sentence: (every Feature of Interest is defined by its properties, which describe its characteristics and behaviors in the context of observation or measurement.)"
+        }
+    ],
+    "ObservableProperty": [
+        {
+            "s": "ObservableProperty",
+            "p": "observes",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(This property is specifically linked to sensors, which are responsible for observing and collecting data about it.)"
+        },
+        {
+            "s": "ObservableProperty",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(ObservableProperties serve as key indicators within a system, providing valuable insights into the state or condition of the features they represent.)"
+        },
+        {
+            "s": "ObservableProperty",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(Their measurements are essential for understanding and analyzing various phenomena in the environment.)"
+        }
+    ],
+    "Output": [
+        {
+            "s": "Output",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(The Output class represents the results produced by a system's processes, typically generated as a response to an input or observation.)"
+        },
+        {
+            "s": "Output",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "(The Output class represents the results produced by a system's processes, typically generated as a response to an input or observation.)"
+        },
+        {
+            "s": "Output",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(Outputs may result from the operation of sensors, actuators, or sampling devices, reflecting the state or changes in the environment.)"
+        }
+    ],
+    "Sampler": [
+        {
+            "s": "Sampler",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(Samplers are essential components in the broader context of data collection and analysis within sensor networks, which implies that they produce results related to their sampling activities.)"
+        },
+        {
+            "s": "Sampler",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(A Sampler is designed to collect data from a specific feature of interest, indicating that it must have a feature of interest associated with its sampling activities.)"
+        },
+        {
+            "s": "Sampler",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(It performs this function by engaging in sampling activities that adhere to defined protocols or methods, suggesting that a Sampler uses specific procedures for its operations.)"
+        },
+        {
+            "s": "Sampler",
+            "p": "madeSampling",
+            "rtype": "some",
+            "o": "Sampling",
+            "support_sentence": "(This class is characterized by its exclusive involvement in sampling processes, indicating that it is involved in making samplings.)"
+        }
+    ],
+    "Actuation": [
+        {
+            "s": "Actuation",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(Each actuation yields a specific result, reflecting the outcome of the interaction between the actuator and the property it acts upon.)"
+        },
+        {
+            "s": "Actuation",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(This process is closely tied to a particular feature of interest, which is the focus of the actuation.)"
+        },
+        {
+            "s": "Actuation",
+            "p": "usedProcedure",
+            "rtype": "some",
+            "o": "Procedure",
+            "support_sentence": "(The actuation is guided by a defined procedure that outlines the steps necessary to achieve the intended outcome.)"
+        },
+        {
+            "s": "Actuation",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "(Actuation refers to the process by which an actuator exerts influence on a specific property, typically an actuatable property, to achieve a desired effect.)"
+        }
+    ],
+    "Procedure": [
+        {
+            "s": "Procedure",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "(A Procedure refers to a structured set of actions or steps designed to achieve a specific outcome. It is characterized by its exclusive reliance on defined inputs and outputs...)"
+        },
+        {
+            "s": "Procedure",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "(...ensuring that the process is clearly delineated and reproducible. Additionally, each Procedure is executed by a designated system...)"
+        },
+        {
+            "s": "Procedure",
+            "p": "implementedBy",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(...each Procedure is executed by a designated system, which embodies the necessary capabilities to carry out the prescribed actions.)"
+        }
+    ],
+    "TemporalEntity": [
+        {
+            "s": "TemporalEntity",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(TemporalEntities provide a framework for understanding the timing and duration of activities or measurements, which can result in various outcomes represented by the Result class.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "observes",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(TemporalEntities encompass various temporal aspects that can be associated with observations, indicating a relationship with the Observation class.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(TemporalEntities can be associated with features of interest, which are represented in the FeatureOfInterest class.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "isActedOnBy",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(TemporalEntities may be influenced or acted upon by systems, which include various types of agents such as Actuators, Samplers, and Sensors.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "isProxyFor",
+            "rtype": "some",
+            "o": "TemporalEntity",
+            "support_sentence": "(The concept of a TemporalEntity can be represented through proxies, which are also classified as TemporalEntities.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "hasSample",
+            "rtype": "some",
+            "o": "Sample",
+            "support_sentence": "(TemporalEntities can be linked to samples, which are represented in the Sample class, indicating a relationship with specific instances of observation.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "madeObservation",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(TemporalEntities are integral to the process of making observations, which are captured in the Observation class.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "phenomenonTime",
+            "rtype": "some",
+            "o": "TemporalEntity",
+            "support_sentence": "(The timing of phenomena is a critical aspect of TemporalEntities, indicating a relationship with other TemporalEntities.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "hasProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(TemporalEntities can possess properties that are defined within the Property class, indicating their characteristics and attributes.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(TemporalEntities may interact with or influence properties, which are defined in the Property class.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "isObservedBy",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(TemporalEntities can be observed by various systems, including Sensors and Samplers, which are part of the System class.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(TemporalEntities can be generated or measured by sensors, which are classified under the System class.)"
+        },
+        {
+            "s": "TemporalEntity",
+            "p": "madeBySampler",
+            "rtype": "some",
+            "o": "Sampler",
+            "support_sentence": "(TemporalEntities can also be associated with samplers, which are part of the System class.)"
+        }
+    ],
+    "Sample": [
+        {
+            "s": "Sample",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure. Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed.)"
+        },
+        {
+            "s": "Sample",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure.)"
+        },
+        {
+            "s": "Sample",
+            "p": "isResultOf",
+            "rtype": "some",
+            "o": "Sampling",
+            "support_sentence": "(Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed.)"
+        },
+        {
+            "s": "Sample",
+            "p": "madeBySampler",
+            "rtype": "some",
+            "o": "Sampler",
+            "support_sentence": "(Each Sample is uniquely associated with the act of Sampling that produced it, ensuring that it reflects the conditions or characteristics of the Feature being observed.)"
+        },
+        {
+            "s": "Sample",
+            "p": "madeObservation",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(Samples serve as crucial data points in the analysis and understanding of various phenomena.)"
+        },
+        {
+            "s": "Sample",
+            "p": "hasInput",
+            "rtype": "some",
+            "o": "Input",
+            "support_sentence": "(Samples serve as crucial data points in the analysis and understanding of various phenomena.)"
+        },
+        {
+            "s": "Sample",
+            "p": "hasOutput",
+            "rtype": "some",
+            "o": "Output",
+            "support_sentence": "(Samples serve as crucial data points in the analysis and understanding of various phenomena.)"
+        },
+        {
+            "s": "Sample",
+            "p": "forProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(This relationship emphasizes the importance of context and methodology in the interpretation of the Sample.)"
+        },
+        {
+            "s": "Sample",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(This relationship emphasizes the importance of context and methodology in the interpretation of the Sample.)"
+        },
+        {
+            "s": "Sample",
+            "p": "isObservedBy",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(Samples serve as crucial data points in the analysis and understanding of various phenomena.)"
+        },
+        {
+            "s": "Sample",
+            "p": "isSampleOf",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(A Sample is a representation of a specific instance of a Feature of Interest, often collected during a Sampling procedure.)"
+        },
+        {
+            "s": "Sample",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(Samples serve as crucial data points in the analysis and understanding of various phenomena.)"
+        },
+        {
+            "s": "Sample",
+            "p": "madeByActuator",
+            "rtype": "some",
+            "o": "Actuator",
+            "support_sentence": "(Samples serve as crucial data points in the analysis and understanding of various phenomena.)"
+        },
+        {
+            "s": "Sample",
+            "p": "hasProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(This"
+        }
+    ],
+    "Observation": [
+        {
+            "s": "Observation",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(Each observation is associated with a unique result that reflects the data gathered during the observation process.)"
+        },
+        {
+            "s": "Observation",
+            "p": "observes",
+            "rtype": "some",
+            "o": "ObservableProperty",
+            "support_sentence": "(It is linked to a specific observable property, following a defined procedure, and is often triggered by a stimulus.)"
+        },
+        {
+            "s": "Observation",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(Each observation is associated with a unique result that reflects the data gathered during the observation process, focusing on a particular feature of interest.)"
+        },
+        {
+            "s": "Observation",
+            "p": "madeBySensor",
+            "rtype": "some",
+            "o": "Sensor",
+            "support_sentence": "(It is conducted by a sensor and is linked to a specific observable property, following a defined procedure, and is often triggered by a stimulus.)"
+        }
+    ],
+    "ActuatableProperty": [
+        {
+            "s": "ActuatableProperty",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "Property",
+            "support_sentence": "(An ActuatableProperty refers to a characteristic or attribute of a system that can be influenced or modified through a specific action, indicating a clear relationship between the property and the action taken.)"
+        }
+    ],
+    "Actuator": [
+        {
+            "s": "Actuator",
+            "p": "actsOnProperty",
+            "rtype": "some",
+            "o": "ActuatableProperty",
+            "support_sentence": "(An Actuator is associated with a specific type of property that it can influence, ensuring that its functionality is aligned with the properties it is intended to actuate.)"
+        },
+        {
+            "s": "Actuator",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(An Actuator plays a crucial role in the operational dynamics of a system, enabling precise control over various actuatable properties, which implies it can produce results.)"
+        }
+    ],
+    "Stimulus": [
+        {
+            "s": "Stimulus",
+            "p": "hasFeatureOfInterest",
+            "rtype": "some",
+            "o": "FeatureOfInterest",
+            "support_sentence": "(A Stimulus is intrinsically linked to specific observable properties, ensuring that each stimulus is associated with a defined aspect of interest in the surrounding environment.)"
+        },
+        {
+            "s": "Stimulus",
+            "p": "observes",
+            "rtype": "some",
+            "o": "Observation",
+            "support_sentence": "(This connection allows for the meaningful interpretation of data collected in response to the stimulus.)"
+        },
+        {
+            "s": "Stimulus",
+            "p": "hasResult",
+            "rtype": "some",
+            "o": "Result",
+            "support_sentence": "(Stimuli play a vital role in enhancing the understanding of dynamic conditions by prompting relevant measurements.)"
+        }
+    ],
+    "Platform": [
+        {
+            "s": "Platform",
+            "p": "hosts",
+            "rtype": "some",
+            "o": "System",
+            "support_sentence": "(A Platform exclusively hosts systems, ensuring that only compatible entities operate within its framework.)"
+        },
+        {
+            "s": "Platform",
+            "p": "hasDeployment",
+            "rtype": "some",
+            "o": "Deployment",
+            "support_sentence": "(Additionally, a Platform is always associated with a deployment context, indicating its specific operational environment.)"
+        }
+    ]
+}

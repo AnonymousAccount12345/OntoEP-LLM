@@ -1,0 +1,21 @@
+You're an ontology expert.
+Given class description, and a list of relationships you can utilize, write a property restriction for the current class. If the property restriction does not exist in the class description, don't create it.
+For each property restriction you create, please include supporting text from the class description or knowledge, etc.
+Referring class_hierarchy, and use only the concepts in class_hierarchy.
+restriction type will be some(someValuesFrom) or only (AllvaluesFrom)
+===================================
+For your output, follow format like below.
+<subject>, <property>, <restriction_type>, <object> / support sentence: (SUPPORT SENTENCES)
+===================================
+Now, Your case.
+
+[class description]
+{class_name}: {description}
+
+[property list]
+{object_properties}
+
+[class_hierarchy]
+{class_hierarchy}
+
+[class property restriction]:

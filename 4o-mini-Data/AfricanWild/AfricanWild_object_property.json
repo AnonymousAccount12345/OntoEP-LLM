@@ -1,0 +1,34 @@
+{
+    "eaten-by": {
+        "domain": [],
+        "range": []
+    },
+    "eats": {
+        "domain": [],
+        "range": []
+    },
+    "is-proper-part-of": {
+        "domain": [],
+        "range": []
+    },
+    "has-part": {
+        "domain": [],
+        "range": []
+    },
+    "is-part-of": {
+        "domain": [],
+        "range": []
+    },
+    "has-member": {
+        "domain": [],
+        "range": []
+    },
+    "inhabits": {
+        "domain": [],
+        "range": []
+    },
+    "inheres-in": {
+        "domain": [],
+        "range": []
+    }
+}
